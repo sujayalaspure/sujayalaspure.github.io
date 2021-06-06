@@ -1,0 +1,19 @@
+.app {
+	background-color: #dadbd3;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+}
+
+.app-body {
+	display: flex;
+}
+.sidebar {
+	/* display: flex; */
+	/* justify-content: center; */
+	margin-top: -50px;
+	width: 90%;
+	height: 90vh;
+	background-color: #ededed;
+	box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.3);
+}

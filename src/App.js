@@ -1,5 +1,6 @@
+import React from 'react';
 function App() {
-	return <div className='App'>React Boiler Plate by Sujay Alaspure</div>;
+	return <div className='app'></div>;
 }
 
 export default App;
