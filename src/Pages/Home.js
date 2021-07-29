@@ -21,7 +21,7 @@ function Home() {
 			<HeaderContainer>
 				<MinorHeading>Hi, my name is</MinorHeading>
 				<NameHeading>Sujay Alaspure</NameHeading>
-				<Heading2>I build things for the web/mobile.</Heading2>
+				<Heading2>I build things for the web.</Heading2>
 			</HeaderContainer>
 		</Container>
 	);

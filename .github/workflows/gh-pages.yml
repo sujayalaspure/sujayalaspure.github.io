@@ -1,32 +1,27 @@
-name: GitHub Pages
+name: Github Pages Deploy
 
 on:
   push:
     branches:
-      - master # Set a branch name to trigger deployment
+      - 'master'
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
+
+    strategy:
+      matrix:
+        node-version: [15.x]
+
     steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+      - name: Checkout
+        uses: actions/checkout@v1
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.85.0'
-
-      - name: Build
-        run: hugo --minify
+      - name: Install and build
+        run: npm install && npm run build
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
