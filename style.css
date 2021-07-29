@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', sans-serif, monospace;
+}
+
+.font-mono {
+	font-family: 'Roboto mono';
+}
+
+li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+.social_styled_link {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	-webkit-box-align: center;
+	align-items: center;
+	margin: 0px;
+	padding: 0px;
+}
+
+.social_styled_link:after {
+	content: '';
+	display: block;
+	width: 1px;
+	height: 90px;
+	margin: 0px auto;
+	background-color: #a8b2d1;
+}
