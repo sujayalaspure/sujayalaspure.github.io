@@ -2,8 +2,8 @@ name: Github Pages Deploy
 
 on:
   push:
-    branches:
-      - 'master'
+    tags:
+      - '1.*'
 
 jobs:
   build:
