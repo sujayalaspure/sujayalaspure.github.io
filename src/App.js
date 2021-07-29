@@ -2,9 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { IconContext } from 'react-icons';
 
-import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
-import { colors } from './Styles';
 
 function App() {
 	return (
