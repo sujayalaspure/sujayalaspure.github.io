@@ -19,7 +19,7 @@ export default function Hero() {
 
 const Container = styled.div`
 	background: ${colors.navy};
-	width: ${theme.width.screen};
+	/* width: ${theme.width.screen}; */
 	height: ${theme.height.screen};
 	display: flex;
 	align-items: center;
