@@ -3,7 +3,7 @@ name: Github Pages Deploy
 on:
   push:
     tags:
-      - '1.*'
+      - 'V1.*'
 
 jobs:
   build:

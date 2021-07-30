@@ -1,4 +1,4 @@
-import { FiGithub, FiInstagram, FiLinkedin } from 'react-icons/fi';
+import { FiGithub, FiInstagram, FiLinkedin, FiMail } from 'react-icons/fi';
 export const colors = {
 	primary: '#A179AF',
 	secondary: '#564B64',
@@ -13,4 +13,5 @@ export const socialLink = [
 	{ name: 'Github', Icon: FiGithub, link: 'https://github.com/alaspuresujay' },
 	{ name: 'LinkedIn', Icon: FiLinkedin, link: 'https://www.linkedin.com/in/alaspuresujay/' },
 	{ name: 'Instagram', Icon: FiInstagram, link: 'https://www.instagram.com/alaspuresujay/' },
+	{ name: 'Mail', Icon: FiMail, link: 'mailto:alaspuresujay@gmail.com' },
 ];
