@@ -46,6 +46,7 @@ const MinorHeading = styled.h1`
 	color: ${colors.accent};
 	font-family: 'Roboto mono';
 	font-size: clamp(14px, 5vw, 16px);
+	font-weight: 400;
 `;
 
 const NameHeading = styled.h2`

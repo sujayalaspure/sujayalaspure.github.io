@@ -15,3 +15,13 @@ export const socialLink = [
 	{ name: 'Instagram', Icon: FiInstagram, link: 'https://www.instagram.com/alaspuresujay/' },
 	{ name: 'Mail', Icon: FiMail, link: 'mailto:alaspuresujay@gmail.com' },
 ];
+
+export const project = {
+	name: 'OctoProfile',
+	description:
+		'A nicer look at your GitHub profile and repository stats with data visualizations of your top languages and stars. Sort through your top repos by number of stars, forks, and size.',
+	tags: ['Next.js', 'Chart.js', 'GitHub API'],
+	githubLink: '',
+	ExternalLink: '',
+	PageLink: '',
+};
