@@ -16,11 +16,12 @@ const Container = styled.div`
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
+	margin-bottom: 50px;
 `;
 
 const HeadingNumber = styled.h2`
 	position: relative;
-	bottom: 4px;
+	/* bottom: 4px; */
 	margin-right: 10px;
 	color: var(--green);
 	font-family: var(--font-mono);

@@ -7,10 +7,11 @@ export default function Section({ children }) {
 
 const Container = styled.section`
 	margin: 0px auto;
-	padding: 100px 0px;
+
+	/* padding: 100px 0px; */
 	max-width: 1000px;
 
-	@media (max-width: 1080px) {
+	/* @media (max-width: 1080px) {
 		padding: 0px 100px;
 	}
 	@media (max-width: 768px) {
@@ -18,5 +19,5 @@ const Container = styled.section`
 	}
 	@media (max-width: 480px) {
 		padding: 0px 25px;
-	}
+	} */
 `;

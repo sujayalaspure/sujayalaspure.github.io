@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
-import { project } from '../../constant';
+import { project, TestImage } from '../../constant';
 import { theme } from '../../Styles';
 
 export default function FeaturedProject() {
@@ -39,24 +39,33 @@ export default function FeaturedProject() {
 					</a>
 				</ProjectLinks>
 			</ProjectContent>
-			<ProjectImage></ProjectImage>
+			<ProjectImage>
+				<a href='http://' target='_blank' rel='noopener noreferrer'>
+					<img src={TestImage} alt='Some' />
+				</a>
+			</ProjectImage>
 		</Container>
 	);
 }
 
 const Container = styled.div`
+	border: 0px solid white;
 	position: relative;
-	display: grid;
-	gap: 10px;
-	grid-template-columns: repeat(12, 1fr);
+	display: flex;
+	/* display: grid; */
+	/* gap: 10px; */
+	/* grid-template-columns: repeat(12, 1fr); */
 	-webkit-box-align: center;
 	align-items: center;
-	/* background: blueviolet; */
+	margin-bottom: 100px;
 `;
 
 const ProjectContent = styled.div`
+	border: 0px solid cyan;
+
 	position: relative;
-	grid-area: 1 / 1 / -1 / 7;
+	/* grid-area: 1 / 1 / -1 / 7; */
+	width: 60%;
 	/* background: blue; */
 `;
 
@@ -94,6 +103,9 @@ const ProjectDescription = styled.div`
 	background-color: var(--light-navy);
 	color: var(--light-slate);
 	font-size: var(--fz-lg);
+	p {
+		margin-bottom: 0;
+	}
 `;
 
 const ProjectTags = styled.ul`
@@ -166,25 +178,54 @@ const ProjectLinks = styled.div`
 `;
 
 const ProjectImage = styled.div`
-	grid-column: 1 / 8;
+	/* border: 1px solid yellow; */
 	box-shadow: 0 10px 30px -15px var(--navy-shadow);
 	transition: var(--transition);
-	grid-area: 1 / 6 / -1 / -1;
 	position: relative;
 	z-index: 1;
-	div {
-	}
-	img {
-		bottom: 0;
-		height: 100%;
-		left: 0;
-		margin: 0;
-		max-width: none;
-		padding: 0;
-		position: absolute;
-		right: 0;
-		top: 0;
+	width: 50%;
+
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	a {
 		width: 100%;
-		object-fit: cover;
+		height: 100%;
+		background-color: var(--green);
+		border-radius: var(--border-radius);
+		vertical-align: middle;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			inset: 0px;
+			z-index: 3;
+			transition: var(--transition);
+			background-color: var(--navy);
+			mix-blend-mode: screen;
+		}
+		img {
+			/* opacity: 0; */
+			transition: opacity 500ms linear 0s;
+			object-fit: cover;
+			border-radius: var(--border-radius);
+			mix-blend-mode: multiply;
+			filter: grayscale(100%) contrast(1) brightness(90%);
+			width: 100%;
+			max-width: 100%;
+			vertical-align: middle;
+			height: 100%;
+			padding: 0;
+			margin: 0;
+			max-width: none;
+		}
+
+		img[alt=''],
+		img:not([alt]) {
+			filter: blur(5px);
+		}
 	}
 `;

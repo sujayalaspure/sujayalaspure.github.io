@@ -1,13 +1,6 @@
 import { FiGithub, FiInstagram, FiLinkedin, FiMail } from 'react-icons/fi';
-export const colors = {
-	primary: '#A179AF',
-	secondary: '#564B64',
-	background: '#EDEAEA',
-	backgroundSecondary: '#3E3547',
-	text: '#3E3547',
-	textSecondary: '#ABA6A6',
-	white: '#FBFBFB',
-};
+
+export { default as TestImage } from './Assets/Screenshot from 2021-07-30 21-38-38.png';
 
 export const socialLink = [
 	{ name: 'Github', Icon: FiGithub, link: 'https://github.com/alaspuresujay' },
@@ -19,7 +12,7 @@ export const socialLink = [
 export const project = {
 	name: 'OctoProfile',
 	description:
-		'A nicer look at your GitHub profile and repository stats with data visualizations of your top languages and stars. Sort through your top repos by number of stars, forks, and size.',
+		'A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
 	tags: ['Next.js', 'Chart.js', 'GitHub API'],
 	githubLink: '',
 	ExternalLink: '',
