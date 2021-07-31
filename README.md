@@ -1,3 +1,7 @@
+<div align="center">
+  <img alt="Logo" src="https://raw.githubusercontent.com/alaspuresujay/alaspuresujay.github.io/master/public/favicon/android-chrome-384x384.png" width="100" />
+</div>
+
 # Hi, I'm Sujay ⚡
 
 A passionate Programmer | Techie | Engineer | Human Being
@@ -18,24 +22,26 @@ Programmer who makes some kludges.
 
 [![Linked In!](https://img.shields.io/badge/Linked%20In-%20-9cf?style=plastic&logo=linkedin)](https://in.linkedin.com/in/alaspuresujay)
 [![Instagram!](https://img.shields.io/badge/Instagram-%20-orange?style=plastic&logo=instagram)](https://www.instagram.com/alaspuresujay)
-[![Facebook!](https://img.shields.io/badge/Facebook-%20-blue?style=plastic&logo=facebook)](http://www.facebook.com/alaspuresujay)
-[![Hackerrank!](https://img.shields.io/badge/HackerRank-%20-brightgreen?style=plastic&logo=HackerRank)](https://www.hackerrank.com/alaspuresujay)
 
-### Languages and Tools:
+## 🎨 Color Reference
 
-[<img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />][github]
-[<img align="left" alt="Python" width="26px" src="https://raw.githubusercontent.com/alaspuresujay/alaspuresujay/master/img/python.png" />][github]
+| Color          | Hex                                                                |
+| -------------- | ------------------------------------------------------------------ |
+| Navy           | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) `#0a192f` |
+| Light Navy     | ![#112240](https://via.placeholder.com/10/0a192f?text=+) `#112240` |
+| Lightest Navy  | ![#233554](https://via.placeholder.com/10/303C55?text=+) `#233554` |
+| Slate          | ![#8892b0](https://via.placeholder.com/10/8892b0?text=+) `#8892b0` |
+| Light Slate    | ![#a8b2d1](https://via.placeholder.com/10/a8b2d1?text=+) `#a8b2d1` |
+| Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
+| White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
+| Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
 
-[<img align="left" alt="Esp8266" width="26px" src="https://cdn.icon-icons.com/icons2/2108/PNG/512/espressif_icon_130944.png" />][github]
-[<img align="left" alt="OpenCV" width="26px" src="https://raw.githubusercontent.com/alaspuresujay/alaspuresujay/master/img/opencv.png" />][github]
-[<img align="left" alt="Selenium" width="26px" src="https://raw.githubusercontent.com/alaspuresujay/alaspuresujay/master/img/selenium.png" />][github]
-[<img align="left" alt="Raspberry Pi" width="26px" src="https://cdn.icon-icons.com/icons2/2108/PNG/512/raspberry_pi_icon_130847.png" />][github]
-[<img align="left" alt="React native" width="26px" src="https://miro.medium.com/max/384/1*To2H39eauxaeYxYMtV1afQ.png" />][github]
-<br>
+# Open Source Credits
 
-[![Open Source? Yes!](https://img.shields.io/badge/Open%20Source%3F-Yes-blue?style=plastic&logo=github)](https://github.com/alaspuresujay)
+Thanks to all who directly, indirectly help me build this version of my portfolio website.
 
-It's all folks
+- [Brittany Chiang](https://brittanychiang.com/) For UI inspiration and Color Scheme
+- [InventingWithMonster](https://codesandbox.io/s/framer-motion-side-menu-mx2rw?fontsize=14&module=/src/Example.tsx&file=/src/MenuItem.tsx:497-517) For awesome verticle navbar animation using framer motion.
 
 [github]: https://github.com/alaspuresujay
 [website]: https://alaspuresujay.github.io
