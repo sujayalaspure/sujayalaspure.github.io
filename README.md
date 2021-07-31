@@ -56,7 +56,7 @@ Programmer who makes some kludges.
 | White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
 | Accent         | ![#38b2ac](https://via.placeholder.com/10/38b2ac?text=+) `#38b2ac` |
 
-# Open Source Credits
+## Open Source Credits
 
 Thanks to all who directly, indirectly help me build this version of my portfolio website.
 
@@ -66,6 +66,6 @@ Thanks to all who directly, indirectly help me build this version of my portfoli
 [github]: https://github.com/alaspuresujay
 [website]: https://alaspuresujay.github.io
 
-# License
+## License
 
 [MIT](https://github.com/alaspuresujay/alaspuresujay.github.io/blob/master/LICENSE) License
