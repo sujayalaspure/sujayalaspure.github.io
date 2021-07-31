@@ -65,3 +65,7 @@ Thanks to all who directly, indirectly help me build this version of my portfoli
 
 [github]: https://github.com/alaspuresujay
 [website]: https://alaspuresujay.github.io
+
+# License
+
+[MIT](https://github.com/alaspuresujay/alaspuresujay.github.io/blob/master/LICENSE) License
