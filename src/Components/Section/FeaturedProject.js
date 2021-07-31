@@ -6,7 +6,7 @@ import { theme } from '../../Styles';
 
 export default function FeaturedProject() {
 	return (
-		<Container>
+		<Container className='container'>
 			<ProjectContent>
 				{/* ProjectOverline */}
 				<ProjectOverline>Featured Project</ProjectOverline>
@@ -34,14 +34,11 @@ export default function FeaturedProject() {
 					<a href={project.ExternalLink} target='_blank' className='external' rel='noreferrer'>
 						<FiExternalLink />
 					</a>
-					<a href={project.PageLink} target='_blank' className='info' rel='noreferrer'>
-						Read More
-					</a>
 				</ProjectLinks>
 			</ProjectContent>
 			<ProjectImage>
 				<a href='http://' target='_blank' rel='noopener noreferrer'>
-					<img src={TestImage} alt='Some' />
+					<img className='img-fluid projectImage' src={TestImage} alt='Some' />
 				</a>
 			</ProjectImage>
 		</Container>
@@ -49,24 +46,16 @@ export default function FeaturedProject() {
 }
 
 const Container = styled.div`
-	border: 0px solid white;
 	position: relative;
 	display: flex;
-	/* display: grid; */
-	/* gap: 10px; */
-	/* grid-template-columns: repeat(12, 1fr); */
 	-webkit-box-align: center;
 	align-items: center;
 	margin-bottom: 100px;
 `;
 
 const ProjectContent = styled.div`
-	border: 0px solid cyan;
-
 	position: relative;
-	/* grid-area: 1 / 1 / -1 / 7; */
 	width: 60%;
-	/* background: blue; */
 `;
 
 const ProjectOverline = styled.p`
@@ -178,54 +167,31 @@ const ProjectLinks = styled.div`
 `;
 
 const ProjectImage = styled.div`
-	/* border: 1px solid yellow; */
-	box-shadow: 0 10px 30px -15px var(--navy-shadow);
-	transition: var(--transition);
-	position: relative;
-	z-index: 1;
-	width: 50%;
-
+	width: 60%;
+	height: 340px;
 	position: absolute;
 	right: 0;
-	top: 0;
-	bottom: 0;
-	a {
-		width: 100%;
-		height: 100%;
-		background-color: var(--green);
-		border-radius: var(--border-radius);
-		vertical-align: middle;
+	box-shadow: 0 10px 30px -15px var(--navy-shadow);
+	transition: var(--transition);
+	z-index: 1;
 
-		&::before {
-			content: '';
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			inset: 0px;
-			z-index: 3;
-			transition: var(--transition);
-			background-color: var(--navy);
-			mix-blend-mode: screen;
-		}
+	a {
 		img {
-			/* opacity: 0; */
-			transition: opacity 500ms linear 0s;
-			object-fit: cover;
-			border-radius: var(--border-radius);
-			mix-blend-mode: multiply;
-			filter: grayscale(100%) contrast(1) brightness(90%);
 			width: 100%;
-			max-width: 100%;
-			vertical-align: middle;
 			height: 100%;
-			padding: 0;
-			margin: 0;
-			max-width: none;
+			-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+			filter: grayscale(100%);
+			transition: var(--transition);
+			border-radius: var(--border-radius);
 		}
 
 		img[alt=''],
 		img:not([alt]) {
 			filter: blur(5px);
 		}
+	}
+	&:hover img {
+		-webkit-filter: none; /* Safari 6.0 - 9.0 */
+		filter: none;
 	}
 `;

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { IconContext } from 'react-icons';
 
@@ -10,7 +10,7 @@ function App() {
 	return (
 		<IconContext.Provider value={{ className: 'react-icons' }}>
 			<Router>
-				<Navbar />
+				{/* <Navbar /> */}
 
 				<Switch>
 					<Route path='/' exact component={Home} />

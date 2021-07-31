@@ -103,3 +103,25 @@ a:focus {
 	text-decoration: none;
 	text-decoration-skip-ink: auto;
 }
+
+.projectImageContainer {
+	width: 60%;
+	height: 340px;
+	position: absolute;
+	right: 0;
+	box-shadow: 0 10px 30px -15px var(--navy-shadow);
+	transition: var(--transition);
+	z-index: 1;
+}
+.projectImageContainer .projectImage {
+	width: 100%;
+	height: 100%;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+	transition: var(--transition);
+	border-radius: var(--border-radius);
+}
+.projectImageContainer .projectImage:hover {
+	-webkit-filter: none; /* Safari 6.0 - 9.0 */
+	filter: none;
+}
