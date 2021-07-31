@@ -23,6 +23,26 @@ Programmer who makes some kludges.
 [![Linked In!](https://img.shields.io/badge/Linked%20In-%20-9cf?style=plastic&logo=linkedin)](https://in.linkedin.com/in/alaspuresujay)
 [![Instagram!](https://img.shields.io/badge/Instagram-%20-orange?style=plastic&logo=instagram)](https://www.instagram.com/alaspuresujay)
 
+## 🛠 Installation & Set Up
+
+1. Clone the repo
+
+   ```sh
+   git clone https://github.com/alaspuresujay/alaspuresujay.github.io.git
+   ```
+
+2. Install dependencies
+
+   ```sh
+   yarn
+   ```
+
+3. Start the development server
+
+   ```sh
+   yarn start
+   ```
+
 ## 🎨 Color Reference
 
 | Color          | Hex                                                                |
@@ -34,7 +54,7 @@ Programmer who makes some kludges.
 | Light Slate    | ![#a8b2d1](https://via.placeholder.com/10/a8b2d1?text=+) `#a8b2d1` |
 | Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
 | White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
-| Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
+| Accent         | ![#38b2ac](https://via.placeholder.com/10/38b2ac?text=+) `#38b2ac` |
 
 # Open Source Credits
 
