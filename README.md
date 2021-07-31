@@ -25,23 +25,48 @@ Programmer who makes some kludges.
 
 ## 🛠 Installation & Set Up
 
-1. Clone the repo
+### To use the template on your github:
+
+1. Click on `Fork`
+2. Rename your repo `yourgithubname.github.io`
+3. Clone your fork
+   ```sh
+   git clone https://github.com/yourgithubname/yourgithubname.github.io.git
+   ```
+4. Modify the as per your convenience.
+
+### To setup the project and contribute on your local machine:
+
+1. Click on `Fork`
+2. Go to your fork and `clone` the project to your local machine.
 
    ```sh
-   git clone https://github.com/alaspuresujay/alaspuresujay.github.io.git
+   git clone https://github.com/yourgithubname/yourgithubname.github.io.git
    ```
 
-2. Install dependencies
-
+3. Install dependencies
    ```sh
    yarn
    ```
+4. Start the development server
 
-3. Start the development server
-
-   ```sh
+   ```
    yarn start
    ```
+
+5. ⚡ Hurry you are good to go.
+
+### To contribute to the project:
+
+1. Choose any open issue from [here](https://github.com/alaspuresujay/alaspuresujay.github.io/issues).
+2. Comment on the issue: `Can I work on this?` and get it assigned.
+3. Make changes to your fork and send a PR.
+
+> Follow the given link to make a successful and valid PR: https://help.github.com/articles/creating-a-pull-request/
+
+#### To send a PR, follow these rules carefully, **otherwise your PR will be closed**:
+
+> Make PR title in this format: `Fixes #IssueNo : Name of Issue`
 
 ## 🎨 Color Reference
 
