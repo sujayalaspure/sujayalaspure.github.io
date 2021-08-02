@@ -15,7 +15,7 @@ export const colors = {
 	lightestSlate: '#ccd6f6',
 
 	surface: '#',
-	accent: '#38b2ac',
+	accent: '#f6ad55',
 	error: '#F04400',
 	onSurface: '#',
 	disabled: '#5B5B5B',
@@ -32,6 +32,29 @@ export const colors = {
 };
 
 export const theme = {
+	fz: {
+		xxs: '0.75rem',
+		xs: '0.713rem',
+		sm: '0.875rem',
+		md: '1rem',
+		lg: '1.125rem',
+		xl: '1.25rem',
+		xxl: '1.375rem',
+		'2xl': '1.5rem',
+		'3xl': '1.875rem',
+		'4xl': '2.25rem',
+		'5xl': '3rem',
+		'6xl': '4rem',
+		heading: '2rem',
+	},
+	nav: {
+		height: '6.25rem',
+		scrollHeight: '4.375rem',
+	},
+	tab: {
+		height: '2.625rem',
+		width: '7.5rem',
+	},
 	screens: {
 		sm: '640px',
 		md: '768px',
@@ -67,6 +90,7 @@ export const theme = {
 		144: '36rem',
 	},
 	transition: 'all 0.25s cubic-bezier(0.645,0.045,0.355,1)',
+	easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
 	backgroundColor: theme => theme('colors'),
 	backgroundPosition: {
 		bottom: 'bottom',
@@ -84,10 +108,7 @@ export const theme = {
 		cover: 'cover',
 		contain: 'contain',
 	},
-	borderColor: theme => ({
-		...theme('colors'),
-		DEFAULT: theme('colors.gray.300', 'currentColor'),
-	}),
+
 	borderRadius: {
 		none: '0',
 		sm: '0.125rem',
@@ -122,7 +143,6 @@ export const theme = {
 		raised: '0 20px 50px rgba(0,0,0, 0.075)',
 		none: 'none',
 	},
-	container: {},
 	cursor: {
 		auto: 'auto',
 		default: 'DEFAULT',
@@ -171,18 +191,7 @@ export const theme = {
 		serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
 		mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
 	},
-	fontSize: {
-		xs: '0.75rem',
-		sm: '0.875rem',
-		base: '1rem',
-		lg: '1.125rem',
-		xl: '1.25rem',
-		'2xl': '1.5rem',
-		'3xl': '1.875rem',
-		'4xl': '2.25rem',
-		'5xl': '3rem',
-		'6xl': '4rem',
-	},
+
 	fontWeight: {
 		hairline: '100',
 		thin: '200',

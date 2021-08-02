@@ -23,7 +23,7 @@ const HeadingNumber = styled.h2`
 	position: relative;
 	/* bottom: 4px; */
 	margin-right: 10px;
-	color: var(--green);
+	color: var(--accent);
 	font-family: var(--font-mono);
 	font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
 	font-weight: 400;

@@ -11,8 +11,8 @@
 	--light-slate: #a8b2d1;
 	--lightest-slate: #ccd6f6;
 	--white: #e6f1ff;
-	--green: #38b2ac;
-	--green-tint: rgba(100, 255, 218, 0.1);
+	--accent: #f6ad55;
+	--accent-tint: rgba(100, 255, 218, 0.1);
 	--font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui,
 		sans-serif;
 	--font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
@@ -68,25 +68,6 @@ li {
 	text-align: -webkit-match-parent;
 }
 
-.social_styled_link {
-	list-style: none;
-	display: flex;
-	flex-direction: column;
-	-webkit-box-align: center;
-	align-items: center;
-	margin: 0px;
-	padding: 0px;
-}
-
-.social_styled_link:after {
-	content: '';
-	display: block;
-	width: 1px;
-	height: 90px;
-	margin: 0px auto;
-	background-color: #a8b2d1;
-}
-
 a {
 	font-family: inherit;
 	display: inline-block;
@@ -99,29 +80,18 @@ a {
 
 a:hover,
 a:focus {
-	color: var(--green);
+	color: var(--accent);
 	text-decoration: none;
 	text-decoration-skip-ink: auto;
 }
 
-.projectImageContainer {
-	width: 60%;
-	height: 340px;
-	position: absolute;
-	right: 0;
-	box-shadow: 0 10px 30px -15px var(--navy-shadow);
+.react-icons {
 	transition: var(--transition);
-	z-index: 1;
+	width: 20px;
+	height: 20px;
+	color: var(--lightest-slate);
 }
-.projectImageContainer .projectImage {
-	width: 100%;
-	height: 100%;
-	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-	filter: grayscale(100%);
-	transition: var(--transition);
-	border-radius: var(--border-radius);
-}
-.projectImageContainer .projectImage:hover {
-	-webkit-filter: none; /* Safari 6.0 - 9.0 */
-	filter: none;
+a:hover .react-icons {
+	color: var(--accent);
+	transform: translateY(-3px);
 }

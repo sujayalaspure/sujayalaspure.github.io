@@ -1,6 +1,6 @@
 import { FiGithub, FiInstagram, FiLinkedin, FiMail } from 'react-icons/fi';
 
-export { default as TestImage } from './Assets/Screenshot from 2021-07-30 21-38-51.png';
+export { default as TestImage } from './Assets/w3s.png';
 
 export const socialLink = [
 	{ name: 'Github', Icon: FiGithub, link: 'https://github.com/alaspuresujay' },

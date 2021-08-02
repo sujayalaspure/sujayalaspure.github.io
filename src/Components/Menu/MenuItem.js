@@ -45,7 +45,7 @@ const Item = styled(motion.li)`
 		align-items: center;
 	}
 	&:hover {
-		color: var(--green);
+		color: var(--accent);
 	}
 `;
 
@@ -55,7 +55,7 @@ const IconPlaceholder = styled.div`
 	border-radius: 50%;
 	/* flex: 20px 0; */
 	margin-right: 40px;
-	border: 2px solid var(--green);
+	border: 2px solid var(--accent);
 `;
 
 const TextPlaceholder = styled.div`

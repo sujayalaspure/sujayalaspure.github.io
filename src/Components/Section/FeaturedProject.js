@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FiGithub, FiExternalLink } from 'react-icons/fi';
+import { FiGithub, FiExternalLink, FiMonitor } from 'react-icons/fi';
 import { project, TestImage } from '../../constant';
-import { theme } from '../../Styles';
+import { colors } from '../../Styles';
 
 export default function FeaturedProject() {
 	return (
-		<Container className='container'>
+		<Container>
 			<ProjectContent>
 				{/* ProjectOverline */}
 				<ProjectOverline>Featured Project</ProjectOverline>
@@ -34,11 +34,14 @@ export default function FeaturedProject() {
 					<a href={project.ExternalLink} target='_blank' className='external' rel='noreferrer'>
 						<FiExternalLink />
 					</a>
+					<a href={project.ExternalLink} target='_blank' className='demo' rel='noreferrer'>
+						<FiMonitor />
+					</a>
 				</ProjectLinks>
 			</ProjectContent>
 			<ProjectImage>
 				<a href='http://' target='_blank' rel='noopener noreferrer'>
-					<img className='img-fluid projectImage' src={TestImage} alt='Some' />
+					<img src={TestImage} alt='Some' />
 				</a>
 			</ProjectImage>
 		</Container>
@@ -46,31 +49,44 @@ export default function FeaturedProject() {
 }
 
 const Container = styled.div`
+	/* border: 1px solid red; */
 	position: relative;
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
 	margin-bottom: 100px;
+	@media (max-width: 768px) {
+		margin-bottom: 70px;
+		justify-content: center;
+		padding: 2rem 0;
+	}
 `;
 
 const ProjectContent = styled.div`
 	position: relative;
 	width: 60%;
+	@media (max-width: 768px) {
+		width: 100%;
+		padding: 2rem 2rem;
+
+		/* background-color: ${colors.navy}aa; */
+		z-index: 10;
+	}
 `;
 
 const ProjectOverline = styled.p`
 	margin: 10px 0px;
-	color: var(--green);
+	color: ${colors.accent};
 	font-family: var(--font-mono);
 	font-size: var(--fz-xs);
 	font-weight: 400;
 `;
 
 const ProjectTitle = styled.h3`
-	color: var(--lightest-slate);
+	color: ${colors.lightestSlate};
 	font-size: clamp(24px, 5vw, 28px);
 	&:hover {
-		color: var(--green);
+		color: ${colors.accent};
 	}
 	a {
 		display: inline-block;
@@ -83,17 +99,25 @@ const ProjectTitle = styled.h3`
 `;
 
 const ProjectDescription = styled.div`
-	box-shadow: 0 10px 30px -15px var(--navy-shadow);
+	box-shadow: 0 10px 30px -15px ${colors.navyshadow};
 	transition: var(--transition);
 	position: relative;
 	z-index: 2;
 	padding: 25px;
 	border-radius: var(--border-radius);
-	background-color: var(--light-navy);
-	color: var(--light-slate);
+	background-color: ${colors.lightnavy};
+	color: ${colors.lightestSlate};
 	font-size: var(--fz-lg);
 	p {
 		margin-bottom: 0;
+	}
+
+	@media (max-width: 768px) {
+		/* margin: 0 -1rem; */
+		background-color: transparent;
+		box-shadow: none;
+		margin-top: 2rem;
+		padding: 0px 0px;
 	}
 `;
 
@@ -106,14 +130,21 @@ const ProjectTags = styled.ul`
 	padding: 0px;
 	list-style: none;
 	li {
-		margin: 0px 10px 5px 0px;
-		color: var(--light-slate);
+		margin: 0px 10px 0px 0px;
+		color: ${colors.lightSlate};
 		font-family: var(--font-mono);
 		font-size: var(--fz-xs);
 		white-space: nowrap;
-		background-color: var(--light-navy);
-		padding: 2px 10px;
+		/* background-color: ${colors.lightnavy}; */
+		padding: 2px 8px;
 		border-radius: 10px;
+		&:first-of-type {
+			padding-left: 0;
+		}
+	}
+	@media (max-width: 768px) {
+		margin-top: 1.2rem;
+		/* background-color: ${colors.lightnavy}99; */
 	}
 `;
 
@@ -124,7 +155,7 @@ const ProjectLinks = styled.div`
 	position: relative;
 	margin-top: 10px;
 	margin-left: -10px;
-	color: var(--lightest-slate);
+	color: ${colors.lightestSlate};
 	a {
 		display: flex;
 		-webkit-box-pack: center;
@@ -132,16 +163,6 @@ const ProjectLinks = styled.div`
 		-webkit-box-align: center;
 		align-items: center;
 		padding: 10px;
-		.react-icons {
-			transition: ${theme.transition};
-			width: 20px;
-			height: 20px;
-			color: var(--lightest-slate);
-		}
-		&:hover .react-icons {
-			color: var(--green);
-			transform: translateY(-3px);
-		}
 	}
 	a.external {
 		.react-icons {
@@ -150,35 +171,33 @@ const ProjectLinks = styled.div`
 			margin-top: -4px;
 		}
 	}
-	a.info {
-		transition: ${theme.transition};
-
-		margin: 0px 20px 0px 20px;
-		color: var(--light-slate);
-		font-family: var(--font-mono);
-		font-size: var(--fz-xs);
-		white-space: nowrap;
-		background-color: var(--light-navy);
-		text-decoration: none;
-		&:hover {
-			color: var(--green);
+	a.demo {
+		.react-icons {
+			width: 22px;
+			height: 22px;
 		}
+	}
+
+	@media (max-width: 768px) {
+		justify-content: flex-end;
 	}
 `;
 
 const ProjectImage = styled.div`
+	/* border: 2px solid yellow; */
 	width: 60%;
-	height: 340px;
+	max-height: 340px;
 	position: absolute;
 	right: 0;
-	box-shadow: 0 10px 30px -15px var(--navy-shadow);
+	box-shadow: 0 10px 30px -15px ${colors.navyshadow};
 	transition: var(--transition);
 	z-index: 1;
-
+	overflow: hidden;
+	object-fit: fill;
 	a {
 		img {
 			width: 100%;
-			height: 100%;
+			height: auto;
 			-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 			filter: grayscale(100%);
 			transition: var(--transition);
@@ -193,5 +212,34 @@ const ProjectImage = styled.div`
 	&:hover img {
 		-webkit-filter: none; /* Safari 6.0 - 9.0 */
 		filter: none;
+	}
+	@media (max-width: 768px) {
+		height: auto;
+		width: 100%;
+		max-height: 100%;
+		top: 0;
+		bottom: 0;
+		a {
+			background-color: ${colors.navy};
+			height: 100%;
+			width: 100%;
+			&::before {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				inset: 0px;
+				z-index: 3;
+				transition: var(--transition);
+				background-color: var(--navy);
+				mix-blend-mode: screen;
+			}
+			img {
+				object-fit: cover;
+				width: auto;
+				height: 100%;
+				filter: grayscale(100%) contrast(1) brightness(20%);
+			}
+		}
 	}
 `;

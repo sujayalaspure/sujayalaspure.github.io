@@ -4,7 +4,7 @@ import { IconContext } from 'react-icons';
 
 import Home from './Pages/Home';
 import TestPage from './Pages/TestPage';
-import Navbar from './Components/Navbar';
+// import Navbar from './Components/Navbar';
 
 function App() {
 	return (

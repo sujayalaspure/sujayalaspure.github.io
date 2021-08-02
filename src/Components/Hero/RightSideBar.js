@@ -15,11 +15,12 @@ export default function RightSideBar() {
 const Container = styled.div`
 	width: 40px;
 	position: fixed;
-	bottom: 0px;
+	top: auto;
+	bottom: auto;
 	left: auto;
 	right: 40px;
 	z-index: 10;
-	color: ${colors.lightSlate};
+	color: ${colors.slate}99;
 	@media (max-width: 768px) {
 		display: none;
 	}
@@ -27,13 +28,14 @@ const Container = styled.div`
 		right: 20px;
 		left: auto;
 	}
+	&:before,
 	&:after {
 		content: '';
 		display: block;
 		width: 1px;
 		height: 90px;
 		margin: 0px auto;
-		background-color: #a8b2d1;
+		background-color: ${colors.slate}99;
 	}
 `;
 

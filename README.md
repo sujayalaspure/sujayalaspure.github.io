@@ -30,9 +30,11 @@ Programmer who makes some kludges.
 1. Click on `Fork`
 2. Rename your repo `yourgithubname.github.io`
 3. Clone your fork
+
    ```sh
    git clone https://github.com/yourgithubname/yourgithubname.github.io.git
    ```
+
 4. Modify the as per your convenience.
 
 ### To setup the project and contribute on your local machine:
@@ -79,7 +81,7 @@ Programmer who makes some kludges.
 | Light Slate    | ![#a8b2d1](https://via.placeholder.com/10/a8b2d1?text=+) `#a8b2d1` |
 | Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
 | White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
-| Accent         | ![#38b2ac](https://via.placeholder.com/10/38b2ac?text=+) `#38b2ac` |
+| Accent         | ![#f6ad55](https://via.placeholder.com/10/f6ad55?text=+) `#f6ad55` |
 
 ## Open Source Credits
 
