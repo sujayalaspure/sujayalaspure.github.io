@@ -43,6 +43,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'PT Sans', sans-serif, monospace;
+	color: var(--slate);
 }
 body {
 	background-color: var(--navy);
@@ -94,4 +95,18 @@ a:focus {
 a:hover .react-icons {
 	color: var(--accent);
 	transform: translateY(-3px);
+}
+
+.ParallaxBanner {
+	margin-top: 5rem;
+	height: 80vh !important;
+	width: 100vw !important;
+	border: 1px solid red;
+	object-fit: contain;
+}
+
+.custom-bg {
+	background-color: #8892b0;
+	width: 40vw;
+	height: 800px;
 }
