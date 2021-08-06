@@ -64,17 +64,4 @@ const SocialLink = styled.li`
 	padding: 10px;
 	cursor: pointer;
 	margin: 5px 0px;
-	/* .react-icons {
-		transition: ${theme.transition};
-		height: 20px;
-		width: 20px;
-		color: ${colors.slate}99;
-	}
-	&:hover .react-icons {
-		color: ${colors.accent};
-		transform: translateY(-3px);
-	} */
-	:last-of-type {
-		/* margin-bottom: 40px; */
-	}
 `;
