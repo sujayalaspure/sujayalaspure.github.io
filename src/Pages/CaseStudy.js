@@ -1,21 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Row, Col } from 'react-bootstrap';
+
 import BannerImage from '../Projects/Smarthm/Assets/banner3.png';
-import img1 from '../Projects/Smarthm/Assets/img1.png';
-import { TestImage } from '../constant';
+import DesignSystem from '../Projects/Smarthm/Assets/designSystem.png';
 import '../Components/Dust';
-import { Parallax, Background } from 'react-parallax';
+import { Parallax } from 'react-parallax';
 import { FiArrowLeft, FiAlignRight } from 'react-icons/fi';
-import { colors, theme } from '../Styles';
+import { colors } from '../Styles';
+import GridItem from '../Components/GridItem';
+import { Data } from '../Projects/Smarthm/Data';
 
 export default function CaseStudy() {
 	return (
 		<>
 			<Header>
-				<a onClick={() => console.log('[CaseStudy.js:14] -  ')}>
+				<a href='#back'>
 					<FiArrowLeft />
 				</a>
-				<a href=''>
+				<a href='#home'>
 					<FiAlignRight />
 				</a>
 			</Header>
@@ -50,34 +53,42 @@ export default function CaseStudy() {
 									rel='noopener noreferrer'>
 									Play Store
 								</a>
-								<a
+								{/* <a
 									className='underline--magical'
 									href='http://'
 									target='_blank'
 									rel='noopener noreferrer'>
 									App Store
-								</a>
+								</a> */}
 							</BriefLink>
 						</BriefContent>
 					</BriefContainer>
 				</Brief>
 
-				{/* <div className='row mt-5'>
-					<div className='col'>
-						<Parallax bgImage={img1} strength={-200} style={{ width: '40vw' }}>
-							<div style={{ height: 800 }}></div>
-						</Parallax>
-					</div>
-					<div className='col'>
-						<Parallax bgImage={img1} strength={-200} style={{ width: '40vw' }}>
-							<Background className='custom-bg'>
-								<img src='http://www.fillmurray.com/500/320' alt='fill murray' />
-							</Background>
-						</Parallax>
-					</div>
-				</div>
+				<Parallax bgImage={DesignSystem} strength={100}>
+					<div style={{ height: '100vh' }}></div>
+				</Parallax>
+				<GridContainer>
+					<Row xs={1} md={2}>
+						<Col>
+							<LeftCol>
+								<GridItem
+									img={Data[2].img}
+									caption='Our first task was to give SmartHM a logotype and corporate identity.'
+								/>
+								<GridItem img={Data[3].img} />
+							</LeftCol>
+						</Col>
+						<Col>
+							<RightCol>
+								<GridItem img={Data[4].img} />
+								<GridItem img={Data[0].img} />
+							</RightCol>
+						</Col>
+					</Row>
+				</GridContainer>
 
-				<p style={{ fontSize: 50 }}>
+				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae veniam tempore expedita
 					reprehenderit earum harum cupiditate similique minima ab aliquam, ex suscipit enim beatae
 					eveniet maiores optio eius libero ipsa. Lorem, ipsum dolor sit amet consectetur
@@ -94,7 +105,7 @@ export default function CaseStudy() {
 					Reprehenderit delectus accusantium autem vel aliquid reiciendis alias, ipsum inventore
 					earum impedit minima debitis, incidunt facere? Numquam nisi repellendus ea, praesentium
 					nam ratione cupiditate iusto dolores consequatur? Voluptatem, eos ipsa.
-				</p> */}
+				</p>
 			</Container>
 		</>
 	);
@@ -113,6 +124,32 @@ const Container = styled.div`
 	justify-content: center;
 	flex-direction: column; */
 	/* padding: 0 270px; */
+`;
+
+const GridContainer = styled.div`
+	max-width: 100vw;
+	/* display: flex; */
+	/* padding: 0 270px;
+	margin: 200px 0px; */
+	@media (min-width: 480px) {
+		padding: 200px 15px;
+	}
+	@media (min-width: 768px) {
+		padding: 300px 100px;
+		margin: 80px 0px;
+	}
+	@media (min-width: 1024px) {
+		padding: 250px 120px;
+		margin: 100px 0px;
+	}
+	@media (min-width: 1354px) {
+		padding: 300px 180px;
+		margin: 160px 0px;
+	}
+	@media (min-width: 1600px) {
+		padding: 350px 220px;
+		margin: 160px 0px;
+	}
 `;
 
 const Header = styled.div`
@@ -231,6 +268,9 @@ const BriefContent = styled.div`
 
 const BriefText = styled.div`
 	font-size: clamp(20px, 24px, 28px);
+	p {
+		color: ${colors.slate};
+	}
 `;
 
 const BriefLink = styled.div`
@@ -264,4 +304,33 @@ const BriefLink = styled.div`
 		vertical-align: middle;
 		text-decoration: none;
 	}
+`;
+
+const RightCol = styled.div`
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-moz-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	@media (min-width: 1900px) {
+		margin: 250px 0 0 0;
+	}
+	@media (min-width: 1200px) {
+		margin: 193px 0 0 0;
+	}
+
+	@media (min-width: 1024px) {
+		margin: 170px 0 0 0;
+	}
+	@media (min-width: 768px) {
+		margin: 122px 0 0 0;
+	}
+`;
+
+const LeftCol = styled.div`
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-moz-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
 `;
