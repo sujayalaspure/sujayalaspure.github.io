@@ -9,10 +9,10 @@ function Home() {
 	return (
 		<div className='home'>
 			<Hero />
-			{/* <Section>
+			<Section>
 				<SectionHeading number='01' title='Some Things I’ve Built' />
 				<FeaturedProject />
-			</Section> */}
+			</Section>
 			<Footer />
 		</div>
 	);
