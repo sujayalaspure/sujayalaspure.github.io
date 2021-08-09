@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter, BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { IconContext } from 'react-icons';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import './App.css';
@@ -13,7 +13,7 @@ function App() {
 	return (
 		<ParallaxProvider>
 			<IconContext.Provider value={{ className: 'react-icons' }}>
-				<Router>
+				<HashRouter basename='/'>
 					<Suspense fallback={<div>Loading...</div>}>
 						{/* <Navbar /> */}
 
@@ -24,7 +24,7 @@ function App() {
 							{/*<Route path='/sign-up' component={SignUp} /> */}
 						</Switch>
 					</Suspense>
-				</Router>
+				</HashRouter>
 			</IconContext.Provider>
 		</ParallaxProvider>
 	);
