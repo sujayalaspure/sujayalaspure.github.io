@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { HashRouter, BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import { IconContext } from 'react-icons';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import './App.css';
