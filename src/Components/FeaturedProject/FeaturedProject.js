@@ -1,7 +1,6 @@
 import React from 'react';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
 import { project, TestImage } from 'constant';
-import { Link } from 'react-router-dom';
 import './FeaturedProject.css';
 export default function FeaturedProject({ slug }) {
 	return (
