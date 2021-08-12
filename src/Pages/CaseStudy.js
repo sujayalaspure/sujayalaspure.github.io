@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Row, Col } from 'react-bootstrap';
-
+import { useParams } from 'react-router-dom';
 import BannerImage from '../Projects/Smarthm/Assets/banner3.png';
 import DesignSystem from '../Projects/Smarthm/Assets/designSystem.png';
 import '../Components/Dust';
@@ -12,6 +12,8 @@ import GridItem from '../Components/GridItem';
 import { Data } from '../Projects/Smarthm/Data';
 
 export default function CaseStudy() {
+	const { slug } = useParams();
+	console.log('[CaseStudy.js:16] -  ', slug);
 	return (
 		<>
 			<Header>

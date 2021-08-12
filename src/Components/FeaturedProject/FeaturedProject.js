@@ -1,14 +1,16 @@
 import React from 'react';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
-import { project, TestImage } from '../../constant';
+import { project, TestImage } from 'constant';
+import { Link } from 'react-router-dom';
 import './FeaturedProject.css';
-export default function FeaturedProject() {
+export default function FeaturedProject({ slug }) {
 	return (
 		<div className='featured-project'>
 			<div className='content'>
 				<p className='overline'>Featured Project</p>
 				<h3 className='title'>
-					<a href={project.githubLink} target='_blank' rel='noreferrer'>
+					{/* <Link to='/case'>OctoProfile</Link> */}
+					<a href={`#/case/${slug}`} rel='noreferrer'>
 						OctoProfile
 					</a>
 				</h3>

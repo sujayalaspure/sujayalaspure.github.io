@@ -14,7 +14,7 @@
 	--accent-tint: rgba(100, 255, 218, 0.1);
 	--font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui,
 		sans-serif;
-	--font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+	--font-mono: 'Roboto Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 	--fz-xxs: 12px;
 	--fz-xs: 13px;
 	--fz-sm: 14px;
@@ -102,4 +102,25 @@ a:hover .react-icons {
 
 .font-mono {
 	font-family: 'Roboto mono';
+}
+#forkme {
+	transform: rotate(45deg);
+	background-color: #fff;
+	overflow: hidden;
+	position: fixed;
+	z-index: 300;
+	width: 180px;
+	right: -50px;
+	top: 20px;
+	border-style: solid;
+	border-color: #7b7979;
+}
+#forkme a {
+	color: #404040;
+	display: block;
+	font: 13px var(--font-mono) Neue, Arial, sans-serif;
+	margin: 0.05rem 0px 0.075rem;
+	padding: 0.4rem;
+	text-align: center;
+	text-decoration: none;
 }

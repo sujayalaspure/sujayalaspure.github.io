@@ -1,18 +1,18 @@
 import React from 'react';
 import './Home.css';
-import Hero from '../Components/Hero/Hero';
-// import Section, { SectionHeading } from '../Components/Section';
-// import FeaturedProject from '../Components/FeaturedProject/FeaturedProject';
-import Footer from '../Components/Footer/Footer';
+import Hero from 'Components/Hero/Hero';
+import Section, { SectionHeading } from 'Components/Section';
+import FeaturedProject from 'Components/FeaturedProject/FeaturedProject';
+import Footer from 'Components/Footer/Footer';
 
 function Home() {
 	return (
 		<div className='home'>
 			<Hero />
-			{/* <Section>
+			<Section>
 				<SectionHeading number='01' title='Some Things I’ve Built' />
-				<FeaturedProject />
-			</Section> */}
+				<FeaturedProject slug='smarthm' />
+			</Section>
 			<Footer />
 		</div>
 	);
