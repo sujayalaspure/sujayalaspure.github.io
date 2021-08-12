@@ -30,7 +30,7 @@ export default function NotFound() {
 	}, [marioClass]);
 	return (
 		<>
-			<div class='error'>
+			<div className='error'>
 				<div className='go-back'>
 					<a href='#/'>Go Home</a>
 				</div>
