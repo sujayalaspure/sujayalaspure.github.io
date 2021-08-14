@@ -8,6 +8,8 @@ import banner from './Assets/banner3.png';
 import profile from './Assets/profile.png';
 import loginui from './Assets/loginui.png';
 import home from './Assets/home.png';
+
+export { banner };
 export const smarthmStructure = [
 	{ type: 'bannerImage', value: { title: '', imgsrc: banner } },
 	{

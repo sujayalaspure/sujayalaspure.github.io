@@ -7,7 +7,7 @@ export default function Footer() {
 			<div className='social'>
 				<ul>
 					{socialLink.map(({ Icon, link, name }) => (
-						<li>
+						<li key={link}>
 							<a href={link} target='_blank' rel='noreferrer'>
 								<Icon />
 							</a>

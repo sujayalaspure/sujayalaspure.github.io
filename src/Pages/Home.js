@@ -4,6 +4,7 @@ import Hero from 'Components/Hero/Hero';
 import Section, { SectionHeading } from 'Components/Section';
 import FeaturedProject from 'Components/FeaturedProject/FeaturedProject';
 import Footer from 'Components/Footer/Footer';
+import { projects } from 'Projects/Projects';
 
 function Home() {
 	return (
@@ -28,7 +29,7 @@ function Home() {
 			<Hero />
 			<Section>
 				<SectionHeading number='01' title='Some Things I’ve Built' />
-				<FeaturedProject slug='smarthm' />
+				<FeaturedProject {...projects[0]} />
 			</Section>
 			<Footer />
 		</div>

@@ -1,4 +1,5 @@
-export const structure = [
+/* eslint-disable no-unused-vars */
+const structure = [
 	{ type: 'bannerImage', value: { title: 'string', imgsrc: 'image' } },
 	{ type: 'tophead', value: { caseName: 'SmartHM', caseBio: '' } },
 	{ type: 'bannerImage', value: { title: 'string', imgsrc: 'image' } },
@@ -13,3 +14,14 @@ export const structure = [
 	},
 	{ type: 'bannerVdo', value: { title: '', thumbnail: '', src: '' } },
 ];
+
+const projectStruc = {
+	title: '',
+	slug: '',
+	description: '',
+	image: '',
+	tags: ['', '', ''],
+	githubLink: 'https://github.com/alaspuresujay',
+	externalLink: 'https://github.com/alaspuresujay',
+	data: '',
+};

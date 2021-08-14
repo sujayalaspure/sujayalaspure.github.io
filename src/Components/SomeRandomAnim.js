@@ -2,8 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { colors } from 'Styles';
 export default function SomeRandomAnim({ i }) {
-	console.log('[SomeRandomAnim.js:5] -  ', i + Math.floor(Math.random() * 1001) + 50);
-
 	return (
 		<div>
 			<motion.div

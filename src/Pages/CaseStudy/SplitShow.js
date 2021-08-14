@@ -6,13 +6,13 @@ export default function SplitShow({ title, right, left }) {
 		<div className='splitshow'>
 			<div className='col'>
 				<div className='left'>
-					{left.map(({ imgsrc, caption }) => (
-						<GridItem img={imgsrc} caption={caption} />
+					{left.map(({ imgsrc, caption }, index) => (
+						<GridItem key={index} img={imgsrc} caption={caption} />
 					))}
 				</div>
 				<div className='right'>
-					{right.map(({ imgsrc, caption }) => (
-						<GridItem img={imgsrc} caption={caption} />
+					{right.map(({ imgsrc, caption }, index) => (
+						<GridItem key={index} img={imgsrc} caption={caption} />
 					))}
 				</div>
 			</div>

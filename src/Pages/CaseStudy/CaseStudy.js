@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 import 'Components/Dust';
 import { smarthmStructure } from 'Projects/Smarthm/Data';
 import './CaseStudy.css';
@@ -8,18 +8,16 @@ import TopHead from './TopHead';
 import Brief from './Brief';
 import SplitShow from './SplitShow';
 export default function CaseStudy() {
-	const { slug } = useParams();
-
 	const renderComponent = ({ type, value }, index) => {
 		switch (type) {
 			case 'bannerImage':
-				return <Banner {...value} index={index} />;
+				return <Banner key={index} {...value} index={index} />;
 			case 'tophead':
-				return <TopHead {...value} />;
+				return <TopHead key={index} {...value} />;
 			case 'splitshow':
-				return <SplitShow {...value} />;
+				return <SplitShow key={index} {...value} />;
 			case 'brief':
-				return <Brief {...value} />;
+				return <Brief key={index} {...value} />;
 
 			default:
 				break;

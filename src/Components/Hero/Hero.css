@@ -38,7 +38,6 @@
 	bottom: auto;
 	z-index: 10;
 	color: var(--slate);
-	opacity: 0.6;
 }
 
 .sidebar.left {
@@ -56,6 +55,7 @@
 .sidebar.left:after {
 	content: '';
 	display: block;
+	opacity: 0.6;
 	width: 1px;
 	height: 12vh;
 	margin: 0px auto;

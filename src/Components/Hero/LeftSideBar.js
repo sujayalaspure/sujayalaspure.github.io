@@ -7,7 +7,7 @@ export default function LeftSideBar() {
 		<div className='sidebar left'>
 			<ul className='social'>
 				{socialLink.map(({ link, Icon }) => (
-					<li className='link'>
+					<li className='link' key={link}>
 						<a href={link} target='_blank' rel='noreferrer'>
 							<Icon />
 						</a>

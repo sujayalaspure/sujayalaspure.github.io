@@ -93,11 +93,12 @@ a:focus {
 	transition: var(--transition);
 	width: 20px;
 	height: 20px;
-	color: var(--lightest-slate);
+	color: var(--light-slate);
 }
 a:hover .react-icons {
 	color: var(--accent);
 	transform: translateY(-3px);
+	opacity: 1;
 }
 
 .font-mono {

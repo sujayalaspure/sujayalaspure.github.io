@@ -13,7 +13,12 @@ export default function Brief({ briefTitle, content, links }) {
 				</div>
 				<div className='links'>
 					{links.map(({ linkName, src }) => (
-						<a className='underline--magical' href={src} target='_blank' rel='noopener noreferrer'>
+						<a
+							key={src}
+							className='underline--magical'
+							href={src}
+							target='_blank'
+							rel='noopener noreferrer'>
 							{linkName}
 						</a>
 					))}
