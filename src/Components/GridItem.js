@@ -26,18 +26,23 @@ const Container = styled.div`
 
 const Image = styled.img`
 	border-radius: 10px;
-	object-fit: cover;
-	max-height: 150vh;
+	/* object-fit: cover; */
+	/* max-height: 150vh; */
 	width: 100%;
-	height: auto;
+	/* height: auto; */
 `;
 
 const Caption = styled.div`
 	margin-top: ${theme.spacing[20]};
 	width: 100%;
 	text-align: center;
+	padding: 0 15%;
 	p {
 		font-size: ${theme.fz['xl']};
 		color: ${colors.lightSlate};
+	}
+
+	@media (max-width: 768px) {
+		padding: 0 5%;
 	}
 `;
