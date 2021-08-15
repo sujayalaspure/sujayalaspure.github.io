@@ -101,15 +101,49 @@
 .casestudy {
 	scroll-snap-type: y proximity;
 }
-.casestudy .footer {
+.casestudy .case-footer {
 	background-color: black;
 	height: 100vh;
 	width: 100%;
 	scroll-snap-align: start;
-	font-size: 10rem;
 	color: var(--lightest-slate);
 	text-align: center;
-	padding: 10% 0;
+	justify-content: center;
+	position: relative;
+}
+.casestudy .case-footer .nextcase {
+	font-size: 10vw;
+	/* position: absolute; */
+	/* top: 50%; */
+	/* margin: 10% 0; */
+}
+.casestudy .case-footer .contact {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.casestudy .case-footer .contact .social {
+	display: block;
+	width: 100%;
+	max-width: 220px;
+	margin: 0px auto 10px;
+	color: var(--light-slate);
+}
+.casestudy .case-footer .contact .social ul {
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	align-items: center;
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+.casestudy .case-footer .contact .credits {
+	margin: 20px 0;
 }
 
 @media (min-width: 768px) {

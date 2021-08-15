@@ -102,6 +102,7 @@
 	transition: var(--transition);
 	z-index: 1;
 	overflow: hidden;
+	border-radius: 0.5rem;
 }
 
 .featured-project .thumbnail a img {

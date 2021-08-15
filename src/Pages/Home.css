@@ -5,6 +5,19 @@
 	color: blue; */
 	padding: 0px 150px;
 }
+.github-corner {
+	fill: #151513;
+	color: #fff !important;
+	position: absolute !important;
+	top: 0;
+	border: 0;
+	right: 0;
+}
+
+.github-corner:hover .octo-arm {
+	animation: octocat-wave 560ms ease-in-out;
+	color: #fff !important;
+}
 
 @media (max-width: 1080px) {
 	.home {
@@ -19,5 +32,14 @@
 @media (max-width: 480px) {
 	.home {
 		padding: 0px 25px;
+	}
+}
+
+@media (max-width: 500px) {
+	.github-corner:hover .octo-arm {
+		animation: none;
+	}
+	.github-corner .octo-arm {
+		animation: octocat-wave 560ms ease-in-out;
 	}
 }

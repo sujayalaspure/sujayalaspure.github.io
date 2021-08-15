@@ -6,6 +6,8 @@ export default function SomeRandomAnim({ i }) {
 		<div>
 			<motion.div
 				style={{
+					// opacity: 0.5,
+					zIndex: -10,
 					width: 20,
 					height: 20,
 					borderRadius: 3,

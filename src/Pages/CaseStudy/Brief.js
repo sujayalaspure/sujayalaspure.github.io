@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default function Brief({ briefTitle, content, links }) {
-	console.log('[Brief.js:4] -  ', links);
 	return (
 		<section className='brief'>
 			<div className='heading'>

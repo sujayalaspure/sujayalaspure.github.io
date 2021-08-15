@@ -1,13 +1,23 @@
-import React from 'react';
-// import { useParams } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import 'Components/Dust';
-import { smarthmStructure } from 'Projects/Smarthm/Data';
 import './CaseStudy.css';
 import Banner from './Banner';
 import TopHead from './TopHead';
 import Brief from './Brief';
 import SplitShow from './SplitShow';
+import { useProject } from 'Context/ProjectContext';
+import { socialLink } from 'constant';
 export default function CaseStudy() {
+	const [project, setProject] = useState(null);
+	const { slug } = useParams();
+	const { getProject } = useProject();
+
+	useEffect(() => {
+		const pro = getProject(slug);
+		setProject(pro);
+	}, []);
+
 	const renderComponent = ({ type, value }, index) => {
 		switch (type) {
 			case 'bannerImage':
@@ -27,11 +37,29 @@ export default function CaseStudy() {
 	return (
 		<>
 			<div className='casestudy container-fluid'>
-				{smarthmStructure.map((item, index) => renderComponent(item, index))}
-				<div className='footer'>
-					<a href='#/' className='link-item'>
+				{project?.data?.map((item, index) => renderComponent(item, index))}
+				<div className='case-footer'>
+					<a href='#/' className='link-item nextcase'>
 						Next Case...
 					</a>
+					<div className='contact'>
+						<div className='social'>
+							<ul>
+								{socialLink.map(({ Icon, link, name }) => (
+									<li key={link}>
+										<a href={link} target='_blank' rel='noreferrer'>
+											<Icon />
+										</a>
+									</li>
+								))}
+							</ul>
+						</div>
+						<div className='credits'>
+							<a href='https://github.com/alaspuresujay' target='_blank' rel='noopener noreferrer'>
+								Designed & Built by Sujay Alaspure
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</>

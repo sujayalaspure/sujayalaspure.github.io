@@ -2,8 +2,9 @@
 const structure = [
 	{ type: 'bannerImage', value: { title: 'string', imgsrc: 'image' } },
 	{ type: 'tophead', value: { caseName: 'SmartHM', caseBio: '' } },
-	{ type: 'bannerImage', value: { title: 'string', imgsrc: 'image' } },
 	{ type: 'brief', value: { briefTitle: '', content: '', links: [{ linkName: '', src: '' }] } },
+	{ type: 'features', value: [{ name: '', content: '' }] },
+	{ type: 'bannerImage', value: { title: 'string', imgsrc: 'image' } },
 	{
 		type: 'splitshow',
 		value: {

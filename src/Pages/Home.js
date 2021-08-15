@@ -4,7 +4,7 @@ import Hero from 'Components/Hero/Hero';
 import Section, { SectionHeading } from 'Components/Section';
 import FeaturedProject from 'Components/FeaturedProject/FeaturedProject';
 import Footer from 'Components/Footer/Footer';
-import { projects } from 'Projects/Projects';
+import projects from 'Projects/Projects';
 
 function Home() {
 	return (
