@@ -1,5 +1,5 @@
 import React from 'react';
-import { socialLink } from '../../constant';
+import { socialLink } from '../../../constant';
 import './Hero.css';
 
 export default function LeftSideBar() {

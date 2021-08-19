@@ -1,5 +1,5 @@
 import React from 'react';
-import { socialLink } from '../../constant';
+import { socialLink } from 'constant';
 import './Footer.css';
 export default function Footer() {
 	return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import GridItem from 'Components/GridItem';
+import GridItem from 'Components/atoms/GridItem';
 
 export default function SplitShow({ title, right, left }) {
 	return (

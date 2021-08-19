@@ -1,0 +1,113 @@
+.about-me {
+	/* height: 100vh; */
+	padding: 20% 0;
+	margin: 0px auto;
+	max-width: 1000px;
+}
+
+.about-me .inner {
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	gap: 50px;
+	width: 100%;
+	height: 100%;
+}
+
+.about-me .inner .about-bio {
+	height: 100%;
+}
+.about-me .inner .about-bio p {
+	margin: 0px 0px 15px;
+}
+
+.about-me .inner .about-bio p:last-child,
+p:last-of-type {
+	margin: 0px;
+}
+.about-me .inner .image {
+	/* background-color: blueviolet; */
+	position: relative;
+	max-width: 300px;
+}
+.about-me .inner .image .wrapper img {
+	/* height: 100%; */
+	width: 100%;
+	border-radius: var(--border-radius);
+}
+.about-me .inner .image .wrapper {
+	box-shadow: 0 10px 30px -15px var(--navy-shadow);
+	transition: var(--transition);
+	display: block;
+	position: relative;
+	width: 100%;
+	border-radius: var(--border-radius);
+	background-color: var(--accent);
+}
+
+.about-me .inner .image .wrapper::after {
+	border: 2px solid var(--accent);
+	top: 20px;
+	left: 20px;
+}
+.about-me .inner .image .wrapper::before {
+	top: 0px;
+	left: 0px;
+	background-color: var(--navy);
+	mix-blend-mode: screen;
+}
+
+.about-me .inner .image .wrapper::before,
+.about-me .inner .image .wrapper::after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: var(--border-radius);
+	transition: var(--transition);
+}
+
+.about-me .inner .image .wrapper:hover,
+.about-me .inner .image .wrapper:focus {
+	background: transparent;
+	outline: 0px;
+}
+.about-me .inner .image .wrapper:hover::after,
+.about-me .inner .image .wrapper:focus::after {
+	top: 15px;
+	left: 15px;
+	z-index: -1;
+}
+
+.about-me .inner .image .wrapper:hover,
+.about-me .inner .image .wrapper:focus {
+	box-shadow: 0 20px 30px -15px var(--navy-shadow);
+}
+
+.about-me .inner .about-bio ul.skills-list {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(140px, 200px));
+	gap: 0px 10px;
+	padding: 0px;
+	margin: 20px 0px 0px;
+	overflow: hidden;
+	list-style: none;
+}
+
+.about-me .inner .about-bio ul.skills-list li {
+	position: relative;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	font-family: var(--font-mono);
+	font-size: var(--fz-xs);
+	color: var(--light-slate);
+}
+
+.about-me .inner .about-bio ul.skills-list li::before {
+	content: '▹';
+	position: absolute;
+	left: 0px;
+	color: var(--accent);
+	font-size: var(--fz-sm);
+	line-height: 12px;
+}

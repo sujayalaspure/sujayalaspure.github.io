@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { colors } from '../../Styles';
+import { colors } from '../../../Styles';
 import styled from 'styled-components';
 
 const Path = props => (

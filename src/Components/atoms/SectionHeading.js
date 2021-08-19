@@ -1,5 +1,4 @@
 import React from 'react';
-import './Section.css';
 
 export default function SectionHeading({ number, title }) {
 	return (

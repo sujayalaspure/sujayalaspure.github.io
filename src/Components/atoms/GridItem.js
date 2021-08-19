@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colors, theme } from '../Styles';
+import { colors, theme } from '../../Styles';
 
 export default function GridItem({ img, caption = null }) {
 	return (

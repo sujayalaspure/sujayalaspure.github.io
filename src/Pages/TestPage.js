@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import { motion, useCycle } from 'framer-motion';
-import Navigation from '../Components/Menu/Navigation';
-import MenuToggle from '../Components/Menu/MenuToggle';
-import { useDimensions } from '../Components/Menu/useDimensions';
+import Navigation from '../Components/molecules/Menu/Navigation';
+import MenuToggle from '../Components/molecules/Menu/MenuToggle';
+import { useDimensions } from '../Components/molecules/Menu/useDimensions';
 import './TestPage.css';
 const sidebar = {
 	open: (height = 1000) => ({
