@@ -16,7 +16,9 @@ function Home() {
 			<AboutMe />
 			<Section>
 				<SectionHeading number='02' title='Some Things I’ve Built' />
-				<FeaturedProject {...projects[0]} />
+				{projects.map((project, index) => (
+					<FeaturedProject key={index} {...project} index={index} />
+				))}
 			</Section>
 
 			<Footer />

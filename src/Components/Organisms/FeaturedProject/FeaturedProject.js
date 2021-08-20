@@ -2,7 +2,7 @@ import React from 'react';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
 import './FeaturedProject.css';
 export default function FeaturedProject(props) {
-	const { title, slug, description, tags, githubLink, image } = props;
+	const { title, slug, description, tags, githubLink, image, index } = props;
 	return (
 		<div className='featured-project'>
 			<div className='content'>
@@ -37,7 +37,7 @@ export default function FeaturedProject(props) {
 			</div>
 			<div className='thumbnail'>
 				<a href={`#/case/${slug}`} rel='noopener noreferrer'>
-					<img src={image} alt={title} />
+					<img src={image} alt={`${title}_${index}`} />
 				</a>
 			</div>
 		</div>
