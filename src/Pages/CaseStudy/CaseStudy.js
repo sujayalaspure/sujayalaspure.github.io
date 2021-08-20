@@ -14,7 +14,9 @@ export default function CaseStudy() {
 
 	useEffect(() => {
 		const pro = getProject(slug);
+
 		setProject(pro);
+		console.log('[CaseStudy.js:18] -  ', pro);
 	}, []);
 
 	const renderComponent = ({ type, value }, index) => {
@@ -33,10 +35,19 @@ export default function CaseStudy() {
 		}
 	};
 
+	const nothingFound = () => (
+		<div className='not-found'>
+			<p>Ohh...</p>
+			<p>I don't have this project at this time.</p>
+		</div>
+	);
+
 	return (
 		<>
 			<div className='casestudy container-fluid'>
-				{project?.data?.map((item, index) => renderComponent(item, index))}
+				{project
+					? project?.data?.map((item, index) => renderComponent(item, index))
+					: nothingFound()}
 				<div className='case-footer'>
 					<a href='#/' className='link-item nextcase'>
 						Next Case...

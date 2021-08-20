@@ -10,7 +10,7 @@
 	text-decoration: none;
 	cursor: pointer;
 	transition: var(--transition);
-	margin-top: 50px;
+	margin: 40px 0;
 }
 
 .button:hover {
@@ -55,4 +55,10 @@ p > a:active {
 
 .link-item:hover:before {
 	transform: scaleX(0);
+}
+
+.get-in-touch {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }

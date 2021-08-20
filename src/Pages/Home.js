@@ -7,6 +7,8 @@ import Footer from 'Components/atoms/Footer/Footer';
 import projects from 'container/Projects/Projects';
 import GithubCorner from 'Components/atoms/GithubCorner';
 import AboutMe from 'Components/Organisms/aboutme/AboutMe';
+import GetInTouch from 'Components/atoms/GetInTouch';
+import ProjectCard from 'Components/molecules/ProjectCard/ProjectCard';
 
 function Home() {
 	return (
@@ -19,6 +21,15 @@ function Home() {
 				{projects.map((project, index) => (
 					<FeaturedProject key={index} {...project} index={index} />
 				))}
+			</Section>
+
+			<Section>
+				<SectionHeading number='03' title='Other Projects' />
+				<ProjectCard />
+			</Section>
+			<Section>
+				<SectionHeading number='04' title='Get In Touch' />
+				<GetInTouch />
 			</Section>
 
 			<Footer />

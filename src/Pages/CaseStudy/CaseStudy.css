@@ -172,3 +172,12 @@
 		margin: 0;
 	}
 }
+
+.not-found {
+	height: 50vh;
+	color: var(--slate);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
