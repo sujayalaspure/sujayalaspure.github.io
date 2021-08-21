@@ -1,5 +1,5 @@
 import React from 'react';
-import './atoms.css';
+import 'styles/components/Atoms.css';
 
 /**
  *

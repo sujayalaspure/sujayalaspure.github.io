@@ -1,6 +1,6 @@
 import React from 'react';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
-import './FeaturedProject.css';
+import 'styles/components/FeaturedProject.css';
 export default function FeaturedProject(props) {
 	const { title, slug, description, tags, githubLink, image, index } = props;
 	return (

@@ -3,7 +3,7 @@ import { motion, useCycle } from 'framer-motion';
 import Navigation from '../Components/molecules/Menu/Navigation';
 import MenuToggle from '../Components/molecules/Menu/MenuToggle';
 import { useDimensions } from '../Components/molecules/Menu/useDimensions';
-import './TestPage.css';
+import 'styles/pages/TestPage.css';
 const sidebar = {
 	open: (height = 1000) => ({
 		clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,

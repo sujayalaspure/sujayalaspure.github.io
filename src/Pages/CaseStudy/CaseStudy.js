@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import './CaseStudy.css';
+import 'styles/pages/CaseStudy.css';
 import Banner from './Banner';
 import TopHead from './TopHead';
 import Brief from './Brief';

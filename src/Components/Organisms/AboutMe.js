@@ -1,7 +1,7 @@
-import Section, { SectionHeading } from 'Components/molecules/Section';
+import Section, { SectionHeading } from 'Components/atoms/Section';
 import { profile } from 'constant';
 import React from 'react';
-import './AboutMe.css';
+import 'styles/components/AboutMe.css';
 
 export default function AboutMe() {
 	return (

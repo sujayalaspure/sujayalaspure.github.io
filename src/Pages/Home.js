@@ -1,14 +1,14 @@
 import React from 'react';
-import './Home.css';
+import 'styles/pages/Home.css';
 import Hero from 'Components/Organisms/Hero/Hero';
-import Section, { SectionHeading } from 'Components/molecules/Section';
-import FeaturedProject from 'Components/Organisms/FeaturedProject/FeaturedProject';
-import Footer from 'Components/atoms/Footer/Footer';
+import Section, { SectionHeading } from 'Components/atoms/Section';
+import FeaturedProject from 'Components/Organisms/FeaturedProject';
+import Footer from 'Components/atoms/Footer';
 import projects from 'container/Projects/Projects';
 import GithubCorner from 'Components/atoms/GithubCorner';
-import AboutMe from 'Components/Organisms/aboutme/AboutMe';
+import AboutMe from 'Components/Organisms/AboutMe';
 import GetInTouch from 'Components/atoms/GetInTouch';
-import ProjectCard from 'Components/molecules/ProjectCard/ProjectCard';
+import ProjectCard from 'Components/molecules/ProjectCard';
 
 function Home() {
 	return (

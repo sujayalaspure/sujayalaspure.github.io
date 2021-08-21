@@ -3,7 +3,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import LeftSideBar from './LeftSideBar';
 import RightSideBar from './RightSideBar';
-import './Hero.css';
+import 'styles/components/Hero.css';
 import SomeRandomAnim from 'Components/atoms/SomeRandomAnim';
 
 export default function Hero() {
