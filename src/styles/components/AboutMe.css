@@ -25,12 +25,11 @@ p:last-of-type {
 	margin: 0px;
 }
 .about-me .inner .image {
-	/* background-color: blueviolet; */
 	position: relative;
 	max-width: 300px;
 }
 .about-me .inner .image .wrapper img {
-	/* height: 100%; */
+	height: 100%;
 	width: 100%;
 	border-radius: var(--border-radius);
 }
@@ -41,7 +40,7 @@ p:last-of-type {
 	position: relative;
 	width: 100%;
 	border-radius: var(--border-radius);
-	background-color: var(--accent);
+	/* background-color: var(--accent); */
 }
 
 .about-me .inner .image .wrapper::after {

@@ -25,7 +25,12 @@ function Home() {
 
 			<Section>
 				<SectionHeading number='03' title='Other Projects' />
-				<ProjectCard />
+				<ul className='project-grid'>
+					<ProjectCard />
+					<ProjectCard />
+					<ProjectCard />
+					<ProjectCard />
+				</ul>
 			</Section>
 			<Section>
 				<SectionHeading number='04' title='Get In Touch' />

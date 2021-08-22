@@ -19,6 +19,16 @@
 	color: #fff !important;
 }
 
+.project-grid {
+	list-style: none;
+	padding: 0px;
+	margin: 50px 0px 0px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 15px;
+	position: relative;
+}
+
 @media (max-width: 1080px) {
 	.home {
 		padding: 0px 100px;

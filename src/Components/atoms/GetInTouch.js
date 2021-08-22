@@ -3,7 +3,13 @@ import 'styles/components/Atoms.css';
 export default function GetInTouch() {
 	return (
 		<div className='get-in-touch'>
-			<h3>Lets have a talk</h3>
+			<h5
+				style={{
+					fontWeight: 400,
+					fontSize: '16px',
+				}}>
+				Lets have a talk
+			</h5>
 			<a className='button' href='mailto:alaspuresujay@gmail.com'>
 				Say Hello
 			</a>
