@@ -108,14 +108,14 @@
 	scroll-snap-align: start;
 	color: var(--lightest-slate);
 	text-align: center;
-	justify-content: center;
 	position: relative;
+	display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+
+	justify-content: center;
+	align-items: center;
 }
 .casestudy .case-footer .nextcase {
 	font-size: 10vw;
-	/* position: absolute; */
-	/* top: 50%; */
-	/* margin: 10% 0; */
 }
 .casestudy .case-footer .contact {
 	position: absolute;

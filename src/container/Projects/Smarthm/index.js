@@ -5,9 +5,10 @@ import logo_name from './Assets/logo_name.png';
 import splash3d from './Assets/spalsh3d.png';
 import designSys from './Assets/designSystem.png';
 import banner from './Assets/banner3.png';
-import profile from './Assets/profile.png';
+import profile from './Assets/profile.jpg';
 import loginui from './Assets/loginui.png';
-import home from './Assets/home.png';
+import home from './Assets/home.jpg';
+import Drawer from './Assets/drawer.jpg';
 
 export { banner };
 export const smarthmStructure = [
@@ -25,7 +26,12 @@ export const smarthmStructure = [
                 have become familiar, which can bring down ratings. Our team worked with Sleepiest
                 to audition dozens of design concepts until we found the perfect solution for
                 improving the design while keeping users comfortable with familiar interactions.`,
-			links: [{ linkName: 'Play Store', src: 'https://smarthm.page.link/getapp' }],
+			links: [
+				{
+					linkName: 'Play Store',
+					src: 'https://play.google.com/store/apps/details?id=com.indivisible.smarthm',
+				},
+			],
 		},
 	},
 	{
@@ -42,8 +48,9 @@ export const smarthmStructure = [
 					caption: 'Our first task was to give SmartHM a logotype and corporate identity.',
 				},
 				{ imgsrc: logo_name, caption: '' },
-				{ imgsrc: profile, caption: '' },
 				{ imgsrc: home, caption: '' },
+				{ imgsrc: profile, caption: '' },
+				// { imgsrc: img1, caption: '' },
 			],
 			right: [
 				{ imgsrc: icon, caption: '' },
@@ -52,7 +59,7 @@ export const smarthmStructure = [
 					caption:
 						'We have setup the login with email as well as Google auth. To ease the user onboarding process',
 				},
-				{ imgsrc: img1, caption: '' },
+				{ imgsrc: Drawer, caption: '' },
 			],
 		},
 	},

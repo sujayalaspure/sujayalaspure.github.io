@@ -1,8 +1,17 @@
 import React from 'react';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
+import { FaGooglePlay, FaAppStoreIos } from 'react-icons/fa';
 import 'styles/components/FeaturedProject.css';
+
+/**
+ *
+ *
+ * @export
+ * @param {{title:string, slug:string, description:string, tags:Array, githubLink?:string, image:any, index, playStore?:string, appStore?:string}} props
+ * @returns {import('react').ReactNode} - React Component
+ */
 export default function FeaturedProject(props) {
-	const { title, slug, description, tags, githubLink, image, index } = props;
+	const { title, slug, description, tags, githubLink, image, index, playStore, appStore } = props;
 	return (
 		<div className='featured-project'>
 			<div className='content'>
@@ -30,6 +39,16 @@ export default function FeaturedProject(props) {
 					<a href={`#/case/${slug}`} className='external' rel='noreferrer'>
 						<FiExternalLink />
 					</a>
+					{playStore && (
+						<a href={playStore} className='external' rel='noreferrer'>
+							<FaGooglePlay />
+						</a>
+					)}
+					{appStore && (
+						<a href={appStore} className='external' rel='noreferrer'>
+							<FaAppStoreIos />
+						</a>
+					)}
 					{/* <a href={project.ExternalLink} target='_blank' className='demo' rel='noreferrer'>
 						<FiMonitor />
 					</a> */}

@@ -2,7 +2,6 @@ import projects from 'container/Projects/Projects';
 import React from 'react';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
 import 'styles/components/ProjectCard.css';
-const tags = ['React JS', 'Firebase'];
 export default function ProjectCard() {
 	return (
 		<div className='inner-card'>

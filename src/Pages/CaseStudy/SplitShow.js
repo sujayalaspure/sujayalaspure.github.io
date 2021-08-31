@@ -12,7 +12,7 @@ export default function SplitShow({ title, right, left }) {
 				</div>
 				<div className='right'>
 					{right.map(({ imgsrc, caption }, index) => (
-						<GridItem key={index} img={imgsrc} caption={caption} />
+						<GridItem key={index} img={imgsrc} caption={caption} right />
 					))}
 				</div>
 			</div>
