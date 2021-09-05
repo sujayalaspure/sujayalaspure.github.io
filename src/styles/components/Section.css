@@ -1,6 +1,7 @@
 .section {
 	margin: 0px auto;
 	max-width: 1000px;
+	padding: 0 0 10%;
 }
 
 .section-heading {

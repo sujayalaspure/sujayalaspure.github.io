@@ -1,11 +1,11 @@
-import Section, { SectionHeading } from 'Components/atoms/Section';
+import { SectionHeading } from 'Components/atoms/Section';
 import { profile } from 'constant';
 import React from 'react';
 import 'styles/components/AboutMe.css';
 
 export default function AboutMe() {
 	return (
-		<div className='about-me'>
+		<section className='about-me'>
 			<SectionHeading number='01' title='About Me' />
 
 			<div className='inner'>
@@ -35,7 +35,6 @@ export default function AboutMe() {
 					</div>
 				</div>
 			</div>
-			<Section></Section>
-		</div>
+		</section>
 	);
 }

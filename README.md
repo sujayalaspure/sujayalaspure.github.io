@@ -4,7 +4,7 @@
 
 # Hi, I'm Sujay ⚡
 
-A passionate Programmer | Techie | Engineer | Human Being
+A passionate Programmer | Techie | Engineer
 
 ## KnowMe Here!
 
@@ -37,7 +37,7 @@ Programmer who makes some kludges.
 
 4. Modify the as per your convenience.
 
-### To setup the project and contribute on your local machine:
+## To setup the project and contribute on your local machine:
 
 1. Click on `Fork`
 2. Go to your fork and `clone` the project to your local machine.
@@ -61,12 +61,12 @@ Programmer who makes some kludges.
 ### To contribute to the project:
 
 1. Choose any open issue from [here](https://github.com/alaspuresujay/alaspuresujay.github.io/issues).
-2. Comment on the issue: `Can I work on this?` and get it assigned.
+2. Comment on the issue: `/claim` and get it assigned.
 3. Make changes to your fork and send a PR.
 
 > Follow the given link to make a successful and valid PR: https://help.github.com/articles/creating-a-pull-request/
 
-#### To send a PR, follow these rules carefully, **otherwise your PR will be closed**:
+#### To send a PR, follow these syntax carefully:
 
 > Make PR title in this format: `Fixes #IssueNo : Name of Issue`
 
@@ -88,7 +88,7 @@ Programmer who makes some kludges.
 Thanks to all who directly, indirectly help me build this version of my portfolio website.
 
 - [Brittany Chiang](https://brittanychiang.com/) For UI inspiration and Color Scheme
-- [InventingWithMonster](https://codesandbox.io/s/framer-motion-side-menu-mx2rw?fontsize=14&module=/src/Example.tsx&file=/src/MenuItem.tsx:497-517) For awesome verticle navbar animation using framer motion.
+<!-- - [InventingWithMonster](https://codesandbox.io/s/framer-motion-side-menu-mx2rw?fontsize=14&module=/src/Example.tsx&file=/src/MenuItem.tsx:497-517) For awesome verticle navbar animation using framer motion. -->
 
 [github]: https://github.com/alaspuresujay
 [website]: https://alaspuresujay.github.io
