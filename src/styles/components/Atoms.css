@@ -62,3 +62,12 @@ p > a:active {
 	flex-direction: column;
 	align-items: center;
 }
+
+.get-in-touch h5 {
+	font-weight: 400;
+	font-size: var(--fz-md);
+	color: var(--slate);
+	max-width: 800px;
+	text-align: center;
+	line-height: 2rem;
+}

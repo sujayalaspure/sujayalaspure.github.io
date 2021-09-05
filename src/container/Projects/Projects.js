@@ -12,16 +12,16 @@ const projects = [
 		playStore: 'https://play.google.com/store/apps/details?id=com.indivisible.smarthm',
 		data: smarthmStructure,
 	},
-	{
-		title: 'Slack Clone',
-		slug: 'slack-clone',
-		image: banner,
-		description:
-			'This app provide the functionality to control your smart home devices from your mobile, set alert, add automation to devices. ',
-		tags: ['React JS', 'Firebase'],
-		githubLink: '',
-		data: '',
-	},
+	// {
+	// 	title: 'Slack Clone',
+	// 	slug: 'slack-clone',
+	// 	image: banner,
+	// 	description:
+	// 		'This app provide the functionality to control your smart home devices from your mobile, set alert, add automation to devices. ',
+	// 	tags: ['React JS', 'Firebase'],
+	// 	githubLink: '',
+	// 	data: '',
+	// },
 ];
 
 export const OtherProjects = [

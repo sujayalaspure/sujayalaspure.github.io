@@ -1,4 +1,5 @@
-import { FiGithub, FiInstagram, FiLinkedin, FiMail } from 'react-icons/fi';
+import { FiGithub, FiInstagram, FiLinkedin, FiMail, FiDownloadCloud } from 'react-icons/fi';
+import resume from './Assets/Sujay-Alaspure-resume-v2.pdf';
 
 export { default as profile } from './Assets/images/profile.jpg';
 export const socialLink = [
@@ -6,6 +7,7 @@ export const socialLink = [
 	{ name: 'LinkedIn', Icon: FiLinkedin, link: 'https://www.linkedin.com/in/alaspuresujay/' },
 	{ name: 'Instagram', Icon: FiInstagram, link: 'https://www.instagram.com/alaspuresujay/' },
 	{ name: 'Mail', Icon: FiMail, link: 'mailto:alaspuresujay@gmail.com' },
+	{ name: 'Resume', Icon: FiDownloadCloud, link: resume },
 ];
 
 export const project = {

@@ -110,3 +110,14 @@ p:last-of-type {
 	font-size: var(--fz-sm);
 	line-height: 12px;
 }
+
+@media (max-width: 768px) {
+	.about-me .inner {
+		display: block;
+	}
+
+	.about-me .inner .image {
+		margin: 50px auto 0px;
+		width: 70%;
+	}
+}
