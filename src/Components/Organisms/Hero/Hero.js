@@ -12,7 +12,6 @@ export default function Hero() {
 	const animation = useAnimation();
 
 	useEffect(() => {
-		console.log('[Hero.js:15] -  ', inView);
 		if (inView) {
 			animation.start({
 				x: 0,
@@ -35,7 +34,7 @@ export default function Hero() {
 			<motion.div initial={{ x: '-100vw' }} animate={animation} className='HeaderContainer'>
 				<h3 className='MinorHeading'>Hello World, my name is</h3>
 				<h1 className='NameHeading'>Sujay Alaspure</h1>
-				<h2 className='bio'>I build things for the web/mobile.</h2>
+				<h2 className='bio'>I build things that lives on Internet.</h2>
 			</motion.div>
 		</div>
 	);

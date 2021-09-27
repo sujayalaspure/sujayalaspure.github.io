@@ -15,7 +15,7 @@ function Home() {
 		<div className='home'>
 			<GithubCorner />
 			<Hero />
-			<AboutMe />
+			<AboutMe number='01' />
 			<Section>
 				<SectionHeading number='02' title='Some Things I’ve Built' />
 				{projects.map((project, index) => (
@@ -33,7 +33,7 @@ function Home() {
 				</ul>
 			</Section> */}
 			<Section>
-				<SectionHeading number='04' title='Get In Touch' />
+				<SectionHeading number='03' title='Get In Touch' />
 				<GetInTouch />
 			</Section>
 

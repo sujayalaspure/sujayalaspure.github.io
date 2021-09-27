@@ -3,10 +3,10 @@ import { profile } from 'constant';
 import React from 'react';
 import 'styles/components/AboutMe.css';
 
-export default function AboutMe() {
+export default function AboutMe({ number }) {
 	return (
 		<section className='about-me'>
-			<SectionHeading number='01' title='About Me' />
+			<SectionHeading number={number} title='About Me' />
 
 			<div className='inner'>
 				<div className='about-bio'>
@@ -27,6 +27,7 @@ export default function AboutMe() {
 						<li>Javascript (ES6)</li>
 						<li>Express</li>
 						<li>Firebase</li>
+						<li>Python</li>
 					</ul>
 				</div>
 				<div className='image'>

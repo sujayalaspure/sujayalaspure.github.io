@@ -21,11 +21,10 @@ export const smarthmStructure = [
 		type: 'brief',
 		value: {
 			briefTitle: 'The Challange',
-			content: `Redesigning a mobile app with a multi-million user base is always a big
-                responsibility. Users sometimes react negatively to changes in interactions that
-                have become familiar, which can bring down ratings. Our team worked with Sleepiest
-                to audition dozens of design concepts until we found the perfect solution for
-                improving the design while keeping users comfortable with familiar interactions.`,
+			content: `Smarthm is an application to control all your smarthome appliances. Be it TV, light,
+      Fan, or anything. The first and foremost important thing was to build an app which is user
+      friendly, powerful and scalable at any extent. I choose to go with React Native because of cross
+      platform and scalability. I audition dozens of design to keep app interaction simplest yet powerful.`,
 			links: [
 				{
 					linkName: 'Play Store',
@@ -48,7 +47,10 @@ export const smarthmStructure = [
 					caption: 'Our first task was to give SmartHM a logotype and corporate identity.',
 				},
 				{ imgsrc: logo_name, caption: '' },
-				{ imgsrc: home, caption: '' },
+				{
+					imgsrc: home,
+					caption: 'The homepage style went through several phases and multiple iterations.',
+				},
 				{ imgsrc: profile, caption: '' },
 				// { imgsrc: img1, caption: '' },
 			],
@@ -57,10 +59,18 @@ export const smarthmStructure = [
 				{
 					imgsrc: loginui,
 					caption:
-						'We have setup the login with email as well as Google auth. To ease the user onboarding process',
+						'To ease the user onboarding process, We have setup the login with email as well as Google auth.',
 				},
 				{ imgsrc: Drawer, caption: '' },
 			],
+		},
+	},
+	{
+		type: 'brief',
+		value: {
+			briefTitle: 'Extra attention to detail development',
+			content: `We were motivated to focus on every little detail including icon animation, to 
+      really enhance the user interaction.`,
 		},
 	},
 ];
