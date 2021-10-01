@@ -1,30 +1,33 @@
-import projects from 'container/Projects/Projects';
 import React from 'react';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
 import 'styles/components/ProjectCard.css';
-export default function ProjectCard() {
+export default function ProjectCard({ project }) {
 	return (
 		<div className='inner-card'>
 			<div className='header'>
 				<div className='links'>
-					{projects[1].githubLink && (
-						<a href={projects[1].githubLink} target='_blank' rel='noreferrer'>
+					{project.githubLink && (
+						<a href={project.githubLink} target='_blank' rel='noreferrer'>
 							<FiGithub />
 						</a>
 					)}
-					<a href={`#/case/${projects[1].slug}`} className='external' rel='noreferrer'>
+					<a
+						href={project.externalLink ? project.externalLink : `#/case/${project.slug}`}
+						className='external'
+						target={project.externalLink && '_blank'}
+						rel='noreferrer'>
 						<FiExternalLink />
 					</a>
 				</div>
 				<h3 className='project-title'>
-					<a href={`#/case/${projects[1].slug}`}>{projects[1].title}</a>
+					<a href={`#/case/${project.slug}`}>{project.title}</a>
 				</h3>
 				<div className='project-description'>
-					<p>{projects[1].description}</p>
+					<p>{project.description}</p>
 				</div>
 			</div>
 			<ul className='project-tech-list'>
-				{projects[1].tags.map(tag => (
+				{project.tags.map(tag => (
 					<li key={tag}>{tag}</li>
 				))}
 			</ul>

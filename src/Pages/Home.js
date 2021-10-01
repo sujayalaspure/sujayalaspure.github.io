@@ -4,11 +4,11 @@ import Hero from 'Components/Organisms/Hero/Hero';
 import Section, { SectionHeading } from 'Components/atoms/Section';
 import FeaturedProject from 'Components/Organisms/FeaturedProject';
 import Footer from 'Components/atoms/Footer';
-import projects from 'container/Projects/Projects';
+import projects, { OtherProjects } from 'container/Projects/Projects';
 import GithubCorner from 'Components/atoms/GithubCorner';
 import AboutMe from 'Components/Organisms/AboutMe';
 import GetInTouch from 'Components/atoms/GetInTouch';
-// import ProjectCard from 'Components/molecules/ProjectCard';
+import ProjectCard from 'Components/molecules/ProjectCard';
 
 function Home() {
 	return (
@@ -23,17 +23,20 @@ function Home() {
 				))}
 			</Section>
 
-			{/* <Section>
+			<Section>
 				<SectionHeading number='03' title='Other Projects' />
 				<ul className='project-grid'>
+					{OtherProjects.map(project => (
+						<ProjectCard {...{ project }} />
+					))}
+					{/* <ProjectCard />
 					<ProjectCard />
 					<ProjectCard />
-					<ProjectCard />
-					<ProjectCard />
+					<ProjectCard /> */}
 				</ul>
-			</Section> */}
+			</Section>
 			<Section>
-				<SectionHeading number='03' title='Get In Touch' />
+				<SectionHeading number='04' title='Get In Touch' />
 				<GetInTouch />
 			</Section>
 
