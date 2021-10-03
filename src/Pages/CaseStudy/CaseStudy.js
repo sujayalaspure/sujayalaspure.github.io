@@ -16,7 +16,6 @@ export default function CaseStudy() {
 		const pro = getProject(slug);
 
 		setProject(pro);
-		console.log('[CaseStudy.js:18] -  ', pro);
 	}, []);
 
 	const renderComponent = ({ type, value }, index) => {

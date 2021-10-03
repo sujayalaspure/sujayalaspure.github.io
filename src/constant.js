@@ -1,5 +1,5 @@
 import { FiGithub, FiInstagram, FiLinkedin, FiMail, FiDownloadCloud } from 'react-icons/fi';
-import resume from './Assets/resume-Sujay-Alaspure-V2-2.pdf';
+import resume from './Assets/resume-Sujay-Alaspure-V2-3.pdf';
 
 export { default as profile } from './Assets/images/profile.jpg';
 export const socialLink = [

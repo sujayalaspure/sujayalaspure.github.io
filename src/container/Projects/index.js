@@ -28,12 +28,20 @@ export const OtherProjects = [
 	{
 		title: 'React Gallery App',
 		slug: 'gallery-app',
-		image: banner,
 		description:
 			'A Simple Gallary App. Photo upload to Firebase Storage, Realtime photo preview with Interactive animation using framer Motion',
 		tags: ['ReactJs', 'Firebase', 'Framer-Motion'],
 		githubLink: 'https://github.com/alaspuresujay/react-galary',
 		externalLink: 'https://alaspuresujay.github.io/react-galary/',
+	},
+	{
+		title: 'React Native Todo App',
+		slug: 'todo-app',
+		description:
+			'A Simple and Beautiful Todo App. Create todo and Separate the to-do items as per categories. Live Sync to Server.',
+		tags: ['React Native', 'Firebase'],
+		githubLink: 'https://github.com/alaspuresujay/todo-app/',
+		externalLink: 'https://expo.dev/@alaspuresujay/todo-app',
 	},
 	// {
 	// 	title: 'Resort Booking App',

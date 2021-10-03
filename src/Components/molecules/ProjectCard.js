@@ -20,7 +20,9 @@ export default function ProjectCard({ project }) {
 					</a>
 				</div>
 				<h3 className='project-title'>
-					<a href={`#/case/${project.slug}`}>{project.title}</a>
+					<a href={project.externalLink ? project.externalLink : `#/case/${project.slug}`}>
+						{project.title}
+					</a>
 				</h3>
 				<div className='project-description'>
 					<p>{project.description}</p>

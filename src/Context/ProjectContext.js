@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import projects from 'container/Projects/Projects';
+import projects from 'container/Projects';
 const ProjectContext = React.createContext();
 
 export function useProject() {

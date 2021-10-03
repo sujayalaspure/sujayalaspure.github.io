@@ -4,7 +4,7 @@ import Hero from 'Components/Organisms/Hero/Hero';
 import Section, { SectionHeading } from 'Components/atoms/Section';
 import FeaturedProject from 'Components/Organisms/FeaturedProject';
 import Footer from 'Components/atoms/Footer';
-import projects, { OtherProjects } from 'container/Projects/Projects';
+import projects, { OtherProjects } from 'container/Projects';
 import GithubCorner from 'Components/atoms/GithubCorner';
 import AboutMe from 'Components/Organisms/AboutMe';
 import GetInTouch from 'Components/atoms/GetInTouch';

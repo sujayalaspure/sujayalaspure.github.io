@@ -13,7 +13,7 @@ export default function AboutMe({ number }) {
 					<p>
 						Hello! My name is Sujay and I enjoy creating things that live on the internet. I believe
 						that, There is no secret to success, It is the result of preparation, Hard work, and
-						learnign from the failure... I love Exploring the new things, knowledge, Technologies,
+						learning from the failure... I love Exploring the new things, knowledge, Technologies,
 						Ideas, New Places and much more.
 					</p>
 					<p>

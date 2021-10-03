@@ -169,11 +169,11 @@ a:hover .react-icons {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #555;
+	background: var(--dark-slate);
 	border-radius: 4px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: #666;
+	background: var(--slate);
 }
