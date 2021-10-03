@@ -26,8 +26,8 @@ function Home() {
 			<Section>
 				<SectionHeading number='03' title='Other Projects' />
 				<ul className='project-grid'>
-					{OtherProjects.map(project => (
-						<ProjectCard {...{ project }} />
+					{OtherProjects.map((project, index) => (
+						<ProjectCard key={index} {...{ project }} />
 					))}
 					{/* <ProjectCard />
 					<ProjectCard />
