@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Parallax } from 'react-parallax';
 import { FiChevronDown } from 'react-icons/fi';
+import MouseScrollAnimation from 'Components/atoms/MouseScrollAnimation';
 
 export default function Banner({ index, title, imgsrc }) {
 	return (
@@ -14,10 +15,11 @@ export default function Banner({ index, title, imgsrc }) {
 				<Parallax bgImage={imgsrc} strength={300}>
 					<div style={{ height: '100vh', width: '100%', position: 'relative' }}>
 						{index === 0 && (
-							<div className='scroll-down'>
-								<p>Scroll Down </p>
-								<FiChevronDown />
-							</div>
+							<MouseScrollAnimation />
+							// <div className='scroll-down'>
+							// 	<p>Scroll Down </p>
+							// 	<FiChevronDown />
+							// </div>
 						)}
 					</div>
 				</Parallax>

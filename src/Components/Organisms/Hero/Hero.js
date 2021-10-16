@@ -5,6 +5,7 @@ import LeftSideBar from './LeftSideBar';
 import RightSideBar from './RightSideBar';
 import 'styles/components/Hero.css';
 import SomeRandomAnim from 'Components/atoms/SomeRandomAnim';
+import MouseScrollAnimation from 'Components/atoms/MouseScrollAnimation';
 
 export default function Hero() {
 	const RandomArray = [...Array(5).keys()];
@@ -36,6 +37,7 @@ export default function Hero() {
 				<h1 className='NameHeading'>Sujay Alaspure</h1>
 				<h2 className='bio'>I build things that lives on Internet.</h2>
 			</motion.div>
+			<MouseScrollAnimation />
 		</div>
 	);
 }
