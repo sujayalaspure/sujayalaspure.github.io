@@ -87,7 +87,7 @@
 	position: relative;
 }
 
-.sidebar.right .email a {
+.sidebar.right .email p {
 	margin: 10px auto;
 	padding: 10px;
 	font-family: 'Roboto mono';
@@ -98,9 +98,10 @@
 	writing-mode: vertical-rl;
 	color: inherit;
 	transition: var(--transition);
+	cursor: pointer;
 }
 
-.sidebar.right .email a:hover {
+.sidebar.right .email p:hover {
 	color: var(--accent);
 	transform: translateY(-3px);
 }

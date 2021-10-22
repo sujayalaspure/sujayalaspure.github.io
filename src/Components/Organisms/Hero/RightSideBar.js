@@ -6,9 +6,9 @@ export default function RightSideBar() {
 		<div className='sidebar right'>
 			<Tooltip title='Click to copy' aria-label={'Click to copy'} placement='left' arrow>
 				<div className='email'>
-					<a href='#' onClick={() => navigator.clipboard.writeText('alaspuresujay@gmail.com')}>
+					<p onClick={() => navigator.clipboard.writeText('alaspuresujay@gmail.com')}>
 						alaspuresujay@gmail.com
-					</a>
+					</p>
 				</div>
 			</Tooltip>
 		</div>
