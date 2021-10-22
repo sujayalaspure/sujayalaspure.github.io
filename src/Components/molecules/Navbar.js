@@ -28,7 +28,6 @@ function Navbar() {
 	const [isOpen, toggleOpen] = useCycle(false, true);
 	const containerRef = useRef(null);
 	const { height } = useDimensions(containerRef);
-	// const styled = ``
 	return (
 		<Nav initial={false} animate={isOpen ? 'open' : 'closed'} custom={height} ref={containerRef}>
 			<NavBackground className='navBackgroud' variants={sidebar} />
