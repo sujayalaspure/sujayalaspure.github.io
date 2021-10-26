@@ -1,11 +1,22 @@
 import React from 'react';
 import 'styles/components/Atoms.css';
-export function Link({ text, href, newTab }) {
+
+/**
+ * Link Component
+ * @param {{ children: string, href:string, newTab:boolean, button:boolean }}  props
+ */
+export function Link(props) {
+	const { children, href, newTab, button = false } = props;
 	return (
 		<>
 			&nbsp;
-			<a className='link-item' href={href} target={newTab ? '_blank' : '_self'} rel='noreferrer'>
-				{text}
+			<a
+				className={button ? 'button' : 'link-item'}
+				href={href}
+				target={newTab ? '_blank' : '_self'}
+				type={button && 'button'}
+				rel='noreferrer'>
+				{children}
 			</a>
 			&nbsp;
 		</>

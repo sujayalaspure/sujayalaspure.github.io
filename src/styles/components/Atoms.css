@@ -34,6 +34,11 @@ p > a:active {
 	outline: 0px;
 }
 
+.link-item {
+	color: var(--slate);
+	margin: 0 15px;
+}
+
 .link-item:before {
 	content: '';
 	display: block;
@@ -42,6 +47,7 @@ p > a:active {
 	right: 0;
 	bottom: 0;
 	height: 1px;
+
 	background: var(--accent);
 	-webkit-transition: -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
 	transition: -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);

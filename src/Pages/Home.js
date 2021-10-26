@@ -14,6 +14,7 @@ function Home() {
 	return (
 		<div className='home'>
 			<GithubCorner />
+
 			<Hero />
 			<AboutMe number='01' />
 			<Section>
@@ -29,12 +30,12 @@ function Home() {
 					{OtherProjects.map((project, index) => (
 						<ProjectCard key={index} {...{ project }} />
 					))}
-					{/* <ProjectCard />
-					<ProjectCard />
-					<ProjectCard />
-					<ProjectCard /> */}
 				</ul>
 			</Section>
+
+			{/* <Section>
+				<SectionHeading number='04' title='My Experience' />
+			</Section> */}
 			<Section>
 				<SectionHeading number='04' title='Get In Touch' />
 				<GetInTouch />
