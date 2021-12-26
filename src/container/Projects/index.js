@@ -1,4 +1,5 @@
 import { smarthmStructure, banner } from "./Smarthm";
+import cryptoBanner from "./Cryptoverse/banner.png";
 
 const projects = [
   {
@@ -13,19 +14,20 @@ const projects = [
       "https://play.google.com/store/apps/details?id=com.indivisible.smarthm",
     data: smarthmStructure,
   },
+  {
+    title: "Cryptoverse",
+    slug: "cryptoverse",
+    image: cryptoBanner,
+    description:
+      "As name says this app provides all the info regarding crypto, exchanges, news, details, live price, chart history and a lot more...",
+    tags: ["React", "Ant-Design", "RapidAPI", "Redux/toolkit"],
+    githubLink: "https://github.com/alaspuresujay/cryptoverse/",
+    externalLink: "https://alaspuresujay.github.io/cryptoverse/",
+    data: smarthmStructure,
+  },
 ];
 
 export const OtherProjects = [
-  {
-    title: "Slack Clone",
-    slug: "slack-clone",
-    image: banner,
-    description:
-      "This is Slack Clone built using ReactJs and Firebase, with functionality of Google Auth, Realtime Group messaging, etc.",
-    tags: ["ReactJS", "Firebase"],
-    githubLink: "https://github.com/alaspuresujay/slack-clone",
-    externalLink: "https://alaspuresujay.github.io/slack-clone",
-  },
   {
     title: "React Gallery App",
     slug: "gallery-app",
@@ -52,6 +54,16 @@ export const OtherProjects = [
     tags: ["React", "Firebase@V9"],
     githubLink: "https://github.com/alaspuresujay/google-keep/",
     externalLink: "https://alaspuresujay.github.io/google-keep/",
+  },
+
+  {
+    title: "Slack Clone",
+    slug: "slack-clone",
+    description:
+      "This is Slack Clone built using ReactJs and Firebase, with functionality of Google Auth, Realtime Group messaging, etc.",
+    tags: ["ReactJS", "Firebase"],
+    githubLink: "https://github.com/alaspuresujay/slack-clone",
+    externalLink: "https://alaspuresujay.github.io/slack-clone",
   },
   // {
   // 	title: 'Resort Booking App',
