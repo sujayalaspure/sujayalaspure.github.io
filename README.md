@@ -2,28 +2,16 @@
   <img alt="Logo" src="https://raw.githubusercontent.com/alaspuresujay/alaspuresujay.github.io/master/public/favicon/android-chrome-384x384.png" width="100" />
 </div>
 
-# Hi, I'm Sujay ⚡
+# Hi, I'm Sujay 👨‍💻
 
-A passionate Programmer | Techie | Engineer
-
-## KnowMe Here!
-
-Programing ❤️ | Electronics 💙 | Some Fun 💚
-
-I'm from Mumbai | India
-
-This is me, I love Exploring the new things, knowledge, Technologies, Ideas, New Places and much more.
-
-Programmer who makes some kludges.
-
----
+This portfolio is written in ReactJs and plain css. You can reuse this project if you are looking for jobs and looking to create a portfolio for yourself. Please don't reuse for commercial use, if you do, please give credits 😁.
 
 ### Connect With me!
 
 [![Linked In!](https://img.shields.io/badge/Linked%20In-%20-9cf?style=plastic&logo=linkedin)](https://in.linkedin.com/in/alaspuresujay)
 [![Instagram!](https://img.shields.io/badge/Instagram-%20-orange?style=plastic&logo=instagram)](https://www.instagram.com/alaspuresujay)
 
-## 🛠 Installation & Set Up
+## 🛠 Dev Set Up
 
 ### To use the template on your github:
 
@@ -35,40 +23,12 @@ Programmer who makes some kludges.
    git clone https://github.com/yourgithubname/yourgithubname.github.io.git
    ```
 
-4. Modify the as per your convenience.
-
-## To setup the project and contribute on your local machine:
-
-1. Click on `Fork`
-2. Go to your fork and `clone` the project to your local machine.
-
+4. Install the dependencies
    ```sh
-   git clone https://github.com/yourgithubname/yourgithubname.github.io.git
+      npm install
+      npm start
    ```
-
-3. Install dependencies
-   ```sh
-   yarn
-   ```
-4. Start the development server
-
-   ```
-   yarn start
-   ```
-
-5. ⚡ Hurry you are good to go.
-
-### To contribute to the project:
-
-1. Choose any open issue from [here](https://github.com/alaspuresujay/alaspuresujay.github.io/issues).
-2. Comment on the issue: `/claim` and get it assigned.
-3. Make changes to your fork and send a PR.
-
-> Follow the given link to make a successful and valid PR: https://help.github.com/articles/creating-a-pull-request/
-
-#### To send a PR, follow these syntax carefully:
-
-> Make PR title in this format: `Fixes #IssueNo : Name of Issue`
+5. Modify the as per your convenience.
 
 ## 🎨 Color Reference
 
