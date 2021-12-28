@@ -3,7 +3,6 @@ import { Title, Content, Timeline, List, ListItem } from "./style";
 import { Link } from "Components/atoms/Link";
 
 const TabPanel = ({ data, value, ...other }) => {
-  console.log("LOG> [experience/TabPanel.jsx:4] data --->", data);
   return (
     <Content
       role="tabpanel"

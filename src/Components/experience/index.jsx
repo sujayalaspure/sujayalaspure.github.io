@@ -1,15 +1,7 @@
 import React from "react";
 import AppBar from "@material-ui/core/AppBar";
 
-import {
-  ExperienceContainer,
-  Title,
-  Timeline,
-  List,
-  ListItem,
-  TabsRow,
-  TabItem,
-} from "./style";
+import { TabsRow, TabItem } from "./style";
 import ExpData from "../../data/experience";
 import COLORS from "../../utils/Colors";
 import TabPanel from "./TabPanel";
@@ -39,12 +31,6 @@ const Experience = () => {
       </AppBar>
 
       <TabPanel value={value} data={ExpData[value]} />
-      {/* 
-      {ExpData.map((exp, index) => (
-        <TabPanel value={value} index={index}>
-          {exp.title}
-        </TabPanel>
-      ))} */}
     </div>
   );
 };
