@@ -1,5 +1,6 @@
 import { smarthmStructure, banner } from "./Smarthm";
 import cryptoBanner from "./Cryptoverse/banner.png";
+import keepBanner from "./Keeper/keep-banner.png";
 
 const projects = [
   {
@@ -15,6 +16,17 @@ const projects = [
     data: smarthmStructure,
   },
   {
+    title: "Keeper App",
+    slug: "keeper",
+    image: keepBanner,
+    description:
+      "A Clone app of Google's note taking app Google Keep. This app is built using React and Firebase. It has all the features of Google keep. Adding, editing and deleting Notes, Colors, Labels, etc",
+    tags: ["ReactJs", "Firebase@V9", "Context-API", "Google-auth"],
+    githubLink: "https://github.com/alaspuresujay/google-keep/",
+    externalLink: "https://alaspuresujay.github.io/google-keep/",
+    data: "",
+  },
+  {
     title: "Cryptoverse",
     slug: "cryptoverse",
     image: cryptoBanner,
@@ -23,7 +35,7 @@ const projects = [
     tags: ["React", "Ant-Design", "RapidAPI", "Redux/toolkit"],
     githubLink: "https://github.com/alaspuresujay/cryptoverse/",
     externalLink: "https://alaspuresujay.github.io/cryptoverse/",
-    data: smarthmStructure,
+    data: "",
   },
 ];
 
@@ -45,15 +57,6 @@ export const OtherProjects = [
     tags: ["React Native", "Firebase"],
     githubLink: "https://github.com/alaspuresujay/todo-app/",
     externalLink: "https://expo.dev/@alaspuresujay/todo-app",
-  },
-  {
-    title: "Google Keep Clone",
-    slug: "google-keep",
-    description:
-      "Clone app of Google keep. This app is built using React and Firebase. It has all the features of Google keep. Adding, editing and deleting Notes, Colors, Labels, etc.",
-    tags: ["React", "Firebase@V9"],
-    githubLink: "https://github.com/alaspuresujay/google-keep/",
-    externalLink: "https://alaspuresujay.github.io/google-keep/",
   },
 
   {

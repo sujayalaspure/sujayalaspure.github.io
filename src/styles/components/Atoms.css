@@ -1,183 +1,185 @@
 .button {
-	color: var(--accent);
-	background-color: transparent;
-	border: 1px solid var(--accent);
-	border-radius: var(--border-radius);
-	padding: 1.25rem 1.75rem;
-	font-size: var(--fz-sm);
-	font-family: var(--font-mono);
-	line-height: 1;
-	text-decoration: none;
-	cursor: pointer;
-	transition: var(--transition);
-	margin: 40px 0;
+  color: var(--accent);
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  border-radius: var(--border-radius);
+  padding: 1.25rem 1.75rem;
+  font-size: var(--fz-sm);
+  font-family: var(--font-mono);
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+  margin: 40px 0;
 }
 
 .button:hover {
-	background-color: var(--accent-tint);
-	outline: none;
+  background-color: var(--accent-tint);
+  outline: none;
 }
 p > a {
-	cursor: pointer;
-	display: inline-block;
-	text-decoration: none;
-	text-decoration-skip-ink: auto;
-	position: relative;
-	transition: var(--transition);
-	color: var(--accent);
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  position: relative;
+  transition: var(--transition);
+  color: var(--accent);
 }
 
 p > a:hover,
 p > a:focus,
 p > a:active {
-	color: var(--accent);
-	outline: 0px;
+  color: var(--accent);
+  outline: 0px;
 }
 
 .link-item {
-	color: var(--slate);
-	margin: 0 15px;
+  color: var(--accent);
+  cursor: pointer;
+  /* margin: 0 15px; */
 }
 
 .link-item:before {
-	content: '';
-	display: block;
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	height: 1px;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
 
-	background: var(--accent);
-	-webkit-transition: -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
-	transition: -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
-	-o-transition: -o-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
-	-moz-transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1),
-		-moz-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
-	transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1),
-		-webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1),
-		-moz-transform 1s cubic-bezier(0.19, 1, 0.22, 1), -o-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  background: var(--accent);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: -o-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1),
+    -moz-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1),
+    -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1),
+    -moz-transform 1s cubic-bezier(0.19, 1, 0.22, 1),
+    -o-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .link-item:hover:before {
-	transform: scaleX(0);
+  transform: scaleX(0);
 }
 
 .get-in-touch {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .get-in-touch h5 {
-	font-weight: 400;
-	font-size: var(--fz-md);
-	color: var(--slate);
-	max-width: 800px;
-	text-align: center;
-	line-height: 2rem;
+  font-weight: 400;
+  font-size: var(--fz-md);
+  color: var(--slate);
+  max-width: 800px;
+  text-align: center;
+  line-height: 2rem;
 }
 
 .mouse-scroll {
-	position: absolute;
-	bottom: 10px;
-	right: 10%;
-	width: 24px;
-	height: 100px;
-	/* cursor: pointer; */
+  position: absolute;
+  bottom: 10px;
+  right: 10%;
+  width: 24px;
+  height: 100px;
+  /* cursor: pointer; */
 }
 
 .mouse {
-	height: 42px;
-	width: 24px;
-	border-radius: 14px;
-	-webkit-transform: none;
-	transform: none;
-	border: 2px solid var(--lightest-slate);
-	top: 170px;
+  height: 42px;
+  width: 24px;
+  border-radius: 14px;
+  -webkit-transform: none;
+  transform: none;
+  border: 2px solid var(--lightest-slate);
+  top: 170px;
 }
 
 .wheel {
-	display: block;
-	margin: 5px auto;
-	background: transparent;
-	position: relative;
-	height: 10px;
-	width: 6px;
-	border: 2px solid var(--lightest-slate);
-	border-radius: 8px;
-	-webkit-animation: mouse-wheel 0.6s linear infinite;
-	animation: mouse-wheel 0.6s linear infinite;
+  display: block;
+  margin: 5px auto;
+  background: transparent;
+  position: relative;
+  height: 10px;
+  width: 6px;
+  border: 2px solid var(--lightest-slate);
+  border-radius: 8px;
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  animation: mouse-wheel 0.6s linear infinite;
 }
 
 .scroll-arrows {
-	display: block;
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
-	border-right: 2px solid var(--lightest-slate);
-	border-bottom: 2px solid var(--lightest-slate);
-	margin: 0 0 5px 6px;
-	width: 13px;
-	height: 13px;
+  display: block;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-right: 2px solid var(--lightest-slate);
+  border-bottom: 2px solid var(--lightest-slate);
+  margin: 0 0 5px 6px;
+  width: 13px;
+  height: 13px;
 }
 
 .scroll-arrows.top {
-	-webkit-animation-delay: 0.1s;
-	-moz-animation-delay: 0.1s;
-	-webkit-animation-direction: alternate;
-	animation-direction: alternate;
-	animation-delay: 0.1s;
-	animation: mouse-scroll 1s infinite;
-	margin-top: 1px;
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  animation-delay: 0.1s;
+  animation: mouse-scroll 1s infinite;
+  margin-top: 1px;
 }
 
 .scroll-arrows.bottom {
-	-webkit-animation-direction: alternate;
-	animation-direction: alternate;
-	margin-top: -6px;
-	animation: mouse-scroll 1s infinite;
-	animation-delay: 0.2s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  margin-top: -6px;
+  animation: mouse-scroll 1s infinite;
+  animation-delay: 0.2s;
 }
 
 @keyframes mouse-wheel {
-	0% {
-		top: 1px;
-	}
+  0% {
+    top: 1px;
+  }
 
-	25% {
-		top: 2px;
-	}
+  25% {
+    top: 2px;
+  }
 
-	50% {
-		top: 3px;
-	}
+  50% {
+    top: 3px;
+  }
 
-	75% {
-		top: 2px;
-	}
+  75% {
+    top: 2px;
+  }
 
-	100% {
-		top: 1px;
-	}
+  100% {
+    top: 1px;
+  }
 }
 
 @keyframes mouse-scroll {
-	0% {
-		opacity: 0;
-	}
-	25% {
-		opacity: 0.5;
-	}
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
 
-	50% {
-		opacity: 1;
-	}
+  50% {
+    opacity: 1;
+  }
 
-	75% {
-		opacity: 0.5;
-	}
+  75% {
+    opacity: 0.5;
+  }
 
-	100% {
-		opacity: 0;
-	}
+  100% {
+    opacity: 0;
+  }
 }

@@ -19,12 +19,12 @@ function Home() {
       <AboutMe number="01" />
 
       <Section>
-        <SectionHeading number="02" title="My Professional Experience" />
+        <SectionHeading number="02" title="Where I’ve Worked" />
         <Experience />
       </Section>
 
       <Section>
-        <SectionHeading number="02" title="Some Things I’ve Built" />
+        <SectionHeading number="03" title="Some Things I’ve Built" />
         {projects.map((project, index) => (
           <div>
             <FeaturedProjectCard right={index % 2} key={index} {...project} />
@@ -33,7 +33,7 @@ function Home() {
       </Section>
 
       <Section>
-        <SectionHeading number="03" title="Other Projects" />
+        <SectionHeading number="04" title="Other Projects" />
         <ul className="project-grid">
           {OtherProjects.map((project, index) => (
             <ProjectCard key={index} {...{ project }} />
@@ -45,7 +45,7 @@ function Home() {
 				<SectionHeading number='04' title='My Experience' />
 			</Section> */}
       <Section>
-        <SectionHeading number="04" title="Get In Touch" />
+        <SectionHeading number="05" title="Get In Touch" />
         <GetInTouch />
       </Section>
 

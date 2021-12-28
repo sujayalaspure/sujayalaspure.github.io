@@ -33,11 +33,41 @@ export const TabsRow = styled(Tabs)`
 
 export const TabItem = styled(Tab)``;
 
-export const Title = styled.div``;
+export const Content = styled.div`
+  padding: 20px 4px;
+`;
+export const Title = styled.div`
+  display: flex;
+  align-items: center;
+  color: ${COLORS.lightestSlate};
+  font-size: 1.2rem;
+  .company {
+    color: ${COLORS.accent};
+  }
+`;
 
-export const timeline = styled.div``;
+export const Timeline = styled.div`
+  color: ${COLORS.slate};
+  font-size: 13px;
+  margin-bottom: 20px;
+`;
 
-export const TabPanel = styled.div``;
-export const List = styled.ul``;
+export const List = styled.ul`
+  list-style: none;
+  padding-right: 2rem;
+`;
 
-export const ListItem = styled.li``;
+export const ListItem = styled.li`
+  color: ${COLORS.slate};
+  /* display: list-item; */
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  text-align: -webkit-match-parent;
+  &::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: ${COLORS.accent};
+  }
+`;
