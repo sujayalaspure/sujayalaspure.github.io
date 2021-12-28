@@ -9,6 +9,7 @@ import AboutMe from "Components/Organisms/AboutMe";
 import GetInTouch from "Components/atoms/GetInTouch";
 import ProjectCard from "Components/molecules/ProjectCard";
 import FeaturedProjectCard from "Components/featured-project-card";
+import Experience from "Components/experience";
 function Home() {
   return (
     <div className="home">
@@ -16,6 +17,11 @@ function Home() {
 
       <Hero />
       <AboutMe number="01" />
+
+      <Section>
+        <SectionHeading number="02" title="My Professional Experience" />
+        <Experience />
+      </Section>
 
       <Section>
         <SectionHeading number="02" title="Some Things I’ve Built" />
