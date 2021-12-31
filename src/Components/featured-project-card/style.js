@@ -2,17 +2,23 @@ import styled from "styled-components";
 
 export const FeaturedProjectCardContainer = styled.div`
   /* border: 1px solid #eaeaea; */
-  height: 500px;
+  min-height: 400px;
   position: relative;
   /* overflow: hidden; */
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--slate);
+  margin: 80px 0;
+  transition: var(--transition);
 
+  border-radius: 10px;
   @media (max-width: 768px) {
     margin-bottom: 70px;
     justify-content: center;
+  }
+  &:hover {
+    /* border-bottom: 2px solid var(--lightest-slate); */
   }
 `;
 
