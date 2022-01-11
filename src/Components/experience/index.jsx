@@ -2,8 +2,8 @@ import React from "react";
 import AppBar from "@material-ui/core/AppBar";
 
 import { TabsRow, TabItem } from "./style";
-import ExpData from "../../data/experience";
-import COLORS from "../../utils/Colors";
+import ExpData from "data/experience";
+import COLORS from "utils/Colors";
 import TabPanel from "./TabPanel";
 const Experience = () => {
   const [value, setValue] = React.useState(0);

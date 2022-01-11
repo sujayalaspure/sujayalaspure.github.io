@@ -1,42 +1,43 @@
 .section {
-	margin: 0px auto;
-	max-width: 1000px;
-	padding: 0 0 10%;
+  margin: 0px auto;
+  max-width: 1000px;
+  padding: 0 0 10%;
+  /* min-height: 100vh; */
 }
 
 .section-heading {
-	color: var(--slate);
-	display: flex;
-	-webkit-box-align: center;
-	align-items: center;
-	margin: 40px 0;
+  color: var(--slate);
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 40px 0;
 }
 
 .section-heading .number {
-	position: relative;
-	/* bottom: 4px; */
-	margin-right: 10px;
-	color: var(--accent);
-	font-family: var(--font-mono);
-	font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
-	font-weight: 400;
+  position: relative;
+  /* bottom: 4px; */
+  margin-right: 10px;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
+  font-weight: 400;
 }
 
 .section-heading .title {
-	display: flex;
-	align-items: center;
-	position: relative;
-	width: 100%;
-	font-size: clamp(26px, 5vw, 32px);
-	white-space: nowrap;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  font-size: clamp(26px, 5vw, 32px);
+  white-space: nowrap;
 }
 
 .section-heading .title:after {
-	content: '';
-	display: block;
-	position: relative;
-	width: 30%;
-	height: 3px;
-	margin-left: 20px;
-	background-color: var(--lightest-navy);
+  content: "";
+  display: block;
+  position: relative;
+  width: 30%;
+  height: 3px;
+  margin-left: 20px;
+  background-color: var(--lightest-navy);
 }

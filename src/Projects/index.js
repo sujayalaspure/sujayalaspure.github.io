@@ -1,9 +1,10 @@
 import { smarthmStructure, banner } from "./Smarthm";
 import cryptoBanner from "./Cryptoverse/banner.png";
 import keepBanner from "./Keeper/keep-banner.png";
-
+import musicAppStucture from "./music-app";
 const projects = [
   {
+    featured: true,
     title: "Smarthm",
     slug: "smarthm",
     image: banner,
@@ -16,6 +17,8 @@ const projects = [
     data: smarthmStructure,
   },
   {
+    featured: true,
+
     title: "Keeper App",
     slug: "keeper",
     image: keepBanner,
@@ -27,6 +30,7 @@ const projects = [
     data: "",
   },
   {
+    featured: true,
     title: "Cryptoverse",
     slug: "cryptoverse",
     image: cryptoBanner,
@@ -37,9 +41,6 @@ const projects = [
     externalLink: "https://alaspuresujay.github.io/cryptoverse/",
     data: "",
   },
-];
-
-export const OtherProjects = [
   {
     title: "React Gallery App",
     slug: "gallery-app",
@@ -60,24 +61,14 @@ export const OtherProjects = [
   },
 
   {
-    title: "Slack Clone",
-    slug: "slack-clone",
-    description:
-      "This is Slack Clone built using ReactJs and Firebase, with functionality of Google Auth, Realtime Group messaging, etc.",
-    tags: ["ReactJS", "Firebase"],
-    githubLink: "https://github.com/alaspuresujay/slack-clone",
-    externalLink: "https://alaspuresujay.github.io/slack-clone",
+    title: "Music Redesigned",
+    slug: "music-redesigned",
+    description: `This is a redesign of YouTube Music. In this design, I mostly tried to create a dark and artistic space for users to interact with.`,
+    tags: ["ReactJS", "RapidAPI", "Redux/toolkit"],
+    githubLink: "https://github.com/alaspuresujay/music-redesigned",
+    // externalLink: "https://music-redesigned.netlify.app/",
+    data: musicAppStucture,
   },
-  // {
-  // 	title: 'Resort Booking App',
-  // 	slug: 'resort-app',
-  // 	image: banner,
-  // 	description:
-  // 		'This app provide the functionality to control your smart home devices from your mobile, set alert, add automation to devices. Toggle device on specific time and much more. And yes with security and privacy because of its all new OfflineFirst technology.',
-  // 	tags: ['ReactJs', 'Contentful CMS'],
-  // 	githubLink: 'https://github.com/alaspuresujay/resortapp',
-  // 	externalLink: 'https://sujay-resort-app.netlify.app',
-  // },
 ];
 
 export default projects;
