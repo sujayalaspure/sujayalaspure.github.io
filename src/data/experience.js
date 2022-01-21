@@ -2,7 +2,7 @@ const expData = [
   {
     title: "Cofounder and CTO",
     company: "Indivisible Solutions",
-    companyWebsite: "www.tcs.com",
+    companyWebsite: "https://indivisiblesol.com/",
     start: "Aug 2020",
     end: "Present",
     details: [

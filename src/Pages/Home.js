@@ -28,9 +28,7 @@ function Home() {
         {projects
           .filter((pro) => pro.featured)
           .map((project, index) => (
-            <div>
-              <FeaturedProjectCard right={index % 2} key={index} {...project} />
-            </div>
+            <FeaturedProjectCard right={index % 2} key={index} {...project} />
           ))}
       </Section>
 
@@ -45,9 +43,6 @@ function Home() {
         </ul>
       </Section>
 
-      {/* <Section>
-				<SectionHeading number='04' title='My Experience' />
-			</Section> */}
       <Section>
         <SectionHeading number="05" title="Get In Touch" />
         <GetInTouch />

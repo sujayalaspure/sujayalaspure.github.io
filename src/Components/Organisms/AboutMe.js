@@ -52,7 +52,7 @@ export default function AboutMe({ number }) {
           </ul>
         </motion.div>
         <motion.div
-          initial={{ x: "200vw" }}
+          initial={{ x: "100vw" }}
           animate={animation}
           className="image"
         >
