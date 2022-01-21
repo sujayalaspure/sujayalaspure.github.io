@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { FaGooglePlay, FaAppStoreIos } from "react-icons/fa";
 
@@ -14,6 +14,9 @@ import {
   Link,
   Projectimage,
 } from "./style";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
+
 const FeaturedProjectCard = ({
   title,
   slug,
@@ -26,57 +29,77 @@ const FeaturedProjectCard = ({
   externalLink,
   right,
 }) => {
+  const { ref, inView } = useInView({ threshold: 0.2 });
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        opacity: 1,
+        y: 0,
+        transition: {
+          type: "spring",
+          bounce: 0.4,
+          duration: 0.8,
+        },
+      });
+    }
+  }, [inView]);
   return (
-    <FeaturedProjectCardContainer>
-      <FeaturedProjectContent right={right}>
-        <Overline>Featured Project</Overline>
-        <Title>
-          <a
-            href={externalLink ? externalLink : `#/case/${slug}`}
-            rel="noreferrer"
-          >
-            {title}
-          </a>
-        </Title>
-        <Description>
-          <p>{description}</p>
-        </Description>
-        <Tags right={right}>
-          {tags.map((tag, index) => (
-            <Tag key={index}>{tag}</Tag>
-          ))}
-        </Tags>
-        <ProjectLinks right={right}>
-          {githubLink && (
-            <Link href={githubLink} target="_blank" rel="noreferrer">
-              <FiGithub />
-            </Link>
-          )}
+    <motion.div ref={ref}>
+      <motion.div initial={{ y: 300 }} animate={animation}>
+        <FeaturedProjectCardContainer>
+          <FeaturedProjectContent right={right}>
+            <Overline>Featured Project</Overline>
+            <Title>
+              <a
+                href={externalLink ? externalLink : `#/case/${slug}`}
+                rel="noreferrer"
+              >
+                {title}
+              </a>
+            </Title>
+            <Description>
+              <p>{description}</p>
+            </Description>
+            <Tags right={right}>
+              {tags.map((tag, index) => (
+                <Tag key={index}>{tag}</Tag>
+              ))}
+            </Tags>
+            <ProjectLinks right={right}>
+              {githubLink && (
+                <Link href={githubLink} target="_blank" rel="noreferrer">
+                  <FiGithub />
+                </Link>
+              )}
 
-          <Link
-            href={externalLink ? externalLink : `#/case/${slug}`}
-            rel="noreferrer"
-            target={externalLink ? "_blank" : "_self"}
-          >
-            <FiExternalLink />
-          </Link>
+              <Link
+                href={externalLink ? externalLink : `#/case/${slug}`}
+                rel="noreferrer"
+                target={externalLink ? "_blank" : "_self"}
+              >
+                <FiExternalLink />
+              </Link>
 
-          {playStore && (
-            <Link href={playStore} className="external" rel="noreferrer">
-              <FaGooglePlay />
-            </Link>
-          )}
-          {appStore && (
-            <Link href={appStore} className="external" rel="noreferrer">
-              <FaAppStoreIos />
-            </Link>
-          )}
-        </ProjectLinks>
-      </FeaturedProjectContent>
-      <Projectimage right={right}>
-        <img src={image} alt={title} />
-      </Projectimage>
-    </FeaturedProjectCardContainer>
+              {playStore && (
+                <Link href={playStore} className="external" rel="noreferrer">
+                  <FaGooglePlay />
+                </Link>
+              )}
+              {appStore && (
+                <Link href={appStore} className="external" rel="noreferrer">
+                  <FaAppStoreIos />
+                </Link>
+              )}
+            </ProjectLinks>
+          </FeaturedProjectContent>
+          <Projectimage right={right}>
+            <img src={image} alt={title} />
+          </Projectimage>
+        </FeaturedProjectCardContainer>
+      </motion.div>
+    </motion.div>
   );
 };
 

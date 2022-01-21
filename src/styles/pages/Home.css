@@ -1,70 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap");
 
 .home {
-	/* font-family: 'Roboto Mono';
+  /* font-family: 'Roboto Mono';
 	color: blue; */
-	padding: 0px 150px;
+  padding: 0px 150px;
+  overflow-x: hidden;
 }
 .github-corner {
-	fill: #151513;
-	color: #fff !important;
-	position: absolute !important;
-	top: 0;
-	border: 0;
-	right: 0;
+  fill: #151513;
+  color: #fff !important;
+  position: absolute !important;
+  top: 0;
+  border: 0;
+  right: 0;
 }
 
 .github-corner:hover .octo-arm {
-	animation: octocat-wave 800ms infinite ease-in-out;
-	color: #fff !important;
+  animation: octocat-wave 800ms infinite ease-in-out;
+  color: #fff !important;
 }
 
 .project-grid {
-	list-style: none;
-	padding: 0px;
-	margin: 50px 0px 0px;
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	gap: 15px;
-	position: relative;
+  list-style: none;
+  padding: 0px;
+  margin: 50px 0px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  position: relative;
 }
 
 @media (max-width: 1080px) {
-	.home {
-		padding: 0px 100px;
-	}
+  .home {
+    padding: 0px 100px;
+  }
 }
 @media (max-width: 768px) {
-	.home {
-		padding: 0px 50px;
-	}
+  .home {
+    padding: 0px 50px;
+  }
 }
 @media (max-width: 480px) {
-	.home {
-		padding: 0px 25px;
-	}
+  .home {
+    padding: 0px 25px;
+  }
 }
 
 @media (max-width: 500px) {
-	.github-corner:hover .octo-arm {
-		animation: none;
-	}
-	.github-corner .octo-arm {
-		animation: octocat-wave 1s infinite ease-in-out;
-	}
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 1s infinite ease-in-out;
+  }
 }
 
 @keyframes octocat-wave {
-	0%,
-	100% {
-		transform: rotate(0);
-	}
-	20%,
-	60% {
-		transform: rotate(-25deg);
-	}
-	40%,
-	80% {
-		transform: rotate(10deg);
-	}
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
 }

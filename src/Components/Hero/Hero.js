@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import LeftSideBar from "./LeftSideBar";
@@ -8,11 +8,32 @@ import SomeRandomAnim from "Components/atoms/SomeRandomAnim";
 import MouseScrollAnimation from "Components/atoms/MouseScrollAnimation";
 import { Link } from "Components/atoms/Link";
 import resume from "Assets/resume-Sujay-Alaspure-V2-3.pdf";
+import COLORS from "utils/Colors";
 
 export default function Hero() {
-  const RandomArray = [...Array(5).keys()];
+  const RandomArray = [...Array(10).keys()];
   const { ref, inView } = useInView({ threshold: 0.2 });
   const animation = useAnimation();
+
+  const [mousePosition, setMousePosition] = useState({
+    x: null,
+    y: null,
+  });
+
+  useEffect(() => {
+    const handle = (e) =>
+      setMousePosition({
+        x: e.pageX,
+        y: e.pageY,
+      });
+
+    document.addEventListener("mousemove", handle);
+    return () => {
+      document.removeEventListener("mousemove", handle);
+    };
+  }, []);
+
+  console.log("LOG> [Hero/Hero.js:50] x, y --->", mousePosition);
 
   useEffect(() => {
     if (inView) {
@@ -31,6 +52,20 @@ export default function Hero() {
       {RandomArray.map((i) => (
         <SomeRandomAnim i={i} key={i} />
       ))}
+
+      <div
+        style={{
+          height: 80,
+          width: 80,
+          backgroundColor: COLORS.darkslate,
+          borderRadius: "50%",
+          position: "absolute",
+          top: mousePosition.y - 40,
+          left: mousePosition.x - 40,
+          opacity: 0.7,
+          filter: "blur(30px)",
+        }}
+      />
 
       <LeftSideBar />
       <RightSideBar />
