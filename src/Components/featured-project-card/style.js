@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const FeaturedProjectCardContainer = styled.div`
@@ -62,11 +61,30 @@ export const Description = styled.div`
   font-size: var(--fz-md);
   line-height: 25px;
   text-align: left;
+  &::before {
+    background-color: #b5e2cb;
+    content: "";
+    position: absolute;
+    height: 90%;
+    width: 0.3rem;
+
+    /* left: 0; */
+    ${(_) =>
+      _.right
+        ? "border-top-left-radius: 100%;border-bottom-left-radius: 100%;"
+        : "border-top-right-radius: 100%;border-bottom-right-radius: 100%;"}
+    ${(_) => (_.right ? "right: 0;" : "left: 0;")}
+    top: 5%;
+  }
   @media (max-width: 768px) {
     background-color: transparent;
     box-shadow: none;
     margin-top: 2rem;
     padding: 0px 0px;
+
+    &::before {
+      display: none;
+    }
   }
 `;
 
@@ -79,8 +97,10 @@ export const Tags = styled.ul`
   padding: 0px;
   list-style: none;
   justify-content: ${(_) => (_.right ? "flex-end" : "flex-start")};
+  font-style: italic;
   @media (max-width: 768px) {
     margin: 4vh 0;
+    font-style: italic;
   }
 `;
 

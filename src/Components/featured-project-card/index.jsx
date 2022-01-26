@@ -29,7 +29,7 @@ const FeaturedProjectCard = ({
   externalLink,
   right,
 }) => {
-  const { ref, inView } = useInView({ threshold: 0.2 });
+  const { ref, inView } = useInView({ threshold: 0.4 });
   const animation = useAnimation();
 
   useEffect(() => {
@@ -59,7 +59,7 @@ const FeaturedProjectCard = ({
                 {title}
               </a>
             </Title>
-            <Description>
+            <Description right={right}>
               <p>{description}</p>
             </Description>
             <Tags right={right}>
