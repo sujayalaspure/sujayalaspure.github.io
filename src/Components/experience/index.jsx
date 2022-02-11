@@ -25,7 +25,7 @@ const Experience = () => {
           aria-label="scrollable tabs"
         >
           {ExpData.map((exp, index) => (
-            <TabItem label={exp.company} {...a11yProps(index)} />
+            <TabItem key={index} label={exp.company} {...a11yProps(index)} />
           ))}
         </TabsRow>
       </AppBar>

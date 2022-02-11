@@ -4,7 +4,6 @@ import { useInView } from "react-intersection-observer";
 import LeftSideBar from "./LeftSideBar";
 import RightSideBar from "./RightSideBar";
 import "styles/components/Hero.css";
-import SomeRandomAnim from "Components/atoms/SomeRandomAnim";
 import MouseScrollAnimation from "Components/atoms/MouseScrollAnimation";
 import { Link } from "Components/atoms/Link";
 import resume from "Assets/resume-Sujay-Alaspure-V2-3.pdf";
@@ -27,9 +26,7 @@ export default function Hero() {
   }, [inView]);
   return (
     <div ref={ref} className="hero">
-      {[...Array(10).keys()].map((i) => (
-        <SomeRandomAnim i={i} key={i} />
-      ))}
+      {console.log("Hero rendered")}
 
       <LeftSideBar />
       <RightSideBar />

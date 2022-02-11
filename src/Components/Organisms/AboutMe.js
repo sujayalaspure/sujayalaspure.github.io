@@ -46,7 +46,7 @@ export default function AboutMe({ number }) {
             <li>React Js</li>
             <li>React Native</li>
             <li>Javascript (ES6)</li>
-            <li>Express</li>
+            {/* <li>Express</li> */}
             <li>Firebase</li>
             <li>Python</li>
           </ul>

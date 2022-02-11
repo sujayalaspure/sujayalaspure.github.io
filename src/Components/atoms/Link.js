@@ -13,7 +13,7 @@ export function Link(props) {
         className={button ? "button" : "link-item"}
         href={href}
         target={newTab ? "_blank" : "_self"}
-        type={button && "button"}
+        type={button ? "button" : undefined}
         rel="noreferrer"
         {...other}
       >

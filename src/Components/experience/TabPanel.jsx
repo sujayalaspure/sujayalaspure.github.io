@@ -20,8 +20,8 @@ const TabPanel = ({ data, value, ...other }) => {
         {data.start} - {data.end}
       </Timeline>
       <List>
-        {data.details.map((item) => (
-          <ListItem>{item.content}</ListItem>
+        {data.details.map((item, index) => (
+          <ListItem key={index}>{item.content}</ListItem>
         ))}
       </List>
     </Content>
