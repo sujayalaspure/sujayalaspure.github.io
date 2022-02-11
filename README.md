@@ -4,7 +4,7 @@
 
 # Hi, I'm Sujay 👨‍💻
 
-This portfolio is written in ReactJs and plain css. You can reuse this project if you are looking for jobs and looking to create a portfolio for yourself. Please don't reuse for commercial use, if you do, please give credits 😁.
+This portfolio is written in ReactJs. You can reuse this project if you are looking for jobs and looking to create a portfolio for yourself. Please don't reuse for commercial use, if you do, please give credits 😁.
 
 ### Connect With me!
 

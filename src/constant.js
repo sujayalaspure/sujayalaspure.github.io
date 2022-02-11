@@ -5,8 +5,11 @@ import {
   FiMail,
   FiDownloadCloud,
 } from "react-icons/fi";
-import resume from "./Assets/Sujay-Resume.pdf";
 
+import { SiLeetcode } from "react-icons/si";
+import resume from "./Assets/Sujay-Alaspure-resume-v3.pdf";
+
+export {resume}
 export { default as profile } from "./Assets/images/profile.jpg";
 export const socialLink = [
   { name: "Github", Icon: FiGithub, link: "https://github.com/alaspuresujay" },
@@ -21,5 +24,10 @@ export const socialLink = [
     link: "https://www.instagram.com/alaspuresujay/",
   },
   { name: "Mail", Icon: FiMail, link: "mailto:alaspuresujay@gmail.com" },
+  {
+    name: "Leetcode",
+    Icon: SiLeetcode,
+    link: "https://leetcode.com/alaspuresujay/",
+  },
   { name: "Resume", Icon: FiDownloadCloud, link: resume },
 ];

@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
+import { motion } from "framer-motion";
+
 import "styles/components/Atoms.css";
 import COLORS from "utils/Colors";
 export default function MouseScrollAnimation() {
+  const [scrolled, setScrolled] = useState(0);
+  useEffect(() => {
+    window.onscroll = () => {
+      console.log("scrolling", window.scrollY);
+      setScrolled(window.scrollY);
+    };
+    return () => {};
+  }, []);
+
   return (
-    <Container>
+    <Container scrolled={scrolled}>
       <Mouse>
         <Wheel />
       </Mouse>
@@ -37,6 +48,8 @@ const Container = styled.div`
   right: 10%;
   width: 24px;
   height: 100px;
+  transition: all 0.5s ease-in-out;
+  opacity: ${(props) => (props.scrolled > 100 ? 0 : 1)};
 `;
 
 const Mouse = styled.div`

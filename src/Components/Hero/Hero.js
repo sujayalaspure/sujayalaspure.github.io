@@ -6,7 +6,7 @@ import RightSideBar from "./RightSideBar";
 import "styles/components/Hero.css";
 import MouseScrollAnimation from "Components/atoms/MouseScrollAnimation";
 import { Link } from "Components/atoms/Link";
-import resume from "Assets/resume-Sujay-Alaspure-V2-3.pdf";
+import { resume } from "constant";
 
 export default function Hero() {
   const { ref, inView } = useInView({ threshold: 0.2 });
