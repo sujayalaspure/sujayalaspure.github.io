@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import COLORS from "utils/Colors";
 
 export const FeaturedProjectCardContainer = styled.div`
   /* border: 1px solid #eaeaea; */
@@ -11,6 +12,7 @@ export const FeaturedProjectCardContainer = styled.div`
   color: var(--slate);
   margin: 80px 0;
   transition: var(--transition);
+  /* padding: 50px; */
 
   border-radius: 10px;
   @media (max-width: 768px) {
@@ -19,13 +21,14 @@ export const FeaturedProjectCardContainer = styled.div`
   }
   &:hover {
     /* border-bottom: 2px solid var(--lightest-slate); */
+    box-shadow: 7px 7px 55px 0 ${COLORS.lightestnavy};
   }
 `;
 
 export const FeaturedProjectContent = styled.div`
   position: absolute;
   width: 60%;
-  ${(_) => (_.right ? "right : 0" : "left:0")};
+  ${(_) => (_.right ? "right : 20px" : "left:20px")};
   text-align: ${(_) => (_.right ? "right" : "left")};
   @media (max-width: 768px) {
     width: 100%;
@@ -148,7 +151,7 @@ export const Projectimage = styled.div`
   max-height: 340px;
   position: absolute;
 
-  ${(_) => (_.right ? "left : 0" : "right:0")};
+  ${(_) => (_.right ? "left : 20px" : "right:20px")};
   box-shadow: 0 10px 30px -15px var(--navy-shadow);
   transition: var(--transition);
   z-index: 1;
