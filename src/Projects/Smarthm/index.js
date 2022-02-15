@@ -36,7 +36,7 @@ export const smarthmStructure = [
   },
   {
     type: "bannerImage",
-    value: { title: "The design will not leave you cold", imgsrc: designSys },
+    value: { title: "The design won't leave you cold", imgsrc: designSys },
   },
   {
     type: "splitshow",

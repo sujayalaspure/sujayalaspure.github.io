@@ -7,7 +7,6 @@ import "styles/components/Hero.css";
 import MouseScrollAnimation from "Components/atoms/MouseScrollAnimation";
 import { Link } from "Components/atoms/Link";
 import { resume } from "constant";
-
 export default function Hero() {
   const { ref, inView } = useInView({ threshold: 0.2 });
   const animation = useAnimation();
@@ -26,10 +25,9 @@ export default function Hero() {
   }, [inView]);
   return (
     <div ref={ref} className="hero">
-      {console.log("Hero rendered")}
-
       <LeftSideBar />
       <RightSideBar />
+
       <motion.div
         initial={{ x: "-100vw" }}
         animate={animation}

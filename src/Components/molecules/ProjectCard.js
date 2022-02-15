@@ -35,7 +35,7 @@ export default function ProjectCard({ project }) {
               href={
                 project.externalLink
                   ? project.externalLink
-                  : `#/case/${project.slug}`
+                  : `/case/${project.slug}`
               }
               className="external"
               target={project.externalLink && "_blank"}
@@ -49,7 +49,7 @@ export default function ProjectCard({ project }) {
               href={
                 project.externalLink
                   ? project.externalLink
-                  : `#/case/${project.slug}`
+                  : `/case/${project.slug}`
               }
             >
               {project.title}

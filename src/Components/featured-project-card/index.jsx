@@ -53,7 +53,7 @@ const FeaturedProjectCard = ({
             <Overline>Featured Project</Overline>
             <Title>
               <a
-                href={externalLink ? externalLink : `#/case/${slug}`}
+                href={externalLink ? externalLink : `/case/${slug}`}
                 rel="noreferrer"
               >
                 {title}
@@ -75,7 +75,7 @@ const FeaturedProjectCard = ({
               )}
 
               <Link
-                href={externalLink ? externalLink : `#/case/${slug}`}
+                href={externalLink ? externalLink : `/case/${slug}`}
                 rel="noreferrer"
                 target={externalLink ? "_blank" : "_self"}
               >

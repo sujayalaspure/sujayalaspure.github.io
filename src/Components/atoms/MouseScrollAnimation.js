@@ -6,7 +6,6 @@ export default function MouseScrollAnimation() {
   const [scrolled, setScrolled] = useState(0);
   useEffect(() => {
     window.onscroll = () => {
-      console.log("scrolling", window.scrollY);
       setScrolled(window.scrollY);
     };
     return () => {};
@@ -69,8 +68,8 @@ const Wheel = styled.div`
   width: 6px;
   border: 2px solid ${COLORS.lightestSlate};
   border-radius: 8px;
-  -webkit-animation: ${MouseWheel} 0.6s linear infinite;
-  animation: ${MouseWheel} 0.6s linear infinite;
+  -webkit-animation: ${MouseWheel} 0.8s ease-in-out infinite;
+  animation: ${MouseWheel} 0.8s ease-in-out infinite;
 `;
 
 const ScrollArrows = styled.div`
