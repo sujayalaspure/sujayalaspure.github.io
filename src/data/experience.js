@@ -1,18 +1,35 @@
 const expData = [
   {
-    title: "Cofounder and CTO",
-    company: "Indivisible Solutions",
+    title: "Software Developer",
+    company: "Robosoft Technologies",
     companyWebsite: "https://indivisiblesol.com/",
-    start: "Aug 2020",
+    start: "Oct 2021",
     end: "Present",
     details: [
       {
         id: "1",
-        content: `Developed and shipped highly interactive android applications for Home Automation SmartHM`,
+        content: `Worked with a team of 10 Developers to build a Super App for Stanza Living. An ambitious startup working in Living Space.`,
       },
       {
         id: "2",
-        content: `Worked on various Framework and CMS such as React, React Native, Wordpress CMS, Firebase, etc`,
+        content: `Communicate with multi-disciplinary teams of developers, designers, and clients on a daily basis.`,
+      },
+    ],
+  },
+  {
+    title: "Cofounder and CTO",
+    company: "Indivisible Solutions",
+    companyWebsite: "https://indivisiblesol.com/",
+    start: "Aug 2020",
+    end: "Jan 2021",
+    details: [
+      {
+        id: "1",
+        content: `Developed and shipped highly interactive android applications for Home Automation SmartHM.`,
+      },
+      {
+        id: "2",
+        content: `Worked on various Framework and CMS such as React, React Native, Wordpress CMS, Firebase, etc.`,
       },
       {
         id: "3",

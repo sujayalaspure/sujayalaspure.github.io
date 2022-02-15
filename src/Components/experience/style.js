@@ -31,7 +31,9 @@ export const TabsRow = styled(Tabs)`
   }
 `;
 
-export const TabItem = styled(Tab)``;
+export const TabItem = styled(Tab)`
+  padding: 0 20px;
+`;
 
 export const Content = styled.div`
   padding: 20px 4px;

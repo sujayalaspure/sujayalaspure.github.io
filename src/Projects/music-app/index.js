@@ -3,7 +3,7 @@ import img1 from "./assets/music-section.png";
 import img2 from "./assets/img2.jpeg";
 import img3 from "./assets/img3.jpg";
 const musicAppStucture = [
-  { type: "bannerImage", value: { title: "", imgsrc: homePageBanner } },
+  { type: "bannerImage", value: { title: null, imgsrc: homePageBanner } },
   {
     type: "tophead",
     value: {

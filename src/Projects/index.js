@@ -18,7 +18,6 @@ const projects = [
   },
   {
     featured: true,
-
     title: "Keeper App",
     slug: "keeper",
     image: keepBanner,
@@ -27,7 +26,7 @@ const projects = [
     tags: ["ReactJs", "Firebase@V9", "Context-API", "Google-auth"],
     githubLink: "https://github.com/alaspuresujay/google-keep/",
     externalLink: "https://alaspuresujay.github.io/google-keep/",
-    data: "",
+    data: null,
   },
   {
     featured: true,
@@ -39,7 +38,7 @@ const projects = [
     tags: ["React", "Ant-Design", "RapidAPI", "Redux/toolkit"],
     githubLink: "https://github.com/alaspuresujay/cryptoverse/",
     externalLink: "https://alaspuresujay.github.io/cryptoverse/",
-    data: "",
+    data: null,
   },
   {
     title: "React Gallery App",
@@ -49,6 +48,7 @@ const projects = [
     tags: ["ReactJs", "Firebase", "Framer-Motion"],
     githubLink: "https://github.com/alaspuresujay/react-galary",
     externalLink: "https://alaspuresujay.github.io/react-galary/",
+    data: null,
   },
   {
     title: "React Native Todo App",
@@ -58,6 +58,7 @@ const projects = [
     tags: ["React Native", "Firebase"],
     githubLink: "https://github.com/alaspuresujay/todo-app/",
     externalLink: "https://expo.dev/@alaspuresujay/todo-app",
+    data: null,
   },
 
   {

@@ -1,8 +1,6 @@
-import img1 from "./Assets/img1.png";
 import icon from "./Assets/icon.png";
 import logo from "./Assets/logo.png";
 import logo_name from "./Assets/logo_name.png";
-import splash3d from "./Assets/spalsh3d.png";
 import designSys from "./Assets/designSystem.png";
 import banner from "./Assets/banner3.png";
 import profile from "./Assets/profile.jpg";
@@ -77,12 +75,4 @@ export const smarthmStructure = [
       content: `We were motivated to focus on every little detail including icon animation, to really enhance the user interaction.`,
     },
   },
-];
-
-export const Data = [
-  { img: img1 },
-  { img: icon },
-  { img: logo },
-  { img: logo_name },
-  { img: splash3d },
 ];

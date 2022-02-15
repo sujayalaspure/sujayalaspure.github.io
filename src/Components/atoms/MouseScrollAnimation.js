@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
-import { motion } from "framer-motion";
-
 import "styles/components/Atoms.css";
 import COLORS from "utils/Colors";
 export default function MouseScrollAnimation() {
