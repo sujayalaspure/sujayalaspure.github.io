@@ -33,6 +33,7 @@ const MousePointer = () => {
         left: mousePosition.x - 40,
         opacity: 0.7,
         filter: "blur(30px)",
+        zIndex: -1,
       }}
     />
   );

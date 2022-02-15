@@ -10,6 +10,7 @@ export const FeaturedProjectCardContainer = styled.div`
   justify-content: center;
   align-items: center;
   color: var(--slate);
+  background-color: var(--navy);
   margin: 80px 0;
   transition: var(--transition);
   /* padding: 50px; */
@@ -174,6 +175,7 @@ export const Projectimage = styled.div`
       object-fit: cover;
       width: 100%;
       height: 100%;
+
       filter: grayscale(100%) contrast(1) brightness(20%);
     }
   }
@@ -183,6 +185,8 @@ export const Projectimage = styled.div`
     max-height: 100%;
     top: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
     background-color: var(--navy);
     height: 100%;
     &::before {

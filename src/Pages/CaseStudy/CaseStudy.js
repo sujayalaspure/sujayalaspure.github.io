@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import "styles/pages/CaseStudy.css";
 import Banner from "./Banner";
 import TopHead from "./TopHead";
@@ -7,13 +7,13 @@ import Brief from "./Brief";
 import SplitShow from "./SplitShow";
 import { useProject } from "Context/ProjectContext";
 import { socialLink } from "constant";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 
 export default function CaseStudy() {
   const [project, setProject] = useState(null);
   const { slug } = useParams();
   const { getProject } = useProject();
-  let history = useHistory();
+  let navigate = useNavigate();
 
   useEffect(() => {
     const pro = getProject(slug);
@@ -37,14 +37,7 @@ export default function CaseStudy() {
     }
   };
 
-  const routeTo404Page = () => history.push("/#/error");
-
-  const nothingFound = () => (
-    <div className="not-found">
-      <p>Ohh...</p>
-      <p>I don't have this project at this time.</p>
-    </div>
-  );
+  const routeTo404Page = () => navigate("/error");
 
   return (
     <>
@@ -53,7 +46,7 @@ export default function CaseStudy() {
           ? project?.data?.map((item, index) => renderComponent(item, index))
           : routeTo404Page()}
         <div className="case-footer">
-          <a href="#/" className="link-item nextcase">
+          <a href="/" className="link-item nextcase">
             Next Case...
           </a>
           <div className="contact">
