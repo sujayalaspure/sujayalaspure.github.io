@@ -1,0 +1,33 @@
+.outer-ring {
+  stroke-dasharray: 10;
+  /* stroke-dashoffset: 1000;*/
+  animation: dash 1s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 100;
+  }
+}
+
+.logo-icon {
+  animation: secondAnimation 2s linear forwards infinite;
+}
+@keyframes secondAnimation {
+  0% {
+    stroke-dasharray: 40;
+    stroke-dashoffset: 20;
+  }
+  30% {
+    stroke-dasharray: 40;
+    stroke-dashoffset: 200;
+  }
+  50% {
+    stroke-dasharray: 80;
+    stroke-dashoffset: 400;
+  }
+  60% {
+    stroke-dasharray: 80;
+    stroke-dashoffset: 200;
+  }
+}

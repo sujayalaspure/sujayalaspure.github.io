@@ -10,7 +10,20 @@ import GetInTouch from "Components/atoms/GetInTouch";
 import ProjectCard from "Components/molecules/ProjectCard";
 import FeaturedProjectCard from "Components/featured-project-card";
 import Experience from "Components/experience";
+import { useState } from "react";
+import { useEffect } from "react";
+import LogoIcon from "Assets/LogoIcon";
+import COLORS from "utils/Colors";
 function Home() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+
+  if (loading) return <LogoIcon color={COLORS.accent} />;
   return (
     <div className="home">
       <GithubCorner />

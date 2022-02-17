@@ -2,9 +2,15 @@
   <img alt="Logo" src="https://raw.githubusercontent.com/alaspuresujay/alaspuresujay.github.io/master/public/favicon/android-chrome-384x384.png" width="100" />
 </div>
 
+---
+
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/alaspuresujay/alaspuresujay.github.io/Github%20Pages%20Deploy?label=Latest%20Build)
+![GitHub](https://img.shields.io/github/license/alaspuresujay/alaspuresujay.github.io)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/alaspuresujay/alaspuresujay.github.io)
+
 # Hi, I'm Sujay 👨‍💻
 
-This portfolio is written in ReactJs. You can reuse this project if you are looking for jobs and looking to create a portfolio for yourself. Please don't reuse for commercial use, if you do, please give credits 😁.
+This portfolio is written in ReactJs. You can reuse this project if you are looking for jobs or looking to create a portfolio for yourself. Please don't reuse for commercial use, if you do, please give credits 😁.
 
 ### Connect With me!
 
@@ -28,9 +34,9 @@ This portfolio is written in ReactJs. You can reuse this project if you are look
       npm install
       npm start
    ```
-5. Modify the as per your convenience.
+5. Modify as per your convenience.
 
-## 🎨 Color Reference
+## 🎨 Color Scheme
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
