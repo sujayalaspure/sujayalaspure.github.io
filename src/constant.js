@@ -8,7 +8,7 @@ import {
 
 import { SiLeetcode } from "react-icons/si";
 
-export const resumeLink = "/Assets/resume.pdf";
+export const resumeLink = "/assets/resume.pdf";
 
 export { default as profile } from "./Assets/images/profile.jpg";
 export const socialLink = [
