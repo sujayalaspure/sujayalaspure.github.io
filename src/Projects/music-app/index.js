@@ -1,7 +1,7 @@
-import homePageBanner from "./assets/home4.png";
-import img1 from "./assets/music-section.png";
+import homePageBanner from "./assets/home4.webp";
+import img1 from "./assets/music-section.webp";
 import img2 from "./assets/img2.jpeg";
-import img3 from "./assets/img3.jpg";
+import img3 from "./assets/img3.webp";
 const musicAppStucture = [
   { type: "bannerImage", value: { title: null, imgsrc: homePageBanner } },
   {

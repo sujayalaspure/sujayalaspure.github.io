@@ -1,6 +1,6 @@
 import { smarthmStructure, banner } from "./Smarthm";
-import cryptoBanner from "./Cryptoverse/banner.png";
-import keepBanner from "./Keeper/keep-banner.png";
+import cryptoBanner from "./Cryptoverse/banner.webp";
+import keepBanner from "./Keeper/keep-banner.webp";
 import musicAppStucture from "./music-app";
 const projects = [
   {
@@ -59,6 +59,7 @@ const projects = [
     githubLink: "https://github.com/alaspuresujay/todo-app/",
     externalLink: "https://expo.dev/@alaspuresujay/todo-app",
     data: null,
+    case: false,
   },
 
   {
@@ -69,6 +70,27 @@ const projects = [
     githubLink: "https://github.com/alaspuresujay/music-redesigned",
     // externalLink: "https://music-redesigned.netlify.app/",
     data: musicAppStucture,
+    case: true,
+  },
+  {
+    title: "Person Movement Detection",
+    slug: "person-movement-detection",
+    description: `Detect the person movement in the room, Capture their images and send mail to the provided ID.`,
+    tags: ["Python", "OpenCV", "Computer Vision"],
+    githubLink: "https://github.com/alaspuresujay/Person-Detection",
+    // externalLink: "#",
+    data: null,
+    case: false,
+  },
+  {
+    title: "Image Color picker",
+    slug: "image-color-picker",
+    description: `Detect pixel colour over the image by Hovering the mouse over it`,
+    tags: ["Python", "OpenCV", "Computer Vision"],
+    githubLink: "https://github.com/alaspuresujay/color-detection",
+    // externalLink: "#",
+    data: null,
+    case: false,
   },
 ];
 

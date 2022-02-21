@@ -31,25 +31,27 @@ export default function ProjectCard({ project }) {
                 <FiGithub />
               </a>
             )}
-            <a
-              href={
-                project.externalLink
-                  ? project.externalLink
-                  : `/case/${project.slug}`
-              }
-              className="external"
-              target={project.externalLink && "_blank"}
-              rel="noreferrer"
-            >
-              <FiExternalLink />
-            </a>
+            {(project.externalLink || project.case) && (
+              <a
+                href={
+                  !project.case ? project.externalLink : `/case/${project.slug}`
+                }
+                className="external"
+                target={project.externalLink && "_blank"}
+                rel="noreferrer"
+              >
+                <FiExternalLink />
+              </a>
+            )}
           </div>
           <h3 className="project-title">
             <a
               href={
                 project.externalLink
                   ? project.externalLink
-                  : `/case/${project.slug}`
+                  : project.case
+                  ? `/case/${project.slug}`
+                  : "#"
               }
             >
               {project.title}
