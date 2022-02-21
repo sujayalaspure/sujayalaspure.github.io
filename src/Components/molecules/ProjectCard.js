@@ -1,6 +1,6 @@
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect } from "react";
-import { FiGithub, FiExternalLink } from "react-icons/fi";
+import { FiGithub, FiExternalLink, FiYoutube } from "react-icons/fi";
 import { useInView } from "react-intersection-observer";
 import "styles/components/ProjectCard.css";
 export default function ProjectCard({ project }) {
@@ -29,6 +29,16 @@ export default function ProjectCard({ project }) {
             {project.githubLink && (
               <a href={project.githubLink} target="_blank" rel="noreferrer">
                 <FiGithub />
+              </a>
+            )}
+            {project.youtubeLink && (
+              <a
+                href={project.youtubeLink}
+                className="youtube"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FiYoutube />
               </a>
             )}
             {(project.externalLink || project.data) && (

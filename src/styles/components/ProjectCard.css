@@ -39,6 +39,11 @@
   align-items: center;
   padding: 5px 7px;
 }
+.inner-card .header .links a.youtube .react-icons {
+  width: 22px;
+  height: 28px;
+  /* margin-top: -4px; */
+}
 
 .inner-card .header .project-title {
   margin: 0px 0px 20px;

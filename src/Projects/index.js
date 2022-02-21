@@ -88,7 +88,7 @@ const projects = [
     description: `Detect pixel colour over the image by Hovering the mouse over it`,
     tags: ["Python", "OpenCV", "Computer Vision"],
     githubLink: "https://github.com/alaspuresujay/color-detection",
-    // externalLink: "#",
+    youtubeLink: "https://youtu.be/1-b7aUZ1dzo",
     data: null,
     case: false,
   },
