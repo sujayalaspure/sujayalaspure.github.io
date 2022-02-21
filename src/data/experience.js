@@ -2,7 +2,7 @@ const expData = [
   {
     title: "Software Developer",
     company: "Robosoft Technologies",
-    companyWebsite: "https://indivisiblesol.com/",
+    companyWebsite: "#",
     start: "Oct 2021",
     end: "Present",
     details: [

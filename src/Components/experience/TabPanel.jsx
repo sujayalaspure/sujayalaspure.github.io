@@ -13,14 +13,14 @@ const TabPanel = ({ data, value, ...other }) => {
       <Title>
         <span>{data.title}</span>{" "}
         <span className="company">
-          &nbsp;@&nbsp;<Link>{data.company}</Link>
+          &nbsp;@&nbsp;<Link href={data?.companyWebsite}>{data?.company}</Link>
         </span>
       </Title>
       <Timeline>
-        {data.start} - {data.end}
+        {data?.start} - {data?.end}
       </Timeline>
       <List>
-        {data.details.map((item, index) => (
+        {data?.details.map((item, index) => (
           <ListItem key={index}>{item.content}</ListItem>
         ))}
       </List>

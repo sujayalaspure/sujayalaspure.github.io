@@ -54,7 +54,7 @@ export default function CaseStudy() {
                 {socialLink.map(({ Icon, link, name }) => (
                   <li key={link}>
                     <a href={link} target="_blank" rel="noreferrer">
-                      <Icon />
+                      {Icon}
                     </a>
                   </li>
                 ))}

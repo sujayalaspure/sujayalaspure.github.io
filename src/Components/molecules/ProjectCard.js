@@ -18,7 +18,7 @@ export default function ProjectCard({ project }) {
     }
   }, [inView]);
   return (
-    <div ref={ref}>
+    <li ref={ref}>
       <motion.div
         className="inner-card"
         initial={{ opacity: 0 }}
@@ -77,6 +77,6 @@ export default function ProjectCard({ project }) {
           ))}
         </ul>
       </motion.div>
-    </div>
+    </li>
   );
 }
