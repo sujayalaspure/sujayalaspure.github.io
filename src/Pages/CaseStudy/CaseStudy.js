@@ -17,7 +17,6 @@ export default function CaseStudy() {
 
   useEffect(() => {
     const pro = getProject(slug);
-
     setProject(pro);
   }, []);
 

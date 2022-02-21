@@ -3,7 +3,7 @@ import logo from "./Assets/logo.png";
 import logo_name from "./Assets/logo_name.webp";
 import designSys from "./Assets/designSystem.webp";
 import banner from "./Assets/banner3.webp";
-import profile from "./Assets/profile.webp";
+import profileScreen from "./Assets/profile.webp";
 import loginui from "./Assets/loginui.webp";
 import home from "./Assets/home.webp";
 import Drawer from "./Assets/drawer.webp";
@@ -54,7 +54,7 @@ export const smarthmStructure = [
           caption:
             "The homepage style went through several phases and multiple iterations.",
         },
-        { imgsrc: profile, caption: "" },
+        { imgsrc: profileScreen, caption: "" },
         // { imgsrc: img1, caption: '' },
       ],
       right: [

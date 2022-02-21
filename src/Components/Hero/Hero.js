@@ -6,7 +6,7 @@ import RightSideBar from "./RightSideBar";
 import "styles/components/Hero.css";
 import MouseScrollAnimation from "Components/atoms/MouseScrollAnimation";
 import { Link } from "Components/atoms/Link";
-import { resume } from "constant";
+import { resumeLink } from "constant";
 export default function Hero() {
   const { ref, inView } = useInView({ threshold: 0.2 });
   const animation = useAnimation();
@@ -41,7 +41,7 @@ export default function Hero() {
             Hire Me
           </Link>
 
-          <Link style={{ margin: "0 16px" }} href={resume}>
+          <Link style={{ margin: "0 16px" }} href={resumeLink}>
             Get Resume
           </Link>
         </div>

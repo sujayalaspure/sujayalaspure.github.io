@@ -57,7 +57,7 @@ export default function AboutMe({ number }) {
           className="image"
         >
           <div className="wrapper">
-            <img src={profile} alt="" />
+            <img src={profile} alt="Sujay Alaspure" />
           </div>
         </motion.div>
       </div>

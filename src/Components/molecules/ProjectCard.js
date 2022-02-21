@@ -31,10 +31,10 @@ export default function ProjectCard({ project }) {
                 <FiGithub />
               </a>
             )}
-            {(project.externalLink || project.case) && (
+            {(project.externalLink || project.data) && (
               <a
                 href={
-                  !project.case ? project.externalLink : `/case/${project.slug}`
+                  !project.data ? project.externalLink : `/case/${project.slug}`
                 }
                 className="external"
                 target={project.externalLink && "_blank"}
@@ -49,9 +49,9 @@ export default function ProjectCard({ project }) {
               href={
                 project.externalLink
                   ? project.externalLink
-                  : project.case
+                  : project.data
                   ? `/case/${project.slug}`
-                  : "#"
+                  : null
               }
             >
               {project.title}

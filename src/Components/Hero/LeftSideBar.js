@@ -18,7 +18,7 @@ export default function LeftSideBar() {
           >
             <li className="link">
               <a href={link} target="_blank" rel="noreferrer">
-                <Icon />
+                {Icon}
               </a>
             </li>
           </Tooltip>

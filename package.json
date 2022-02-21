@@ -32,7 +32,13 @@
       "react-app/jest"
     ],
     "rules": {
-      "react-hooks/exhaustive-deps": "off"
+      "react-hooks/exhaustive-deps": "off",
+      "import/no-unused-modules": [
+        1,
+        {
+          "unusedExports": true
+        }
+      ]
     }
   },
   "browserslist": {
