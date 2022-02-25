@@ -170,3 +170,16 @@ a:hover .react-icons {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--slate);
 }
+
+.thumbnail {
+  position: absolute;
+  top: 0;
+  z-index: -5000;
+  width: 0px;
+  height: 0px;
+}
+.thumbnail img {
+  object-fit: cover;
+  width: 0px;
+  height: 0px;
+}
