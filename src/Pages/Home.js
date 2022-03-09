@@ -31,7 +31,7 @@ function Home() {
       <Hero />
       <AboutMe number="01" />
 
-      <Section>
+      <Section id="Experience">
         <SectionHeading number="02" title="Where I’ve Worked" />
         <Experience />
       </Section>

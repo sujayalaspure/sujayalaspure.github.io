@@ -6,7 +6,6 @@ import RightSideBar from "./RightSideBar";
 import "styles/components/Hero.css";
 import MouseScrollAnimation from "Components/atoms/MouseScrollAnimation";
 import { Link } from "Components/atoms/Link";
-import { resumeLink } from "constant";
 export default function Hero() {
   const { ref, inView } = useInView({ threshold: 0.2 });
   const animation = useAnimation();
@@ -38,12 +37,12 @@ export default function Hero() {
         <h2 className="bio">I build things that lives on Internet.</h2>
         <div>
           <Link button href="mailto:alaspuresujay@gmail.com">
-            Hire Me
+            Checkout my GitHub!
           </Link>
 
-          <Link style={{ margin: "0 16px" }} href={resumeLink}>
+          {/* <Link style={{ margin: "0 16px" }} href={resumeLink}>
             Get Resume
-          </Link>
+          </Link> */}
         </div>
       </motion.div>
       <MouseScrollAnimation />

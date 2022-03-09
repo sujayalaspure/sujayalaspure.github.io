@@ -13,9 +13,9 @@ const NotFound = React.lazy(() => import("Pages/NotFound"));
 function App() {
   return (
     <>
-      <div className="thumbnail">
+      {/* <div className="thumbnail">
         <img src="./Assets/thumbnail.png" alt="Sujay Alaspure" />
-      </div>
+      </div> */}
       <ContextProvider>
         <MousePointer />
         <SomeRandomAnim />
