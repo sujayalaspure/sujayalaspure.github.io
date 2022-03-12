@@ -1,5 +1,5 @@
 import React from "react";
-import { socialLink } from "constant";
+import { ProfileLinks, socialLink } from "constant";
 import "styles/components/Footer.css";
 export default function Footer() {
   return (
@@ -16,11 +16,7 @@ export default function Footer() {
         </ul>
       </div>
       <div className="credits">
-        <a
-          href="https://github.com/alaspuresujay"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={ProfileLinks.github} target="_blank" rel="noopener noreferrer">
           Designed & Built by Sujay Alaspure
         </a>
       </div>

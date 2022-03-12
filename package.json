@@ -10,6 +10,7 @@
     "gh-pages": "^3.2.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-html-parser": "^2.0.2",
     "react-icons": "^4.2.0",
     "react-intersection-observer": "^8.32.0",
     "react-parallax": "^3.3.0",

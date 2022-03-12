@@ -8,13 +8,14 @@ const expData = [
     details: [
       {
         id: "1",
-        content: `Worked with a team of 10 Developers to build a Super App for Stanza Living. An ambitious startup working in Living Space.`,
+        content: `Worked with a team of 10 Developers to build a Super App for <a href='https://play.google.com/store/apps/details?id=com.stanzaliving.sigma' target='_blank' class='link-item' >Stanza Living</a>. An ambitious startup working in Living Space.`,
       },
       {
         id: "2",
         content: `Communicate with multi-disciplinary teams of developers, designers, and clients on a daily basis.`,
       },
     ],
+    link: "https://play.google.com/store/apps/details?id=com.stanzaliving.sigma",
   },
   {
     title: "Cofounder and CTO",
@@ -25,7 +26,7 @@ const expData = [
     details: [
       {
         id: "1",
-        content: `Developed and shipped highly interactive android applications for Home Automation SmartHM.`,
+        content: `Developed and shipped highly interactive android applications for Home Automation <a href='https://play.google.com/store/apps/details?id=com.indivisible.smarthm' target='_blank' class='link-item' >SmartHM</a>.`,
       },
       {
         id: "2",

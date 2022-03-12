@@ -1,4 +1,6 @@
 import React from "react";
+import ReactHtmlParser from "react-html-parser";
+
 import { Title, Content, Timeline, List, ListItem } from "./style";
 import { Link } from "Components/atoms/Link";
 
@@ -21,7 +23,7 @@ const TabPanel = ({ data, value, ...other }) => {
       </Timeline>
       <List>
         {data?.details.map((item, index) => (
-          <ListItem key={index}>{item.content}</ListItem>
+          <ListItem key={index}>{ReactHtmlParser(item.content)}</ListItem>
         ))}
       </List>
     </Content>

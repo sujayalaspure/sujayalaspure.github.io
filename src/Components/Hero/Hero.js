@@ -6,6 +6,7 @@ import RightSideBar from "./RightSideBar";
 import "styles/components/Hero.css";
 import MouseScrollAnimation from "Components/atoms/MouseScrollAnimation";
 import { Link } from "Components/atoms/Link";
+import { ProfileLinks } from "constant";
 export default function Hero() {
   const { ref, inView } = useInView({ threshold: 0.2 });
   const animation = useAnimation();
@@ -36,7 +37,7 @@ export default function Hero() {
         <h1 className="NameHeading">Sujay Alaspure</h1>
         <h2 className="bio">I build things that lives on Internet.</h2>
         <div>
-          <Link button href="mailto:alaspuresujay@gmail.com">
+          <Link button href={ProfileLinks.github}>
             Checkout my GitHub!
           </Link>
 

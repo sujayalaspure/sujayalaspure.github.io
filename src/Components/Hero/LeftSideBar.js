@@ -17,7 +17,12 @@ export default function LeftSideBar() {
             key={link}
           >
             <li className="link">
-              <a href={link} target="_blank" rel="noreferrer">
+              <a
+                aria-label={`Link to ${name}`}
+                href={link}
+                target="_blank"
+                rel="noreferrer"
+              >
                 {Icon}
               </a>
             </li>

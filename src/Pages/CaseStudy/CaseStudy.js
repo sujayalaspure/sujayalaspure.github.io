@@ -6,7 +6,7 @@ import TopHead from "./TopHead";
 import Brief from "./Brief";
 import SplitShow from "./SplitShow";
 import { useProject } from "Context/ProjectContext";
-import { socialLink } from "constant";
+import { ProfileLinks, socialLink } from "constant";
 // import { useHistory } from "react-router-dom";
 
 export default function CaseStudy() {
@@ -62,7 +62,7 @@ export default function CaseStudy() {
             </div>
             <div className="credits">
               <a
-                href="https://github.com/alaspuresujay"
+                href={ProfileLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
               >
