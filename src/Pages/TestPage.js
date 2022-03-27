@@ -6,7 +6,6 @@ import ReactHtmlParser from "react-html-parser";
 
 import { useDimensions } from "../Components/molecules/Menu/useDimensions";
 import "styles/pages/TestPage.css";
-import styled from "styled-components";
 import { Link } from "Components/atoms/Link";
 const sidebar = {
   open: (height = 1000) => ({
@@ -60,20 +59,3 @@ export default function TestPage() {
     </>
   );
 }
-
-const HeatMapWrapper = styled.div`
-  height: 100vh;
-  width: 100vw;
-  /* background: #f0f0f0; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 20px;
-`;
-
-const HeatMap = styled.div`
-  width: 100%;
-  /* height: 100%; */
-  background-color: #222;
-  padding: 20px;
-`;
