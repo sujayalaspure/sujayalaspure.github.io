@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { FaGooglePlay, FaAppStoreIos } from "react-icons/fa";
+import ReactHtmlParser from "react-html-parser";
 
 import {
   FeaturedProjectCardContainer,
@@ -60,7 +61,7 @@ const FeaturedProjectCard = ({
               </a>
             </Title>
             <Description right={right}>
-              <p>{description}</p>
+              <p>{ReactHtmlParser(description)}</p>
             </Description>
             <Tags right={right}>
               {tags.map((tag, index) => (

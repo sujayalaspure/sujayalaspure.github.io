@@ -22,7 +22,7 @@ const projects = [
     slug: "keeper",
     image: keepBanner,
     description:
-      "A Clone app of Google's note taking app Google Keep. This app is built using React and Firebase. It has all the features of Google keep. Adding, editing and deleting Notes, Colors, Labels, etc",
+      "A Clone app of Google's note taking app <a href='https://keep.google.com/' target='_blank' class='link-item' > Google Keep</a>. This app is built using React and Firebase. It has all the features of Google keep. Adding, editing and deleting Notes, Colors, Labels, etc",
     tags: ["ReactJs", "Firebase@V9", "Context-API", "Google-auth"],
     githubLink: "https://github.com/alaspuresujay/google-keep/",
     externalLink: "https://alaspuresujay.github.io/google-keep/",

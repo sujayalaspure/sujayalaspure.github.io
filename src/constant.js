@@ -24,22 +24,36 @@ export const socialLink = [
     name: "Github",
     Icon: <FiGithub />,
     link: ProfileLinks.github,
+    color: "#caccd1",
   },
   {
     name: "LinkedIn",
     Icon: <FiLinkedin />,
     link: ProfileLinks.linkedin,
+    color: "#0077b5",
   },
   {
     name: "Instagram",
     Icon: <FiInstagram />,
     link: ProfileLinks.instagram,
+    color: "#e1306c",
   },
-  { name: "E-Mail", Icon: <FiMail />, link: "mailto:alaspuresujay@gmail.com" },
+  {
+    name: "E-Mail",
+    Icon: <FiMail />,
+    link: "mailto:alaspuresujay@gmail.com",
+    color: "#ff0000",
+  },
   {
     name: "Leetcode",
     Icon: <SiLeetcode />,
     link: ProfileLinks.leetcode,
+    color: "#fbb034",
   },
-  { name: "Resume", Icon: <FiDownloadCloud />, link: resumeLink },
+  {
+    name: "Resume",
+    Icon: <FiDownloadCloud />,
+    link: resumeLink,
+    color: "#5ec6f2",
+  },
 ];

@@ -8,16 +8,40 @@ const MousePointer = () => {
     y: null,
   });
 
-  useEffect(() => {
-    const handle = (e) =>
-      setMousePosition({
-        x: e.pageX,
-        y: e.pageY,
-      });
+  function throttle(cb, delay = 1000) {
+    let shouldWait = false;
+    let waitingArgs;
+    const timeoutFunc = () => {
+      if (waitingArgs == null) {
+        shouldWait = false;
+      } else {
+        cb(...waitingArgs);
+        waitingArgs = null;
+        setTimeout(timeoutFunc, delay);
+      }
+    };
 
-    document.addEventListener("mousemove", handle);
+    return (...args) => {
+      if (shouldWait) {
+        waitingArgs = args;
+        return;
+      }
+
+      cb(...args);
+      shouldWait = true;
+      setTimeout(timeoutFunc, delay);
+    };
+  }
+  const updateThrottled = throttle((e) => {
+    setMousePosition({
+      x: e.pageX,
+      y: e.pageY,
+    });
+  }, 30);
+  useEffect(() => {
+    document.addEventListener("mousemove", updateThrottled);
     return () => {
-      document.removeEventListener("mousemove", handle);
+      document.removeEventListener("mousemove", updateThrottled);
     };
   }, []);
 
