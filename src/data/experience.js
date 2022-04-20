@@ -2,7 +2,7 @@ const expData = [
   {
     title: "Software Developer",
     company: "Robosoft Technologies",
-    companyWebsite: "#",
+    companyWebsite: "https://www.robosoftin.com/",
     start: "Oct 2021",
     end: "Present",
     details: [
@@ -20,7 +20,7 @@ const expData = [
   {
     title: "Cofounder and CTO",
     company: "Indivisible Solutions",
-    companyWebsite: "https://indivisiblesol.com/",
+    companyWebsite: "#",
     start: "Aug 2020",
     end: "Jan 2021",
     details: [
@@ -41,7 +41,7 @@ const expData = [
   {
     title: "Software Developer",
     company: "TCS",
-    companyWebsite: "www.tcs.com",
+    companyWebsite: "https://www.tcs.com",
     start: "Nov 2019",
     end: "Apr 2021",
     details: [

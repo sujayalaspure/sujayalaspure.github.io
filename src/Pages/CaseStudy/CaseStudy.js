@@ -41,9 +41,7 @@ export default function CaseStudy() {
   return (
     <>
       <div className="casestudy container-fluid">
-        {project
-          ? project?.data?.map((item, index) => renderComponent(item, index))
-          : routeTo404Page()}
+        {project ? project?.data?.map((item, index) => renderComponent(item, index)) : routeTo404Page()}
         <div className="case-footer">
           <a href="/" className="link-item nextcase">
             Next Case...
@@ -61,11 +59,7 @@ export default function CaseStudy() {
               </ul>
             </div>
             <div className="credits">
-              <a
-                href={ProfileLinks.github}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={ProfileLinks.github} target="_blank" rel="noopener noreferrer">
                 Designed & Built by Sujay Alaspure
               </a>
             </div>

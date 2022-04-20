@@ -13,9 +13,8 @@ export default function SomeRandomAnim({ i }) {
             top: i + Math.floor(Math.random() * 720) + 50,
             right: i + Math.floor(Math.random() * 1901) + 50,
           }}
-          animate={{ rotate: 360 }}
-          transition={{ ease: "linear", duration: 2, repeat: Infinity }}
-        >
+          animate={{ rotate: 360, scrollSnapAlign: "end" }}
+          transition={{ ease: "linear", duration: 2, repeat: Infinity }}>
           ⭐️
         </motion.div>
       ))}

@@ -19,6 +19,12 @@ export default function Footer() {
         <a href={ProfileLinks.github} target="_blank" rel="noopener noreferrer">
           Designed & Built by Sujay Alaspure
         </a>
+        <p className="legal">
+          The source code for this website is
+          <a href="https://github.com/alaspuresujay/alaspuresujay.github.io"> available on GitHub </a>
+          under the
+          <a href="http://opensource.org/licenses/mit-license.html"> MIT license.</a>
+        </p>
       </div>
     </footer>
   );

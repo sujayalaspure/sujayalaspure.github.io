@@ -37,7 +37,7 @@ const MousePointer = () => {
       x: e.pageX,
       y: e.pageY,
     });
-  }, 30);
+  }, 100);
   useEffect(() => {
     document.addEventListener("mousemove", updateThrottled);
     return () => {
@@ -58,6 +58,7 @@ const MousePointer = () => {
         opacity: 0.7,
         filter: "blur(30px)",
         zIndex: -1,
+        transition: "all 0.1s ease",
       }}
     />
   );

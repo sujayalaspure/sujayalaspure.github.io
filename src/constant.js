@@ -1,14 +1,8 @@
-import {
-  FiGithub,
-  FiInstagram,
-  FiLinkedin,
-  FiMail,
-  FiDownloadCloud,
-} from "react-icons/fi";
+import { FiGithub, FiInstagram, FiLinkedin, FiMail, FiDownloadCloud } from "react-icons/fi";
 
 import { SiLeetcode } from "react-icons/si";
 
-export const resumeLink = "/assets/resume.pdf";
+export const resumeLink = "/assets/Resume_Sujay_Alaspure_Software_Developer_3_years.pdf";
 
 export const ProfileLinks = {
   github: "https://github.com/alaspuresujay",
