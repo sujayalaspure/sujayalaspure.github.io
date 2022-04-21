@@ -5,7 +5,10 @@
   flex-direction: column;
   justify-content: center;
   transition: var(--transition);
-  padding: 0 100px;
+  /* padding: 0 100px; */
+  padding: 0 0 10%;
+  margin: 0px auto;
+  /* max-width: 1000px; */
 }
 
 .HeaderContainer {
@@ -111,6 +114,9 @@
   .sidebar.left,
   .sidebar.right {
     display: none;
+  }
+  .hero {
+    padding: 0;
   }
 }
 

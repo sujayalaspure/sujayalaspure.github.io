@@ -40,11 +40,18 @@ export const Content = styled.div`
 `;
 export const Title = styled.div`
   display: flex;
-  align-items: center;
+
   color: ${COLORS.lightestSlate};
-  font-size: 1.2rem;
+  font-size: clamp(16px, 2vw, 1.2rem);
+  /* font-size: 1.2rem; */
+  flex-wrap: nowrap;
+
   .company {
     color: ${COLORS.accent};
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
   }
 `;
 
@@ -61,6 +68,7 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   color: ${COLORS.slate};
+  font-size: 0.95rem;
   /* display: list-item; */
   position: relative;
   padding-left: 30px;
