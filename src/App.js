@@ -1,16 +1,22 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import ContextProvider from "Context/ContextProvider";
 import MousePointer from "Components/atoms/MousePointer";
 import SomeRandomAnim from "Components/atoms/SomeRandomAnim";
 import LogoIcon from "Assets/LogoIcon";
+import useFirebase from "utils/firebase";
 const Home = React.lazy(() => import("Pages/Home"));
 const TestPage = React.lazy(() => import("Pages/TestPage"));
 const CaseStudy = React.lazy(() => import("Pages/CaseStudy/CaseStudy"));
 const NotFound = React.lazy(() => import("Pages/NotFound"));
 
 function App() {
+  const { updateVisitor } = useFirebase();
+  useEffect(() => {
+    updateVisitor();
+  }, []);
+
   return (
     <>
       {/* <div className="thumbnail">

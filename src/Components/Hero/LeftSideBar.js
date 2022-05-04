@@ -10,23 +10,9 @@ export default function LeftSideBar() {
     <div className="sidebar left">
       <ul className="social">
         {socialLink.map(({ name, link, Icon, color }) => (
-          <Tooltip
-            title={name}
-            aria-label={name}
-            placement="right"
-            arrow
-            key={link}
-            color={color}
-            followCursor
-          >
+          <Tooltip title={name} aria-label={name} placement="right" arrow key={link} color={color}>
             <li className="link">
-              <A
-                aria-label={`Link to ${name}`}
-                href={link}
-                target="_blank"
-                rel="noreferrer"
-                color={color}
-              >
+              <A aria-label={`Link to ${name}`} href={link} target="_blank" rel="noreferrer" color={color}>
                 {Icon}
               </A>
             </li>
