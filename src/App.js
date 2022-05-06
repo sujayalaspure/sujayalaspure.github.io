@@ -19,9 +19,6 @@ function App() {
 
   return (
     <>
-      {/* <div className="thumbnail">
-        <img src="./Assets/thumbnail.png" alt="Sujay Alaspure" />
-      </div> */}
       <ContextProvider>
         <MousePointer />
         <SomeRandomAnim />

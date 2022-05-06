@@ -13,7 +13,6 @@ import Experience from "Components/experience";
 import { useState } from "react";
 import { useEffect } from "react";
 import LogoIcon from "Assets/LogoIcon";
-import COLORS from "utils/Colors";
 function Home() {
   const [loading, setLoading] = useState(true);
 
@@ -23,7 +22,7 @@ function Home() {
     }, 1000);
   }, []);
 
-  if (loading) return <LogoIcon color={COLORS.accent} />;
+  if (loading) return <LogoIcon />;
   return (
     <div className="home">
       <GithubCorner />

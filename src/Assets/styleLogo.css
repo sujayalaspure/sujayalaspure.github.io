@@ -1,7 +1,18 @@
+.container-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
 .outer-ring {
   stroke-dasharray: 10;
   /* stroke-dashoffset: 1000;*/
   animation: dash 1s linear infinite;
+}
+.stroke {
+  fill: transparent;
+  stroke-width: 3px;
 }
 
 @keyframes dash {
