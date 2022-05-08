@@ -3,8 +3,7 @@ import COLORS from "utils/Colors";
 import "./styleLogo.css";
 
 const LogoIcon = ({ color }) => {
-  const { innerWidth: width, innerHeight: height } = window;
-  console.log(width, height);
+  const { innerWidth: width } = window;
 
   const strokeColor = color || COLORS.lightestnavy;
   const style = { stroke: strokeColor };

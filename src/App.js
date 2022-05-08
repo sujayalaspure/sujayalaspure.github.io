@@ -6,6 +6,7 @@ import MousePointer from "Components/atoms/MousePointer";
 import SomeRandomAnim from "Components/atoms/SomeRandomAnim";
 import LogoIcon from "Assets/LogoIcon";
 import useFirebase from "utils/firebase";
+import SuperMario from "Components/super-mario";
 const Home = React.lazy(() => import("Pages/Home"));
 const TestPage = React.lazy(() => import("Pages/TestPage"));
 const CaseStudy = React.lazy(() => import("Pages/CaseStudy/CaseStudy"));
@@ -22,6 +23,7 @@ function App() {
       <ContextProvider>
         <MousePointer />
         <SomeRandomAnim />
+        <SuperMario />
 
         <Suspense fallback={<LogoIcon />}>
           <Routes>

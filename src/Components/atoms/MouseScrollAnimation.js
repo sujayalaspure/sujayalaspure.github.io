@@ -1,15 +1,17 @@
+import { useProject } from "Context/ProjectContext";
 import React, { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import "styles/components/Atoms.css";
 import COLORS from "utils/Colors";
 export default function MouseScrollAnimation() {
-  const [scrolled, setScrolled] = useState(0);
-  useEffect(() => {
-    window.onscroll = () => {
-      setScrolled(window.scrollY);
-    };
-    return () => {};
-  }, []);
+  const { scrolled } = useProject();
+  // const [scrolled, setScrolled] = useState(0);
+  // useEffect(() => {
+  //   window.onscroll = () => {
+  //     setScrolled(window.scrollY);
+  //   };
+  //   return () => {};
+  // }, []);
 
   return (
     <Container scrolled={scrolled}>
