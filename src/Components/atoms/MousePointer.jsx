@@ -1,5 +1,7 @@
+import { useProject } from "Context/ProjectContext";
 import React, { useEffect } from "react";
 import { useState } from "react";
+import styled from "styled-components";
 import COLORS from "utils/Colors";
 
 const MousePointer = () => {
@@ -8,35 +10,10 @@ const MousePointer = () => {
     y: null,
   });
 
-  function throttle(cb, delay = 1000) {
-    let shouldWait = false;
-    let waitingArgs;
-    const timeoutFunc = () => {
-      if (waitingArgs == null) {
-        shouldWait = false;
-      } else {
-        cb(...waitingArgs);
-        waitingArgs = null;
-        setTimeout(timeoutFunc, delay);
-      }
-    };
+  const { throttle } = useProject();
 
-    return (...args) => {
-      if (shouldWait) {
-        waitingArgs = args;
-        return;
-      }
-
-      cb(...args);
-      shouldWait = true;
-      setTimeout(timeoutFunc, delay);
-    };
-  }
   const updateThrottled = throttle((e) => {
-    setMousePosition({
-      x: e.pageX,
-      y: e.pageY,
-    });
+    setMousePosition({ x: e.pageX, y: e.pageY });
   }, 100);
   useEffect(() => {
     document.addEventListener("mousemove", updateThrottled);
@@ -45,23 +22,19 @@ const MousePointer = () => {
     };
   }, []);
 
-  return (
-    <div
-      style={{
-        height: 80,
-        width: 80,
-        backgroundColor: COLORS.darkslate,
-        borderRadius: "50%",
-        position: "absolute",
-        top: mousePosition.y - 40,
-        left: mousePosition.x - 40,
-        opacity: 0.7,
-        filter: "blur(30px)",
-        zIndex: -1,
-        transition: "all 0.1s ease",
-      }}
-    />
-  );
+  return <Glow style={{ left: mousePosition.x - 40, top: mousePosition.y - 40 }} />;
 };
 
 export default MousePointer;
+
+const Glow = styled.div`
+  height: 80px;
+  width: 80px;
+  background-color: ${COLORS.darkslate};
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0.7;
+  filter: blur(30px);
+  z-index: -1;
+  transition: all 0.1s ease;
+`;
