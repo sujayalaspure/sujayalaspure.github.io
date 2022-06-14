@@ -13,6 +13,7 @@ import Experience from "Components/experience";
 import { useState } from "react";
 import { useEffect } from "react";
 import LogoIcon from "Assets/LogoIcon";
+import SuperMario from "Components/super-mario";
 function Home() {
   const [loading, setLoading] = useState(true);
 
@@ -28,6 +29,7 @@ function Home() {
   return (
     <div className="home">
       <GithubCorner />
+      <SuperMario />
 
       {/* <div class="div-sticky-class top">Test</div> */}
 

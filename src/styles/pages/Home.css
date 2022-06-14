@@ -4,7 +4,7 @@
   /* font-family: 'Roboto Mono';
 	color: blue; */
   padding: 0px 150px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .github-corner {
   fill: #151513;
