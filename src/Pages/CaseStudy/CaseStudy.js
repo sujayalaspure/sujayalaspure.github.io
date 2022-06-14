@@ -6,8 +6,8 @@ import TopHead from "./TopHead";
 import Brief from "./Brief";
 import SplitShow from "./SplitShow";
 import { useProject } from "Context/ProjectContext";
-import { ProfileLinks, socialLink } from "constant";
-// import { useHistory } from "react-router-dom";
+import Footer from "Components/atoms/Footer";
+import { CaseFooter, CaseStudyContainer } from "./style";
 
 export default function CaseStudy() {
   const [project, setProject] = useState(null);
@@ -40,32 +40,15 @@ export default function CaseStudy() {
 
   return (
     <>
-      <div className="casestudy container-fluid">
+      <CaseStudyContainer>
         {project ? project?.data?.map((item, index) => renderComponent(item, index)) : routeTo404Page()}
-        <div className="case-footer">
-          <a href="/" className="link-item nextcase">
-            Next Case...
-          </a>
-          <div className="contact">
-            <div className="social">
-              <ul>
-                {socialLink.map(({ Icon, link, name }) => (
-                  <li key={link}>
-                    <a href={link} target="_blank" rel="noreferrer">
-                      {Icon}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="credits">
-              <a href={ProfileLinks.github} target="_blank" rel="noopener noreferrer">
-                Designed & Built by Sujay Alaspure
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      </CaseStudyContainer>
+      <CaseFooter>
+        <a href="/" className="link-item nextcase">
+          Next Case...
+        </a>
+        <Footer showSocial />
+      </CaseFooter>
     </>
   );
 }

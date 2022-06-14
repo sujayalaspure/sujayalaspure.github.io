@@ -15,6 +15,20 @@
   right: 0;
 }
 
+.div-sticky-class {
+  color: red;
+  position: sticky;
+  position: -webkit-sticky;
+}
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+  color: green;
+}
+
 .github-corner:hover .octo-arm {
   animation: octocat-wave 800ms infinite ease-in-out;
   color: #fff !important;

@@ -23,7 +23,7 @@ function App() {
       <ContextProvider>
         <MousePointer />
         <SomeRandomAnim />
-        <SuperMario />
+        {/* <SuperMario /> */}
 
         <Suspense fallback={<LogoIcon />}>
           <Routes>

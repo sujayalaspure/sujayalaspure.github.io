@@ -2,15 +2,15 @@ body {
 }
 
 .navBackgroud {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	width: 300px;
-	background: var(--light-navy);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background: var(--light-navy);
 }
 
-button {
+/* button {
 	outline: none;
 	border: none;
 	-webkit-user-select: none;
@@ -24,4 +24,4 @@ button {
 	height: 50px;
 	border-radius: 50%;
 	background: transparent;
-}
+} */

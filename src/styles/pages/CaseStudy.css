@@ -1,183 +1,97 @@
 .scroll-down {
-	position: absolute;
-	bottom: 5vh;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
-	text-align: center;
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
 }
 
 .scroll-down .react-icons {
-	color: black;
+  color: black;
 }
 .scroll-down p {
-	color: black;
-	margin-bottom: 0;
+  color: black;
+  margin-bottom: 0;
 }
 
 .page-header {
-	display: flex;
-	padding: 1rem 2rem;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page-header a:hover .react-icons {
-	transform: none;
+  transform: none;
 }
 
 .tophead-container {
-	padding: 20% 10% 10%;
+  padding: 20% 10% 10%;
 }
 
 .project-title {
-	font-size: clamp(1rem, 1vw, 3rem);
-	line-height: 250%;
-	color: var(--lightest-slate);
+  font-size: clamp(1rem, 1vw, 3rem);
+  line-height: 250%;
+  color: var(--lightest-slate);
 }
 .project-subtitle {
-	font-weight: 200;
-	color: var(--light-slate);
-	font-size: clamp(1.75rem, 3.41667vw, 3.41667vw);
-}
-
-.brief {
-	color: var(--slate);
-	width: 100%;
-	padding: 10% 10%;
-}
-
-.brief .heading {
-	padding: 0 7% 30px 0;
-}
-
-.brief .heading h2 {
-	color: var(--light-slate);
-	font-size: clamp(22px, 1.6vw, 3rem);
-	white-space: nowrap;
-	font-weight: 500;
-}
-.brief .content {
-	max-width: 92%;
-}
-
-.brief .content .text p {
-	font-size: clamp(1.2rem, 2vw, 1.5rem);
-	line-height: 150%;
-	font-weight: 300;
-	color: var(--slate);
-}
-
-.brief .content .links {
-	position: relative;
-	display: inline-block;
-	padding: 3vw 0 0 0;
-	font-size: 1.3rem;
-	text-decoration: none;
-	text-transform: capitalize;
+  font-weight: 200;
+  color: var(--light-slate);
+  font-size: clamp(1.75rem, 3.41667vw, 3.41667vw);
 }
 
 .splitshow {
-	padding: 10%;
+  padding: 10%;
 }
 
 .splitshow .col .right {
-	/* background-color: aqua; */
-	-webkit-box-flex: 1;
-	-webkit-flex: 1;
-	-moz-box-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
-	margin: 20% 0 0 0;
+  /* background-color: aqua; */
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 20% 0 0 0;
 }
 .splitshow .col .left {
-	/* background-color: yellow; */
-	-webkit-box-flex: 1;
-	-webkit-flex: 1;
-	-moz-box-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
+  /* background-color: yellow; */
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
-.casestudy {
-	scroll-snap-type: y proximity;
-}
-.casestudy .case-footer {
-	background-color: black;
-	height: 100vh;
-	width: 100%;
-	scroll-snap-align: start;
-	color: var(--lightest-slate);
-	text-align: center;
-	position: relative;
-	display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
-
-	justify-content: center;
-	align-items: center;
-}
-.casestudy .case-footer .nextcase {
-	font-size: 10vw;
-}
-.casestudy .case-footer .contact {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	left: 0;
-}
-
-.casestudy .case-footer .contact .social {
-	display: block;
-	width: 100%;
-	max-width: 220px;
-	margin: 0px auto 10px;
-	color: var(--light-slate);
-}
-.casestudy .case-footer .contact .social ul {
-	display: flex;
-	-webkit-box-pack: justify;
-	justify-content: space-between;
-	-webkit-box-align: center;
-	align-items: center;
-	padding: 0px;
-	margin: 0px;
-	list-style: none;
-}
-
-.casestudy .case-footer .contact .credits {
-	margin: 20px 0;
-}
+/*  */
 
 @media (min-width: 768px) {
-	.casestudy {
-		padding-right: 0;
-		padding-left: 0;
-	}
-	.brief {
-		display: flex;
-		padding: 10%;
-	}
+  .casestudy {
+    padding-right: 0;
+    padding-left: 0;
+  }
 
-	.splitshow .col {
-		display: flex;
-	}
+  .splitshow .col {
+    display: flex;
+  }
 }
 
 @media (max-width: 768px) {
-	.tophead-container {
-		margin-top: 30%;
-	}
-	.splitshow {
-		padding: 30% 2%;
-	}
-	.splitshow .col .right {
-		margin: 0;
-	}
+  .tophead-container {
+    margin-top: 30%;
+  }
+  .splitshow {
+    padding: 30% 2%;
+  }
+  .splitshow .col .right {
+    margin: 0;
+  }
 }
 
 .not-found {
-	height: 50vh;
-	color: var(--slate);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  height: 50vh;
+  color: var(--slate);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
