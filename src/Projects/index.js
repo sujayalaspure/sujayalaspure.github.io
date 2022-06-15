@@ -12,8 +12,7 @@ const projects = [
       "This app provide the functionality to control your smart home devices from your mobile, set alert, add automation to devices. Toggle device on specific time and much more. And yes with security and privacy because of its all new OfflineFirst technology.",
     tags: ["React Native", "Firebase", "Appcenter API", "playStore CLI"],
     githubLink: "",
-    playStore:
-      "https://play.google.com/store/apps/details?id=com.indivisible.smarthm",
+    playStore: "https://play.google.com/store/apps/details?id=com.indivisible.smarthm",
     data: smarthmStructure,
   },
   {
@@ -49,6 +48,17 @@ const projects = [
     githubLink: "https://github.com/alaspuresujay/react-galary",
     externalLink: "https://alaspuresujay.github.io/react-galary/",
     data: null,
+  },
+  {
+    title: "Chrome Extension App - Scaler-Timer",
+    slug: "scaler-timer",
+    description:
+      "A Simple time tracking extension for Scaler.com. It tracks the time taken by the user to solve the DSA problem. ",
+    tags: ["Javascript", "Chrome-Extension"],
+    githubLink: "https://github.com/alaspuresujay/scaler-timer",
+    externalLink: null,
+    data: null,
+    case: false,
   },
   {
     title: "React Native Todo App",
