@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import projects from "Projects";
 const ProjectContext = React.createContext();
 
@@ -6,21 +6,14 @@ export function useProject() {
   return useContext(ProjectContext);
 }
 export default function ProjectProvider({ children }) {
-  const [scrolled, setScrolled] = useState(0);
   function getProject(slug) {
     return projects.find((project) => project.slug === slug);
   }
 
-  const updateThrottled = throttle((e) => {
-    setScrolled(e.scrollY);
-  }, 100);
-
-  useEffect(() => {
-    window.onscroll = () => {
-      updateThrottled(window);
-    };
-    return () => {};
-  }, []);
+  const getProjectsFromJson = async (slug) => {
+    const data = await import(`Projects/json/${slug}`);
+    return data.default;
+  };
 
   function throttle(cb, delay = 1000) {
     let shouldWait = false;
@@ -48,8 +41,8 @@ export default function ProjectProvider({ children }) {
   }
   const value = {
     getProject,
-    scrolled,
     throttle,
+    getProjectsFromJson,
   };
   return <ProjectContext.Provider value={value}>{children}</ProjectContext.Provider>;
 }

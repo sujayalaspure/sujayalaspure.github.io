@@ -3,8 +3,12 @@ import { motion } from "framer-motion";
 import { Parallax } from "react-parallax";
 import MouseScrollAnimation from "Components/atoms/MouseScrollAnimation";
 import styled from "styled-components";
+import { assetsUrl, isValidURL } from "constant";
 
-export default function Banner({ index, title, imgsrc }) {
+export default function Banner({ index, title, imgsrc, slug }) {
+  // console.log(index, title, imgsrc, slug);
+  const imgUrl = isValidURL(imgsrc) ? imgsrc : `${assetsUrl}ProjectImg/${slug}/${imgsrc}`;
+  // console.log(imgUrl);
   return (
     <div style={{ padding: index === 0 ? "0" : "10% 0" }}>
       {title && (
@@ -14,7 +18,7 @@ export default function Banner({ index, title, imgsrc }) {
       )}
 
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 2 }}>
-        <Parallax bgImage={imgsrc} strength={300}>
+        <Parallax bgImage={imgUrl} strength={300}>
           <div style={{ height: "100vh", width: "100%", position: "relative" }}>
             {index === 0 && <MouseScrollAnimation />}
           </div>

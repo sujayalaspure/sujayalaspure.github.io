@@ -30,7 +30,7 @@
   padding: 20% 10% 10%;
 }
 
-.project-title {
+.tophead-container .project-title {
   font-size: clamp(1rem, 1vw, 3rem);
   line-height: 250%;
   color: var(--lightest-slate);

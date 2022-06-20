@@ -54,6 +54,7 @@ export default function Hero() {
         </div>
       </motion.div>
       <MouseScrollAnimation />
+      {/* <SuperMario /> */}
     </div>
   )
 }

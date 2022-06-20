@@ -33,6 +33,8 @@ function App() {
     )
   }
 
+  console.log("App");
+
   return (
     <>
       <ContextProvider>

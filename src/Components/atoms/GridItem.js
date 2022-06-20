@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React, { memo, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import styled from "styled-components";
 import { colors, theme } from "../../Styles";
 
-export default function GridItem({ img, caption = null, right = false }) {
+function GridItem({ img, caption = null, right = false }) {
   const { ref, inView } = useInView({ threshold: 0.2 });
   const animation = useAnimation();
 
@@ -22,10 +22,7 @@ export default function GridItem({ img, caption = null, right = false }) {
   }, [inView]);
   return (
     <Container ref={ref}>
-      <motion.div
-        initial={{ x: right ? "200vw" : "-100vw" }}
-        animate={animation}
-      >
+      <motion.div initial={{ x: right ? "200vw" : "-100vw" }} animate={animation}>
         <Image src={img} alt="" />
         {caption && (
           <Caption>
@@ -68,3 +65,5 @@ const Caption = styled.div`
     padding: 0 5%;
   }
 `;
+
+export default memo(GridItem);

@@ -1,0 +1,81 @@
+[
+  {
+    "type": "bannerImage",
+    "value": {
+      "title": "",
+      "imgsrc": "smarthm-banner.webp"
+    }
+  },
+  {
+    "type": "tophead",
+    "value": {
+      "caseName": "SmartHM",
+      "caseBio": "Control All your home Devices from your fingertip"
+    }
+  },
+  {
+    "type": "brief",
+    "value": {
+      "briefTitle": "The Challange",
+      "content": "Smarthm is an application to control all your smarthome appliances. Be it TV, light,Fan, or anything. The first and foremost important thing was to build an app which is user friendly, powerful and scalable at any extent. I choose to go with React Native because of cross platform and scalability. I audition dozens of design to keep app interaction simplest yet powerful.",
+      "links": [
+        {
+          "linkName": "Play Store",
+          "src": "https://play.google.com/store/apps/details?id=com.indivisible.smarthm"
+        }
+      ]
+    }
+  },
+  {
+    "type": "bannerImage",
+    "value": {
+      "title": "The design won't leave you cold",
+      "imgsrc": "designSystem.webp"
+    }
+  },
+  {
+    "type": "splitshow",
+    "value": {
+      "title": "",
+      "left": [
+        {
+          "imgsrc": "logo.png",
+          "caption": "Our first task was to give SmartHM a logotype and corporate identity."
+        },
+        {
+          "imgsrc": "logo_name.webp",
+          "caption": ""
+        },
+        {
+          "imgsrc": "home.webp",
+          "caption": "The homepage style went through several phases and multiple iterations."
+        },
+        {
+          "imgsrc": "profile.webp",
+          "caption": ""
+        }
+      ],
+      "right": [
+        {
+          "imgsrc": "icon.webp",
+          "caption": ""
+        },
+        {
+          "imgsrc": "loginui.webp",
+          "caption": "To ease the user onboarding process, We have setup the login with email as well as Google auth."
+        },
+        {
+          "imgsrc": "drawer.webp",
+          "caption": ""
+        }
+      ]
+    }
+  },
+  {
+    "type": "brief",
+    "value": {
+      "briefTitle": "Extra attention to detail development",
+      "content": "We were motivated to focus on every little detail including icon animation, to really enhance the user interaction."
+    }
+  }
+]

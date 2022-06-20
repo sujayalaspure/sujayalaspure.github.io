@@ -52,3 +52,8 @@ export const socialLink = [
     color: "#5ec6f2",
   },
 ]
+
+export function isValidURL(string) {
+  var res = string.match(/(http(s)?:\/\/.)/);
+  return res !== null;
+}

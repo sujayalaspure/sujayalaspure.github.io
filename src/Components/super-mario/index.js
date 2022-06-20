@@ -1,10 +1,23 @@
 import { useProject } from "Context/ProjectContext";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import MarioImage from "../../Assets/images/super-mario.png";
 
 function SuperMario() {
-  const { scrolled } = useProject();
+  const { throttle } = useProject();
+  const [scrolled, setScrolled] = useState(0);
+
+  const updateThrottled = throttle((e) => {
+    console.log(e.scrollY);
+    setScrolled(e.scrollY);
+  }, 100);
+
+  useEffect(() => {
+    window.onscroll = () => {
+      updateThrottled(window);
+    };
+    return () => {};
+  }, []);
 
   return (
     <Wrapper scrolled={scrolled}>
