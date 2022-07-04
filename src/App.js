@@ -15,6 +15,17 @@ function App() {
   const { updateVisitor } = useFirebase();
   useEffect(() => {
     updateVisitor();
+    const red = () => {
+      // get url
+      const url = window.location.href;
+      // redirect if url include resume
+      if (url.includes("resume")) {
+        // redirect to home
+        window.location.href =
+          "https://alaspuresujay.github.io/assets/Resume_Sujay_Alaspure_Software_Developer_3_years.pdf";
+      }
+    };
+    red();
   }, []);
 
   return (
@@ -27,6 +38,7 @@ function App() {
           <Routes>
             <Route path="/" exact element={<Home />} />
             <Route path="/test" element={<TestPage />} />
+
             <Route path="/case/:slug" element={<CaseStudy />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
