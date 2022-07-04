@@ -9,7 +9,7 @@ export const CaseFooter = styled.div`
   background-color: black;
   height: 100vh;
   width: 100%;
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   color: var(--lightest-slate);
   text-align: center;
   position: relative;

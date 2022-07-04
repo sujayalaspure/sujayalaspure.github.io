@@ -95,3 +95,19 @@
   align-items: center;
   justify-content: center;
 }
+
+/* Scroll Snap code */
+
+.snap-container {
+  /* display: flex; */
+  overflow: auto;
+  /* outline: 1px dashed lightgray; */
+  /* flex: none; */
+  scroll-snap-type: y proximity;
+  height: 100vh;
+  /* width: 100vw; */
+}
+
+.snap-me {
+  scroll-snap-align: start;
+}
