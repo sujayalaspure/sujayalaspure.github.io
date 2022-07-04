@@ -16,11 +16,8 @@ function App() {
   useEffect(() => {
     updateVisitor();
     const red = () => {
-      // get url
       const url = window.location.href;
-      // redirect if url include resume
-      if (url.includes("resume")) {
-        // redirect to home
+      if (url.includes("/resume")) {
         window.location.href =
           "https://alaspuresujay.github.io/assets/Resume_Sujay_Alaspure_Software_Developer_3_years.pdf";
       }
