@@ -1,19 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "styles/pages/Home.css";
 import Hero from "Components/Hero/Hero";
 import Section, { SectionHeading } from "Components/atoms/Section";
-import Footer from "Components/atoms/Footer";
 import projects from "Projects";
-import GithubCorner from "Components/atoms/GithubCorner";
+import { GithubCorner, GetInTouch, Footer } from "Components/atoms";
 import AboutMe from "Components/Organisms/AboutMe";
-import GetInTouch from "Components/atoms/GetInTouch";
 import ProjectCard from "Components/molecules/ProjectCard";
 import FeaturedProjectCard from "Components/featured-project-card";
 import Experience from "Components/experience";
-import { useState } from "react";
-import { useEffect } from "react";
 import LogoIcon from "Assets/LogoIcon";
-import SuperMario from "Components/super-mario";
+
 function Home() {
   const [loading, setLoading] = useState(true);
 
@@ -23,16 +19,10 @@ function Home() {
     }, 1000);
   }, []);
 
-  console.log("home");
-
   if (loading) return <LogoIcon />;
   return (
     <div className="home">
       <GithubCorner />
-      <SuperMario />
-
-      {/* <div class="div-sticky-class top">Test</div> */}
-
       <Hero />
       <AboutMe number="01" />
 

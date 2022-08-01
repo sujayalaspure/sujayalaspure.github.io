@@ -8,7 +8,7 @@ const expData = [
     details: [
       {
         id: "1",
-        content: `Worked with a team of 10 Developers to build a Super App for <a href='https://play.google.com/store/apps/details?id=com.stanzaliving.sigma' target='_blank' class='link-item' >Stanza Living</a>. An ambitious startup working in Living Space.`,
+        content: `Managed a process of re-engineering mobile Application to improve end-to-end service processes for <a href='https://play.google.com/store/apps/details?id=com.stanzaliving.sigma' target='_blank' class='link-item' >Stanza Living</a>.`,
       },
       {
         id: "2",
@@ -24,6 +24,10 @@ const expData = [
     start: "Aug 2020",
     end: "Jan 2021",
     details: [
+      {
+        id: "1qa",
+        content: `Co-founded a startup aiming to develop affordable smart home solution products.`,
+      },
       {
         id: "1",
         content: `Developed and shipped highly interactive android applications for Home Automation <a href='https://play.google.com/store/apps/details?id=com.indivisible.smarthm' target='_blank' class='link-item' >SmartHM</a>.`,

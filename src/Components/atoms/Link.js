@@ -15,10 +15,11 @@ export function Link(props) {
         target={newTab ? "_blank" : "_self"}
         type={button ? "button" : undefined}
         rel="noreferrer"
-        {...other}
-      >
+        {...other}>
         {children}
       </a>
     </>
   );
 }
+
+export default Link;

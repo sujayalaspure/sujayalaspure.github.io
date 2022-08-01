@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { FaGooglePlay, FaAppStoreIos } from "react-icons/fa";
 import ReactHtmlParser from "react-html-parser";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 
 import {
   FeaturedProjectCardContainer,
@@ -15,8 +17,6 @@ import {
   Link,
   Projectimage,
 } from "./style";
-import { useInView } from "react-intersection-observer";
-import { motion, useAnimation } from "framer-motion";
 
 const FeaturedProjectCard = ({
   title,
