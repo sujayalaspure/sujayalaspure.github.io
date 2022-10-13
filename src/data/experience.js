@@ -8,7 +8,11 @@ const expData = [
     details: [
       {
         id: "1",
-        content: `Managed a process of re-engineering mobile Application to improve end-to-end service processes for <a href='https://play.google.com/store/apps/details?id=com.stanzaliving.sigma' target='_blank' class='link-item' >Stanza Living</a>.`,
+        content: `Implemented the offline first functionality from scratch using MongoDB Realm database `,
+      },
+      {
+        id: "2",
+        content: `Managed a process of re-engineering mobile Application to improve end-to-end service processes and user experience.`,
       },
       {
         id: "2",
@@ -63,6 +67,6 @@ const expData = [
       },
     ],
   },
-];
+]
 
-export default expData;
+export default expData
