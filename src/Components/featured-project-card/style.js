@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import COLORS from "utils/Colors";
+import styled from "styled-components"
+import COLORS from "utils/Colors"
 
 export const FeaturedProjectCardContainer = styled.div`
   /* border: 1px solid #eaeaea; */
@@ -24,7 +24,7 @@ export const FeaturedProjectCardContainer = styled.div`
     /* border-bottom: 2px solid var(--lightest-slate); */
     box-shadow: 7px 7px 55px 0 ${COLORS.lightestnavy};
   }
-`;
+`
 
 export const FeaturedProjectContent = styled.div`
   position: absolute;
@@ -37,7 +37,7 @@ export const FeaturedProjectContent = styled.div`
     z-index: 10;
     text-align: left;
   }
-`;
+`
 
 export const Overline = styled.div`
   margin: 10px 0px;
@@ -45,14 +45,14 @@ export const Overline = styled.div`
   font-family: var(--font-mono);
   font-size: var(--fz-xs);
   font-weight: 400;
-`;
+`
 
 export const Title = styled.h3`
   color: var(--lightest-slate);
   font-size: clamp(24px, 5vw, 28px);
   transition: var(--transition);
   cursor: pointer;
-`;
+`
 
 export const Description = styled.div`
   box-shadow: 0 10px 30px -15px var(--navy-shadow);
@@ -93,33 +93,7 @@ export const Description = styled.div`
       display: none;
     }
   }
-`;
-
-export const Tags = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 2;
-  margin: 25px 0px 10px;
-  padding: 0px;
-  list-style: none;
-  justify-content: ${(_) => (_.right ? "flex-end" : "flex-start")};
-  font-style: italic;
-  @media (max-width: 768px) {
-    margin: 4vh 0;
-    font-style: italic;
-  }
-`;
-
-export const Tag = styled.li`
-  margin: 0px 10px 0px 0px;
-  color: var(--light-slate);
-  font-family: var(--font-mono);
-  font-size: var(--fz-xs);
-  white-space: nowrap;
-  padding: 2px 8px;
-  border-radius: 10px;
-`;
+`
 
 export const ProjectLinks = styled.div`
   display: flex;
@@ -133,7 +107,7 @@ export const ProjectLinks = styled.div`
   @media (max-width: 768px) {
     justify-content: flex-end;
   }
-`;
+`
 
 export const Link = styled.a`
   cursor: pointer;
@@ -148,7 +122,7 @@ export const Link = styled.a`
     height: 22px;
     margin-top: -4px;
   }
-`;
+`
 
 export const Projectimage = styled.div`
   width: 60%;
@@ -210,4 +184,4 @@ export const Projectimage = styled.div`
       filter: grayscale(100%) contrast(1) brightness(20%);
     } */
   }
-`;
+`

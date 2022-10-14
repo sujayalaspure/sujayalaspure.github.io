@@ -11,12 +11,11 @@ import {
   Overline,
   Title,
   Description,
-  Tags,
-  Tag,
   ProjectLinks,
   Link,
   Projectimage,
 } from "./style"
+import TagGroup from "Components/atoms/TagGroup"
 
 const FeaturedCard = ({
   title,
@@ -60,11 +59,10 @@ const FeaturedCard = ({
             <Description right={right}>
               <p>{ReactHtmlParser(description)}</p>
             </Description>
-            <Tags right={right}>
-              {tags.map((tag, index) => (
-                <Tag key={index}>{tag}</Tag>
-              ))}
-            </Tags>
+
+            <TagGroup right={right} tags={tags} />
+
+            {/* TODO: Make this as array and fetch icon dynamically */}
             <ProjectLinks right={right}>
               {githubLink && (
                 <Link href={githubLink} target="_blank" rel="noreferrer">
