@@ -1,22 +1,23 @@
-import React from "react";
-import COLORS from "utils/Colors";
-import "./styleLogo.css";
+import React from "react"
+import COLORS from "utils/Colors"
+import "./styleLogo.css"
 
-const LogoIcon = ({ color }) => {
-  const { innerWidth: width } = window;
+const LogoIcon = ({ color, zoom }) => {
+  const { innerWidth: width } = window
 
-  const strokeColor = color || COLORS.lightestnavy;
-  const style = { stroke: strokeColor };
+  const strokeColor = color || COLORS.lightestnavy
+  const style = { stroke: strokeColor }
   return (
     <div className="container-logo">
       <svg
         style={{
-          zoom: width > 1000 ? 1 : 0.6,
+          zoom: zoom ? zoom : width > 1000 ? 1 : 0.6,
         }}
         className="logo-icon"
         xmlns="http://www.w3.org/2000/svg"
         width="439"
-        height="363">
+        height="363"
+      >
         {/* <!-- Outer Ring --> */}
         <path
           className="outer-ring stroke"
@@ -50,7 +51,7 @@ const LogoIcon = ({ color }) => {
         />
       </svg>
     </div>
-  );
-};
+  )
+}
 
-export default LogoIcon;
+export default LogoIcon

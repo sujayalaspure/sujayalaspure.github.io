@@ -1,5 +1,7 @@
+import LogoIcon from "Assets/LogoIcon"
 import { Tag, Tags } from "Components/featured-project-card/style"
 import React, { useEffect, useState } from "react"
+import { FiExternalLink } from "react-icons/fi"
 import { getMediumPosts } from "service"
 import { MediumPostsContainer, PostContentWrapper, PostWrapper } from "./style"
 
@@ -16,9 +18,9 @@ function MediumPosts() {
   }, [])
   return (
     <MediumPostsContainer>
-      {mediumPosts?.map((post, index) => (
-        <Post key={index} post={post} />
-      ))}
+      {mediumPosts && mediumPosts?.map((post, index) => <Post key={index} post={post} />)}
+
+      {!mediumPosts && <LogoIcon zoom={0.5} />}
     </MediumPostsContainer>
   )
 }
@@ -38,8 +40,9 @@ const Post = ({ post }) => {
   const description =
     post?.description.replace(/<h3>.*<\/h3>|<figcaption>.*<\/figcaption>|<[^>]*>/gm, "").substring(0, 120) + "..."
   const pubTime = new Date(post?.pubDate).toLocaleString("en-IN", options)
+
   return (
-    <PostWrapper href={post.link} target="_blank" rel="noreferrer">
+    <PostWrapper>
       <img src={post?.thumbnail} alt={title} />
       <PostContentWrapper>
         <h3 className="title">{title}</h3>
@@ -51,6 +54,10 @@ const Post = ({ post }) => {
           ))}
         </Tags>
       </PostContentWrapper>
+
+      <a className="read-more" href={post?.link} target="_blank" rel="noreferrer">
+        <FiExternalLink />
+      </a>
     </PostWrapper>
   )
 }
