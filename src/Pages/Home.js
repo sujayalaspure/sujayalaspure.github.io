@@ -48,7 +48,12 @@ function Home() {
     },
   ]
 
-  if (loading) return <LogoIcon />
+  if (loading)
+    return (
+      <div className="full-screen">
+        <LogoIcon />
+      </div>
+    )
   return (
     <div className="home">
       <GithubCorner />

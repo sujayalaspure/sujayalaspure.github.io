@@ -4,7 +4,7 @@ import "./App.css"
 import ContextProvider from "Context/ContextProvider"
 import { MousePointer, SomeRandomAnim } from "Components/atoms"
 import LogoIcon from "Assets/LogoIcon"
-import useFirebase from "utils/firebase"
+// import useFirebase from "utils/firebase"
 
 const Home = React.lazy(() => import("Pages/Home"))
 const TestPage = React.lazy(() => import("Pages/TestPage"))
@@ -12,9 +12,9 @@ const CaseStudy = React.lazy(() => import("Pages/CaseStudy/CaseStudy"))
 const NotFound = React.lazy(() => import("Pages/NotFound"))
 
 function App() {
-  const { updateVisitor } = useFirebase()
+  // const { updateVisitor } = useFirebase()
   useEffect(() => {
-    updateVisitor()
+    // updateVisitor()
     const resumeRedirect = () => {
       const url = window.location.href
       if (url.includes("/resume")) {
@@ -25,13 +25,21 @@ function App() {
     resumeRedirect()
   }, [])
 
+  const FallbackLoader = () => {
+    return (
+      <div className="full-screen">
+        <LogoIcon />
+      </div>
+    )
+  }
+
   return (
     <>
       <ContextProvider>
         <MousePointer />
         <SomeRandomAnim />
 
-        <Suspense fallback={<LogoIcon />}>
+        <Suspense fallback={<FallbackLoader />}>
           <Routes>
             <Route path="/" exact element={<Home />} />
             <Route path="/test" element={<TestPage />} />
