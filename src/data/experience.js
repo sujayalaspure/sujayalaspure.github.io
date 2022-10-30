@@ -8,10 +8,14 @@ const expData = [
     details: [
       {
         id: "1",
-        content: `Managed a process of re-engineering mobile Application to improve end-to-end service processes for <a href='https://play.google.com/store/apps/details?id=com.stanzaliving.sigma' target='_blank' class='link-item' >Stanza Living</a>.`,
+        content: `Lead the POC of integrating the <b>offine first fuctionality</b> in the mobile app using <b>MongoDB Realm</b>. Successfully managed to get the client to go ahead with the POC.`,
       },
       {
         id: "2",
+        content: `Managed a process of re-engineering mobile Application to improve end-to-end service processes for startup`,
+      },
+      {
+        id: "3",
         content: `Communicate with multi-disciplinary teams of developers, designers, and clients on a daily basis.`,
       },
     ],
@@ -63,6 +67,6 @@ const expData = [
       },
     ],
   },
-];
+]
 
-export default expData;
+export default expData

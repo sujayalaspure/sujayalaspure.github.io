@@ -1,29 +1,29 @@
-import React, { Suspense, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
-import "./App.css";
-import ContextProvider from "Context/ContextProvider";
-import { MousePointer, SomeRandomAnim } from "Components/atoms";
-import LogoIcon from "Assets/LogoIcon";
-import useFirebase from "utils/firebase";
+import React, { Suspense, useEffect } from "react"
+import { Routes, Route } from "react-router-dom"
+import "./App.css"
+import ContextProvider from "Context/ContextProvider"
+import { MousePointer, SomeRandomAnim } from "Components/atoms"
+import LogoIcon from "Assets/LogoIcon"
+// import useFirebase from "utils/firebase"
 
-const Home = React.lazy(() => import("Pages/Home"));
-const TestPage = React.lazy(() => import("Pages/TestPage"));
-const CaseStudy = React.lazy(() => import("Pages/CaseStudy/CaseStudy"));
-const NotFound = React.lazy(() => import("Pages/NotFound"));
+const Home = React.lazy(() => import("Pages/Home"))
+const TestPage = React.lazy(() => import("Pages/TestPage"))
+const CaseStudy = React.lazy(() => import("Pages/CaseStudy/CaseStudy"))
+const NotFound = React.lazy(() => import("Pages/NotFound"))
 
 function App() {
-  const { updateVisitor } = useFirebase();
+  // const { updateVisitor } = useFirebase();
   useEffect(() => {
-    updateVisitor();
+    // updateVisitor();
     const red = () => {
-      const url = window.location.href;
+      const url = window.location.href
       if (url.includes("/resume")) {
         window.location.href =
-          "https://alaspuresujay.github.io/assets/Resume_Sujay_Alaspure_Software_Developer_3_years.pdf";
+          "https://alaspuresujay.github.io/assets/Resume_Sujay_Alaspure_Software_Developer_3_years.pdf"
       }
-    };
-    red();
-  }, []);
+    }
+    red()
+  }, [])
 
   return (
     <>
@@ -41,7 +41,7 @@ function App() {
         </Suspense>
       </ContextProvider>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
