@@ -9,6 +9,7 @@ export const ProfileLinks = {
   linkedin: "https://www.linkedin.com/in/alaspuresujay/",
   instagram: "https://www.instagram.com/alaspuresujay/",
   leetcode: "https://leetcode.com/alaspuresujay/",
+  medium: "https://alaspuresujay.medium.com/",
   resume: resumeLink,
 }
 
@@ -16,27 +17,28 @@ export { default as profile } from "./Assets/images/profile.jpg"
 export const socialLink = [
   {
     name: "Github",
-    Icon: <FiGithub />,
+    Icon: <FaGithub />,
     link: ProfileLinks.github,
     color: "#caccd1",
   },
   {
     name: "LinkedIn",
-    Icon: <FiLinkedin />,
+    Icon: <FaLinkedinIn />,
     link: ProfileLinks.linkedin,
     color: "#0077b5",
   },
+
   {
-    name: "Instagram",
-    Icon: <FiInstagram />,
-    link: ProfileLinks.instagram,
-    color: "#e1306c",
+    name: "Medium",
+    Icon: <FaMediumM />,
+    link: ProfileLinks.medium,
+    color: "#caccd1",
   },
   {
-    name: "E-Mail",
-    Icon: <FiMail />,
-    link: "mailto:alaspuresujay@gmail.com",
-    color: "#ff0000",
+    name: "Instagram",
+    Icon: <FaInstagram />,
+    link: ProfileLinks.instagram,
+    color: "#e1306c",
   },
   {
     name: "Leetcode",
@@ -46,7 +48,7 @@ export const socialLink = [
   },
   {
     name: "Resume",
-    Icon: <FiDownloadCloud />,
+    Icon: <FaDownload />,
     link: resumeLink,
     color: "#5ec6f2",
   },

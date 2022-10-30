@@ -1,15 +1,15 @@
-import React, { useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import LeftSideBar from "./LeftSideBar";
-import RightSideBar from "./RightSideBar";
-import "styles/components/Hero.css";
-import { Link, MouseScrollAnimation } from "Components/atoms";
-import { ProfileLinks } from "constant";
+import React, { useEffect } from "react"
+import { motion, useAnimation } from "framer-motion"
+import { useInView } from "react-intersection-observer"
+import LeftSideBar from "./LeftSideBar"
+import RightSideBar from "./RightSideBar"
+import "styles/components/Hero.css"
+import { Link, MouseScrollAnimation } from "Components/atoms"
+import { ProfileLinks, resumeLink } from "constant"
 
 export default function Hero() {
-  const { ref, inView } = useInView({ threshold: 0.2 });
-  const animation = useAnimation();
+  const { ref, inView } = useInView({ threshold: 0.2 })
+  const animation = useAnimation()
 
   useEffect(() => {
     if (inView) {
@@ -20,9 +20,9 @@ export default function Hero() {
           duration: 1,
           bounce: 0.3,
         },
-      });
+      })
     }
-  }, [inView]);
+  }, [inView])
   return (
     <div ref={ref} className="hero">
       <LeftSideBar />
@@ -37,12 +37,12 @@ export default function Hero() {
             Checkout my GitHub!
           </Link>
 
-          {/* <Link style={{ margin: "0 16px" }} href={resumeLink}>
+          <Link button style={{ margin: "0 16px" }} href={resumeLink}>
             Get Resume
-          </Link> */}
+          </Link>
         </div>
       </motion.div>
       <MouseScrollAnimation />
     </div>
-  );
+  )
 }
