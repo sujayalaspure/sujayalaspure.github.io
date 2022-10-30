@@ -2,6 +2,7 @@ import { smarthmStructure, banner } from "./Smarthm"
 import cryptoBanner from "./Cryptoverse/banner.webp"
 import keepBanner from "./Keeper/keep-banner.webp"
 import musicAppStucture from "./music-app"
+import ScratchAppThumb from "./scratch-app/Scratch-app-thumbnail.webp"
 const projects = [
   {
     featured: true,
@@ -28,7 +29,7 @@ const projects = [
     data: null,
   },
   {
-    featured: true,
+    featured: false,
     title: "Cryptoverse",
     slug: "cryptoverse",
     image: cryptoBanner,
@@ -99,6 +100,18 @@ const projects = [
     tags: ["Python", "OpenCV", "Computer Vision"],
     githubLink: "https://github.com/alaspuresujay/color-detection",
     youtubeLink: "https://youtu.be/1-b7aUZ1dzo",
+    data: null,
+    case: false,
+  },
+  {
+    featured: true,
+    image: ScratchAppThumb,
+    title: "MIT Scratch app clone",
+    slug: "mit-scratch-app",
+    description: `This project is a clone of <a class='link-item' href="https://scratch.mit.edu/projects/editor/">Scratch app from MIT</a>. Having fully featured Drag and Drop UI and animation based on Scratch Blocks.`,
+    tags: ["ReactJs", "React-DND", "Context-API"],
+    githubLink: "https://github.com/alaspuresujay/scratch-mit-clone",
+    externalLink: "https://sujay-scratch-mit.netlify.app/",
     data: null,
     case: false,
   },

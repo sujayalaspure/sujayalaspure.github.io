@@ -16,7 +16,7 @@ export const PostWrapper = styled.div`
   border-radius: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
-  cursor: pointer;
+  /* cursor: pointer; */
   position: relative;
   img {
     width: 35%;
@@ -36,6 +36,7 @@ export const PostWrapper = styled.div`
     background-color: ${colors.accent}33;
     height: 100%;
     width: 50px;
+    cursor: pointer;
 
     align-items: center;
     justify-content: center;

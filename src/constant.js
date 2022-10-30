@@ -1,8 +1,7 @@
-import { FiGithub, FiInstagram, FiLinkedin, FiMail, FiDownloadCloud } from "react-icons/fi"
-
 import { SiLeetcode } from "react-icons/si"
+import { FaMediumM, FaLinkedinIn, FaInstagram, FaGithub, FaDownload } from "react-icons/fa"
 
-export const resumeLink = "/assets/Sujay_Alaspure_Software_Developer_3_years.pdf"
+export const resumeLink = "/assets/Resume_Sujay_Alaspure_Software_Developer_3_years.pdf"
 
 export const ProfileLinks = {
   github: "https://github.com/alaspuresujay",
@@ -34,12 +33,12 @@ export const socialLink = [
     link: ProfileLinks.medium,
     color: "#caccd1",
   },
-  {
-    name: "Instagram",
-    Icon: <FaInstagram />,
-    link: ProfileLinks.instagram,
-    color: "#e1306c",
-  },
+  // {
+  //   name: "Instagram",
+  //   Icon: <FaInstagram />,
+  //   link: ProfileLinks.instagram,
+  //   color: "#e1306c",
+  // },
   {
     name: "Leetcode",
     Icon: <SiLeetcode />,
@@ -47,7 +46,7 @@ export const socialLink = [
     color: "#fbb034",
   },
   {
-    name: "Resume",
+    name: "Download Resume",
     Icon: <FaDownload />,
     link: resumeLink,
     color: "#5ec6f2",
