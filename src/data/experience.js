@@ -8,14 +8,14 @@ const expData = [
     details: [
       {
         id: "1",
-        content: `Implemented the offline first functionality from scratch using MongoDB Realm database `,
+        content: `Lead the POC of integrating the <b>offine first fuctionality</b> in the mobile app using <b>MongoDB Realm</b>. Successfully managed to get the client to go ahead with the POC.`,
       },
       {
         id: "2",
-        content: `Managed a process of re-engineering mobile Application to improve end-to-end service processes and user experience.`,
+        content: `Managed a process of re-engineering mobile Application to improve end-to-end service processes for startup`,
       },
       {
-        id: "2",
+        id: "3",
         content: `Communicate with multi-disciplinary teams of developers, designers, and clients on a daily basis.`,
       },
     ],

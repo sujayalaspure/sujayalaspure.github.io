@@ -1,7 +1,8 @@
-import { SiLeetcode } from "react-icons/si"
-import { FaMediumM, FaLinkedinIn, FaInstagram, FaGithub, FaDownload } from "react-icons/fa"
+import { FiGithub, FiInstagram, FiLinkedin, FiMail, FiDownloadCloud } from "react-icons/fi"
 
-export const resumeLink = "/assets/Resume_Sujay_Alaspure_Software_Developer_3_years.pdf"
+import { SiLeetcode } from "react-icons/si"
+
+export const resumeLink = "/assets/Sujay_Alaspure_Software_Developer_3_years.pdf"
 
 export const ProfileLinks = {
   github: "https://github.com/alaspuresujay",

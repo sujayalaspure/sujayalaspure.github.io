@@ -1,7 +1,7 @@
-import { smarthmStructure, banner } from "./Smarthm";
-import cryptoBanner from "./Cryptoverse/banner.webp";
-import keepBanner from "./Keeper/keep-banner.webp";
-import musicAppStucture from "./music-app";
+import { smarthmStructure, banner } from "./Smarthm"
+import cryptoBanner from "./Cryptoverse/banner.webp"
+import keepBanner from "./Keeper/keep-banner.webp"
+import musicAppStucture from "./music-app"
 const projects = [
   {
     featured: true,
@@ -50,7 +50,7 @@ const projects = [
     data: null,
   },
   {
-    title: "Chrome Extension App - Scaler-Timer",
+    title: "Chrome Extension App : Scaler-Timer",
     slug: "scaler-timer",
     description:
       "A Simple time tracking extension for Scaler.com. It tracks the time taken by the user to solve the DSA problem. ",
@@ -102,6 +102,6 @@ const projects = [
     data: null,
     case: false,
   },
-];
+]
 
-export default projects;
+export default projects
