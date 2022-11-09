@@ -22,7 +22,7 @@ export const Tags = styled.ul`
   justify-content: ${(_) => (_.right ? "flex-end" : "flex-start")};
   font-style: italic;
   @media (max-width: 768px) {
-    margin: 4vh 0;
+    margin: 12px 0;
     font-style: italic;
   }
 `

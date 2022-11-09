@@ -4,7 +4,7 @@ import TagGroup from "Components/atoms/TagGroup"
 import React, { useEffect, useState } from "react"
 import { FiExternalLink } from "react-icons/fi"
 import { getMediumPosts } from "service"
-import { MediumPostsContainer, PostContentWrapper, PostWrapper } from "./style"
+import { MediumPostsContainer, PostContentWrapper, PostImage, PostWrapper } from "./style"
 
 function MediumPosts() {
   const [mediumPosts, setMediumPosts] = useState([])
@@ -45,7 +45,7 @@ const Post = ({ post }) => {
 
   return (
     <PostWrapper>
-      <img src={post?.thumbnail} alt={title} />
+      <PostImage src={post?.thumbnail} alt={title} />
       <PostContentWrapper>
         <h3 className="title">{title}</h3>
         <p className="pub-time">{pubTime}</p>

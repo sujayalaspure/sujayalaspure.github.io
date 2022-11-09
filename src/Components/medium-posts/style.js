@@ -4,11 +4,9 @@ import { colors } from "Styles"
 export const MediumPostsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
   justify-content: flex-start;
 `
 export const PostWrapper = styled.div`
-  /* max-height: 158px; */
   display: flex;
   align-items: center;
   border: 1px solid ${colors.slate};
@@ -16,16 +14,7 @@ export const PostWrapper = styled.div`
   border-radius: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
-  /* cursor: pointer; */
   position: relative;
-  img {
-    width: 35%;
-    /* height: 80%; */
-    max-height: 138px;
-    margin-right: 1.5rem;
-    object-fit: cover;
-  }
-  /* transition: var(--transition); */
 
   .read-more {
     position: absolute;
@@ -42,6 +31,17 @@ export const PostWrapper = styled.div`
     justify-content: center;
     transition: var(--transition);
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    .read-more {
+      display: flex;
+      width: 100%;
+      height: 50px;
+      top: calc(100% - 50px);
+    }
+  }
+
   &:hover {
     .read-more {
       display: flex;
@@ -49,17 +49,24 @@ export const PostWrapper = styled.div`
   }
 `
 
-export const PostImageWrapper = styled.div`
-  width: 150px;
-  /* height: 100%; */
-  .thumbnail {
+export const PostImage = styled.img`
+  width: 35%;
+  max-height: 138px;
+  margin-right: 1.5rem;
+  object-fit: cover;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+    max-height: calc(100% - 60px);
+    margin-right: 0;
+    margin-bottom: 1rem;
   }
 `
 
 export const PostContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  /* flex: 0.7; */
   .title {
   }
   .pub-time {
@@ -67,11 +74,26 @@ export const PostContentWrapper = styled.div`
     display: block;
     margin-top: 5px;
     margin-bottom: 8px;
+    font-size: 14px;
   }
   .description {
     margin-bottom: -1rem;
   }
   .categories {
     margin: 1.5rem 0 0 -10px;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 50px;
+    .pub-time {
+      margin-bottom: -5px;
+    }
+    .description {
+      display: none;
+      margin-bottom: 0;
+    }
+    .categories {
+      margin: 0;
+    }
   }
 `
