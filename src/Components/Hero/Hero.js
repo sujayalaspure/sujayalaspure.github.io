@@ -6,10 +6,14 @@ import RightSideBar from "./RightSideBar"
 import "styles/components/Hero.css"
 import { Link, MouseScrollAnimation } from "Components/atoms"
 import { ProfileLinks, resumeLink } from "constant"
+import useMobile from "../../utils/useMobile"
 
 export default function Hero() {
   const { ref, inView } = useInView({ threshold: 0.2 })
   const animation = useAnimation()
+  const isMobile = useMobile()
+
+  console.log(isMobile)
 
   useEffect(() => {
     if (inView) {
@@ -33,11 +37,12 @@ export default function Hero() {
         <h1 className="NameHeading">Sujay Alaspure</h1>
         <h2 className="bio">I build things that lives on Internet.</h2>
         <div>
-          <Link button href={ProfileLinks.github}>
-            Checkout my GitHub!
-          </Link>
-
-          <Link button style={{ margin: "0 16px" }} href={resumeLink}>
+          {!isMobile && (
+            <Link button href={ProfileLinks.github} style={{ marginRight: "16px" }}>
+              Checkout my GitHub!
+            </Link>
+          )}
+          <Link newTab button href={resumeLink}>
             Get Resume
           </Link>
         </div>

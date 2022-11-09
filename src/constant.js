@@ -1,7 +1,7 @@
 import { SiLeetcode } from "react-icons/si"
 import { FaMediumM, FaLinkedinIn, FaGithub, FaDownload } from "react-icons/fa"
 
-export const resumeLink = "/assets/Resume_Sujay_Alaspure_Software_Developer_3_years.pdf"
+export const resumeLink = "/assets/Sujay_Alaspure_Software_Developer_3_years.pdf"
 
 export const ProfileLinks = {
   github: "https://github.com/alaspuresujay",
