@@ -12,6 +12,9 @@
   --lightest-slate: hsl(226, 70%, 88%);
   --white: #e6f1ff;
   --accent: hsl(33, 90%, 65%);
+  --purple: rgb(123, 31, 162);
+  --violet: rgb(103, 58, 183);
+  --pink: rgb(244, 143, 177);
   --accent-tint: hsla(33, 100%, 70%, 0.1);
   --font-sans: "Poppins", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
   --font-mono: "Roboto Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
@@ -178,8 +181,7 @@ a:hover .react-icons {
   height: 0px;
 }
 
-
-.full-screen{
+.full-screen {
   width: 100vw;
   height: 100vh;
   display: flex;
