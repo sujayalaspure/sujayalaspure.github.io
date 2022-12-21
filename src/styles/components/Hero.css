@@ -5,10 +5,9 @@
   flex-direction: column;
   justify-content: center;
   transition: var(--transition);
-  /* padding: 0 100px; */
   padding: 0 0 10%;
   margin: 0px auto;
-  /* max-width: 1000px; */
+  background: radial-gradient(ellipse 50% 80% at 50% -20%, rgba(13, 43, 185, 0.3) 0%, rgba(238, 130, 238, 0) 100%);
 }
 
 .HeaderContainer {
