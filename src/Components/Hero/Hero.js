@@ -7,7 +7,7 @@ import "styles/components/Hero.css"
 import { Link, MouseScrollAnimation } from "Components/atoms"
 import { ProfileLinks, resumeLink } from "constant"
 import useMobile from "../../utils/useMobile"
-
+import SparkleStar from "../atoms/SparkleStar"
 export default function Hero() {
   const { ref, inView } = useInView({ threshold: 0.2 })
   const animation = useAnimation()
@@ -35,7 +35,13 @@ export default function Hero() {
       <motion.div initial={{ x: "-100vw" }} animate={animation} className="HeaderContainer">
         <h3 className="MinorHeading">Hello World, my name is</h3>
         <h1 className="NameHeading">Sujay Alaspure</h1>
-        <h2 className="bio">I build things that lives on Internet.</h2>
+        <h2 className="bio">
+          I build things that lives on{" "}
+          <span className="magic">
+            <SparkleStar />
+            <span className="magic-text">Internet</span>
+          </span>
+        </h2>
         <div>
           {!isMobile && (
             <Link button href={ProfileLinks.github} style={{ marginRight: "16px" }}>

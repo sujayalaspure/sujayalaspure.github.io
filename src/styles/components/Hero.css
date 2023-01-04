@@ -5,10 +5,9 @@
   flex-direction: column;
   justify-content: center;
   transition: var(--transition);
-  /* padding: 0 100px; */
   padding: 0 0 10%;
   margin: 0px auto;
-  /* max-width: 1000px; */
+  background: radial-gradient(ellipse 50% 80% at 50% -20%, rgba(13, 43, 185, 0.3) 0%, rgba(238, 130, 238, 0) 100%);
 }
 
 .HeaderContainer {
@@ -130,4 +129,73 @@
     right: 20px;
     left: auto;
   }
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: -200% center;
+  }
+}
+
+@keyframes scale {
+  from,
+  to {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.magic {
+  display: inline-block;
+  position: relative;
+}
+
+.magic > .magic-star {
+  --size: clamp(20px, 1.5vw, 30px);
+  --star-left: 10px;
+  --star-top: 10px;
+
+  animation: scale 1000ms ease forwards;
+  display: block;
+  height: var(--size);
+  left: var(--star-left);
+  position: absolute;
+  top: var(--star-top);
+  width: var(--size);
+}
+
+.magic > .magic-star > svg {
+  animation: rotate 1300ms linear infinite;
+  display: block;
+  opacity: 0.7;
+}
+
+.magic > .magic-star > svg > path {
+  fill: var(--violet);
+}
+
+.magic > .magic-text {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(to right, var(--purple), var(--violet), var(--pink), var(--purple));
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
 }
