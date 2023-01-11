@@ -1,17 +1,12 @@
-import React from "react";
-import ReactHtmlParser from "react-html-parser";
+import React from "react"
+import ReactHtmlParser from "react-html-parser"
 
-import { Title, Content, Timeline, List, ListItem } from "./style";
-import { Link } from "Components/atoms/Link";
+import { Title, Content, Timeline, List, ListItem } from "./style"
+import { Link } from "Components/atoms/Link"
 
-const TabPanel = ({ data, value, ...other }) => {
+const TabPanel = ({ data, active }) => {
   return (
-    <Content
-      role="tabpanel"
-      id={`scrollable-auto-tabpanel-${value}`}
-      aria-labelledby={`scrollable-auto-tab-${value}`}
-      {...other}
-    >
+    <Content show={active}>
       <Title>
         <span>{data.title}</span>{" "}
         <span className="company">
@@ -27,7 +22,7 @@ const TabPanel = ({ data, value, ...other }) => {
         ))}
       </List>
     </Content>
-  );
-};
+  )
+}
 
-export default TabPanel;
+export default TabPanel

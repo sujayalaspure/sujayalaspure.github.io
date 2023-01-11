@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 import COLORS from "../../utils/Colors"
 import Tabs from "@material-ui/core/Tabs"
 import Tab from "@material-ui/core/Tab"
@@ -34,10 +34,17 @@ export const TabsRow = styled(Tabs)`
 export const TabItem = styled(Tab)`
   padding: 0 20px;
 `
+const grow = keyframes`
+ 0% { opacity: 0; transform: translateY(25px); }
+ 100% { opacity: 1;transform: translateY(0px); }
+`
 
 export const Content = styled.div`
   padding: 20px 4px;
   transition: all 0.3s ease-in-out;
+  animation-name: ${grow};
+  animation-duration: 1s;
+  display: ${(props) => (props.show ? "block" : "none")};
 `
 export const Title = styled.div`
   display: flex;
@@ -50,7 +57,7 @@ export const Title = styled.div`
   .company {
     color: ${COLORS.accent};
   }
-  @media (max-width: 768px) {
+  @media (max-width: 500px) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -70,11 +77,12 @@ export const List = styled.ul`
 export const ListItem = styled.li`
   color: ${COLORS.slate};
   font-size: 0.95rem;
-  /* display: list-item; */
   position: relative;
   padding-left: 30px;
   margin-bottom: 10px;
   text-align: -webkit-match-parent;
+  animation-name: ${grow};
+  animation-duration: 1s;
   &::before {
     content: "▹";
     position: absolute;
