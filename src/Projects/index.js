@@ -5,6 +5,18 @@ import musicAppStucture from "./music-app"
 import ScratchAppThumb from "./scratch-app/Scratch-app-thumbnail.webp"
 const projects = [
   {
+    featured: false,
+    image: ScratchAppThumb,
+    title: "Frontend Machine Coding Projects",
+    slug: "",
+    description: `This project is a machine coding implementation of some of the frontend problems. `,
+    tags: ["Calculator", "Nested Comments", "Typeahead"],
+    githubLink: "https://github.com/alaspuresujay/react-examples",
+    externalLink: "https://r-example.netlify.app/",
+    data: null,
+    case: false,
+  },
+  {
     featured: true,
     title: "Smarthm",
     slug: "smarthm",

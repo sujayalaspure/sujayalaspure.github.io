@@ -77,7 +77,7 @@ export const PostContentWrapper = styled.div`
     font-size: 14px;
   }
   .description {
-    margin-bottom: -1rem;
+    margin-bottom: 0.5rem;
   }
   .categories {
     margin: 1.5rem 0 0 -10px;
