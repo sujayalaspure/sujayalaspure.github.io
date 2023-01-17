@@ -1,9 +1,10 @@
 name: Github Pages Deploy
 
 on:
-  push:
-    tags:
-      - "V1.*"
+  pull_request:
+    branches:
+      - master
+    types: [closed]
 
 jobs:
   build:
