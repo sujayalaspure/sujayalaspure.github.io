@@ -1,16 +1,16 @@
-import React from "react";
-import AppBar from "@material-ui/core/AppBar";
+import React from "react"
+import AppBar from "@material-ui/core/AppBar"
 
-import { TabsRow, TabItem } from "./style";
-import ExpData from "data/experience";
-import COLORS from "utils/Colors";
-import TabPanel from "./TabPanel";
+import { TabsRow, TabItem } from "./style"
+import ExpData from "data/experience"
+import COLORS from "utils/Colors"
+import TabPanel from "./TabPanel"
 const Experience = () => {
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(0)
 
   const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+    setValue(newValue)
+  }
 
   return (
     <div>
@@ -30,16 +30,18 @@ const Experience = () => {
         </TabsRow>
       </AppBar>
 
-      <TabPanel value={value} data={ExpData[value]} />
+      {ExpData.map((exp, index) => (
+        <TabPanel key={index} active={value === index} data={exp} />
+      ))}
     </div>
-  );
-};
+  )
+}
 
-export default Experience;
+export default Experience
 
 function a11yProps(index) {
   return {
     id: `scrollable-auto-tab-${index}`,
     "aria-controls": `scrollable-auto-tabpanel-${index}`,
-  };
+  }
 }
