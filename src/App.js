@@ -4,6 +4,7 @@ import "./App.css"
 import ContextProvider from "Context/ContextProvider"
 import { MousePointer, SomeRandomAnim } from "Components/atoms"
 import LogoIcon from "Assets/LogoIcon"
+import { resumeLink } from "constant"
 // import useFirebase from "utils/firebase"
 
 const Home = React.lazy(() => import("Pages/Home"))
@@ -19,7 +20,7 @@ function App() {
       const url = window.location.href
       if (url.includes("/resume")) {
         window.location.href =
-          "https://alaspuresujay.github.io/assets/Resume_Sujay_Alaspure_Software_Developer_3_years.pdf"
+          `https://alaspuresujay.github.io${resumeLink}`
       }
     }
     resumeRedirect()

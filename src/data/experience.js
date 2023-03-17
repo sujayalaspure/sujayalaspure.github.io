@@ -1,10 +1,23 @@
 const expData = [
   {
+    title: "Senior Software Developer",
+    company: "Netradyne",
+    companyWebsite: "https://www.netradyne.com/",
+    start: "Feb 2023",
+    end: "Present",
+    details: [
+      {
+        id: "1",
+        content: `Revolutionizing fleet safety with advanced AI fleet dash cams for commercial vehicles.`,
+      },
+    ],
+  },
+  {
     title: "Software Developer",
     company: "Robosoft Technologies",
     companyWebsite: "https://www.robosoftin.com/",
     start: "Oct 2021",
-    end: "Present",
+    end: "Feb 2023",
     details: [
       {
         id: "1",
