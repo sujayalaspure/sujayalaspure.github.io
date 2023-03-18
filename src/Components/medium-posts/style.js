@@ -15,6 +15,7 @@ export const PostWrapper = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
   position: relative;
+  margin: 1rem 0;
 
   .read-more {
     position: absolute;
@@ -34,6 +35,7 @@ export const PostWrapper = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
+    
     .read-more {
       display: flex;
       width: 100%;

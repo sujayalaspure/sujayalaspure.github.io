@@ -31,9 +31,7 @@ const Post = ({ post }) => {
     year: "numeric",
     month: "short",
     day: "numeric",
-    hour: "numeric",
-    minute: "numeric",
-    hour12: false,
+    
   }
 
   const title = post?.title?.length > 80 ? post?.title?.substring(0, 80) + " ..." : post?.title
@@ -41,7 +39,7 @@ const Post = ({ post }) => {
   const description =
     post?.description.replace(/<h3>.*<\/h3>|<figcaption>.*<\/figcaption>|<[^>]*>/gm, "").substring(0, 120) + "..."
 
-  const pubTime = new Date(post?.pubDate).toLocaleString("en-IN", options)
+  const pubTime = new Date(post?.pubDate).toLocaleDateString("en-IN", options)
 
   return (
     <PostWrapper>
