@@ -5,17 +5,21 @@ export const MediumPostsContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  gap: 1.7rem;
 `
 export const PostWrapper = styled.div`
   display: flex;
   align-items: center;
-  border: 1px solid ${colors.slate};
+  justify-content: center;
+  width: 100%;
+  gap: 1.5rem;
+  border: 1px solid ${colors.darkslate};
   padding: 10px 20px;
   border-radius: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
   position: relative;
-  margin: 1rem 0;
+  background-color: ${colors.navy};
 
   .read-more {
     position: absolute;
@@ -35,7 +39,7 @@ export const PostWrapper = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    
+
     .read-more {
       display: flex;
       width: 100%;
@@ -52,10 +56,13 @@ export const PostWrapper = styled.div`
 `
 
 export const PostImage = styled.img`
-  width: 35%;
-  max-height: 138px;
-  margin-right: 1.5rem;
+  min-width: 220px;
+  height: 150px;
+  width: 30%;
   object-fit: cover;
+  box-sizing: border-box;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -69,7 +76,11 @@ export const PostImage = styled.img`
 export const PostContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin-right: 10px;
+  width: 70%;
   .title {
+    line-height: 1.4;
   }
   .pub-time {
     color: ${colors.slate};
@@ -79,7 +90,12 @@ export const PostContentWrapper = styled.div`
     font-size: 14px;
   }
   .description {
-    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   .categories {
     margin: 1.5rem 0 0 -10px;
