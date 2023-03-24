@@ -33,6 +33,7 @@ const Post = ({ post }) => {
   //   day: "numeric",
   // }
 
+
   const title = post?.title
 
   const description = post?.description.replace(/<h3>.*<\/h3>|<figcaption>.*<\/figcaption>|<[^>]*>/gm, "")
