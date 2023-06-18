@@ -34,12 +34,12 @@ export default function AboutMe() {
           </p>
           <p>Here are a few technologies I've been working with recently:</p>
           <ul className="skills-list">
-            <li>React Js</li>
             <li>React Native</li>
-            <li>Javascript (ES6)</li>
+            <li>React Js</li>
+            <li>Javascript/Typescript (ES6)</li>
             {/* <li>Express</li> */}
-            <li>Firebase</li>
-            <li>Python</li>
+            <li>Kotlin</li>
+            <li>SwiftUI</li>
           </ul>
         </motion.div>
         <motion.div initial={{ x: "100vw" }} animate={animation} className="image">

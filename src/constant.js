@@ -4,11 +4,11 @@ import { FaMediumM, FaLinkedinIn, FaGithub, FaDownload } from "react-icons/fa"
 export const resumeLink = "/assets/Sujay_Alaspure_Software_Developer_3_years.pdf"
 
 export const ProfileLinks = {
-  github: "https://github.com/alaspuresujay",
-  linkedin: "https://www.linkedin.com/in/alaspuresujay/",
-  instagram: "https://www.instagram.com/alaspuresujay/",
-  leetcode: "https://leetcode.com/alaspuresujay/",
-  medium: "https://alaspuresujay.medium.com/",
+  github: "https://github.com/sujayalaspure",
+  linkedin: "https://www.linkedin.com/in/sujayalaspure/",
+  instagram: "https://www.instagram.com/sujayalaspure/",
+  leetcode: "https://leetcode.com/sujayalaspure/",
+  medium: "https://sujayalaspure.medium.com/",
   resume: resumeLink,
 }
 

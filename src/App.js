@@ -19,8 +19,7 @@ function App() {
     const resumeRedirect = () => {
       const url = window.location.href
       if (url.includes("/resume")) {
-        window.location.href =
-          `https://alaspuresujay.github.io${resumeLink}`
+        window.location.href = `https://sujayalaspure.github.io${resumeLink}`
       }
     }
     resumeRedirect()

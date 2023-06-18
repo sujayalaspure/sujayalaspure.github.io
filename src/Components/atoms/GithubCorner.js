@@ -1,9 +1,9 @@
-import { ProfileLinks } from "constant";
+import { ProfileLinks } from "constant"
 
 export default function GithubCorner() {
   return (
     <a
-      href={`${ProfileLinks.github}/alaspuresujay.github.io`}
+      href={`${ProfileLinks.github}/sujayalaspure.github.io`}
       className="github-corner"
       aria-label="View source on GitHub"
     >
@@ -22,5 +22,5 @@ export default function GithubCorner() {
         ></path>
       </svg>
     </a>
-  );
+  )
 }
