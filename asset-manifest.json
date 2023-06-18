@@ -2,23 +2,23 @@
   "files": {
     "static/js/0.879d1951.chunk.js": "/static/js/0.879d1951.chunk.js",
     "main.css": "/static/css/main.d7e8b44a.chunk.css",
-    "main.js": "/static/js/main.008c1285.chunk.js",
-    "runtime-main.js": "/static/js/runtime-main.0f5690c2.js",
+    "main.js": "/static/js/main.d87844f3.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.dc4df666.js",
     "static/js/3.9394bfc3.chunk.js": "/static/js/3.9394bfc3.chunk.js",
-    "static/js/4.51f4fe48.chunk.js": "/static/js/4.51f4fe48.chunk.js",
+    "static/js/4.f15fe809.chunk.js": "/static/js/4.f15fe809.chunk.js",
     "static/css/5.e387c7f0.chunk.css": "/static/css/5.e387c7f0.chunk.css",
-    "static/js/5.d5bc6d7b.chunk.js": "/static/js/5.d5bc6d7b.chunk.js",
+    "static/js/5.56c24ec3.chunk.js": "/static/js/5.56c24ec3.chunk.js",
     "static/css/6.aca94f16.chunk.css": "/static/css/6.aca94f16.chunk.css",
-    "static/js/6.9d4a88bf.chunk.js": "/static/js/6.9d4a88bf.chunk.js",
+    "static/js/6.1906b0f3.chunk.js": "/static/js/6.1906b0f3.chunk.js",
     "static/css/7.3cc42532.chunk.css": "/static/css/7.3cc42532.chunk.css",
-    "static/js/7.ea30497a.chunk.js": "/static/js/7.ea30497a.chunk.js",
+    "static/js/7.b3ad98be.chunk.js": "/static/js/7.b3ad98be.chunk.js",
     "static/css/8.2aaf51b3.chunk.css": "/static/css/8.2aaf51b3.chunk.css",
     "static/js/8.23c97f71.chunk.js": "/static/js/8.23c97f71.chunk.js",
     "static/js/9.8622d1e6.chunk.js": "/static/js/9.8622d1e6.chunk.js",
     "index.html": "/index.html",
     "static/js/0.879d1951.chunk.js.LICENSE.txt": "/static/js/0.879d1951.chunk.js.LICENSE.txt",
     "static/js/3.9394bfc3.chunk.js.LICENSE.txt": "/static/js/3.9394bfc3.chunk.js.LICENSE.txt",
-    "static/js/4.51f4fe48.chunk.js.LICENSE.txt": "/static/js/4.51f4fe48.chunk.js.LICENSE.txt",
+    "static/js/4.f15fe809.chunk.js.LICENSE.txt": "/static/js/4.f15fe809.chunk.js.LICENSE.txt",
     "static/media/Scratch-app-thumbnail.47672e32.webp": "/static/media/Scratch-app-thumbnail.47672e32.webp",
     "static/media/banner.63e45e4f.webp": "/static/media/banner.63e45e4f.webp",
     "static/media/banner3.89763756.webp": "/static/media/banner3.89763756.webp",
@@ -37,9 +37,9 @@
     "static/media/profile.f3922fbe.jpg": "/static/media/profile.f3922fbe.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0f5690c2.js",
-    "static/js/4.51f4fe48.chunk.js",
+    "static/js/runtime-main.dc4df666.js",
+    "static/js/4.f15fe809.chunk.js",
     "static/css/main.d7e8b44a.chunk.css",
-    "static/js/main.008c1285.chunk.js"
+    "static/js/main.d87844f3.chunk.js"
   ]
 }
