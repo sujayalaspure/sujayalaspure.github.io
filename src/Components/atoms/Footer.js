@@ -1,6 +1,6 @@
-import React from "react";
-import { ProfileLinks, socialLink } from "constant";
-import styled from "styled-components";
+import React from "react"
+import { ProfileLinks, socialLink } from "constant"
+import styled from "styled-components"
 export default function Footer({ showSocial = false }) {
   return (
     <FooterContainer>
@@ -21,13 +21,13 @@ export default function Footer({ showSocial = false }) {
         </a>
         <Legal>
           The source code for this website is
-          <a href={`${ProfileLinks.github}/alaspuresujay.github.io`}> available on GitHub </a>
+          <a href={`${ProfileLinks.github}/sujayalaspure.github.io`}> available on GitHub </a>
           under the
           <a href="http://opensource.org/licenses/mit-license.html"> MIT license.</a>
         </Legal>
       </FooterCredits>
     </FooterContainer>
-  );
+  )
 }
 
 export const FooterContainer = styled.div`
@@ -41,7 +41,7 @@ export const FooterContainer = styled.div`
   min-height: 70px;
   padding: 15px;
   text-align: center;
-`;
+`
 export const FooterSocial = styled.div`
   display: ${(props) => (props.showSocial ? "block" : "none")};
   width: 100%;
@@ -61,7 +61,7 @@ export const FooterSocial = styled.div`
   @media (max-width: 768px) {
     display: block;
   }
-`;
+`
 
 export const FooterCredits = styled.div`
   color: var(--light-slate);
@@ -71,10 +71,10 @@ export const FooterCredits = styled.div`
   a {
     padding: 10px;
   }
-`;
+`
 
 export const Legal = styled.p`
   margin-bottom: 1rem;
   font-size: 0.6rem;
   opacity: 0.7;
-`;
+`

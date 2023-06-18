@@ -1,12 +1,12 @@
 <div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/alaspuresujay/alaspuresujay.github.io/master/public/favicon/android-chrome-384x384.png" width="100" />
+  <img alt="Logo" src="https://raw.githubusercontent.com/sujayalaspure/sujayalaspure.github.io/master/public/favicon/android-chrome-384x384.png" width="100" />
 </div>
 
 ---
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/alaspuresujay/alaspuresujay.github.io/Github%20Pages%20Deploy?label=Latest%20Build)
-![GitHub](https://img.shields.io/github/license/alaspuresujay/alaspuresujay.github.io)
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/alaspuresujay/alaspuresujay.github.io)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/sujayalaspure/sujayalaspure.github.io/Github%20Pages%20Deploy?label=Latest%20Build)
+![GitHub](https://img.shields.io/github/license/sujayalaspure/sujayalaspure.github.io)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/sujayalaspure/sujayalaspure.github.io)
 
 # Hi, I'm Sujay 👨‍💻
 
@@ -14,8 +14,8 @@ This portfolio is written in ReactJs. You can reuse this project if you are look
 
 ### Connect With me!
 
-[![Linked In!](https://img.shields.io/badge/Linked%20In-%20-9cf?style=plastic&logo=linkedin)](https://in.linkedin.com/in/alaspuresujay)
-[![Instagram!](https://img.shields.io/badge/Instagram-%20-orange?style=plastic&logo=instagram)](https://www.instagram.com/alaspuresujay)
+[![Linked In!](https://img.shields.io/badge/Linked%20In-%20-9cf?style=plastic&logo=linkedin)](https://in.linkedin.com/in/sujayalaspure)
+[![Instagram!](https://img.shields.io/badge/Instagram-%20-orange?style=plastic&logo=instagram)](https://www.instagram.com/sujayalaspure)
 
 ## 🛠 Dev Set Up
 
@@ -56,9 +56,9 @@ Thanks to all who directly, indirectly help me build this version of my portfoli
 - [Brittany Chiang](https://brittanychiang.com/) For UI inspiration and Color Scheme
 <!-- - [InventingWithMonster](https://codesandbox.io/s/framer-motion-side-menu-mx2rw?fontsize=14&module=/src/Example.tsx&file=/src/MenuItem.tsx:497-517) For awesome verticle navbar animation using framer motion. -->
 
-[github]: https://github.com/alaspuresujay
-[website]: https://alaspuresujay.github.io
+[github]: https://github.com/sujayalaspure
+[website]: https://sujayalaspure.github.io
 
 ## License
 
-[MIT](https://github.com/alaspuresujay/alaspuresujay.github.io/blob/master/LICENSE) License
+[MIT](https://github.com/sujayalaspure/sujayalaspure.github.io/blob/master/LICENSE) License
