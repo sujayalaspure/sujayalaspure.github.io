@@ -4,7 +4,8 @@
 
 ---
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/sujayalaspure/sujayalaspure.github.io/Github%20Pages%20Deploy?label=Latest%20Build)
+
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/sujayalaspure/sujayalaspure.github.io/gh-pages.yml)
 ![GitHub](https://img.shields.io/github/license/sujayalaspure/sujayalaspure.github.io)
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/sujayalaspure/sujayalaspure.github.io)
 
