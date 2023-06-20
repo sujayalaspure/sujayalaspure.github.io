@@ -39,6 +39,7 @@ const FeaturedCard = ({
         y: 0,
         transition: {
           type: "spring",
+          damping: 20,
           bounce: 0.4,
           duration: 0.8,
         },
@@ -58,9 +59,8 @@ const FeaturedCard = ({
             </Title>
             <Description right={right}>
               <p>{ReactHtmlParser(description)}</p>
+              <TagGroup tags={tags} />
             </Description>
-
-            <TagGroup right={right} tags={tags} />
 
             {/* TODO: Make this as array and fetch icon dynamically */}
             <ProjectLinks right={right}>
