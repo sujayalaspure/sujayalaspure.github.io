@@ -65,6 +65,7 @@ export const Description = styled.div`
   font-size: var(--fz-md);
   line-height: 25px;
   text-align: left;
+  margin: 15px 0px;
   p {
     text-overflow: ellipsis;
   }

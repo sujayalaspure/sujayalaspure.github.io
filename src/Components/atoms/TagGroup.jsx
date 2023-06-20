@@ -46,6 +46,7 @@ export const Tag = styled.li`
   white-space: nowrap;
   padding: 2px 2px;
   border-radius: 10px;
+  text-transform: capitalize;
   &:first-of-type {
     margin-left: 0;
     padding-left: 0;
