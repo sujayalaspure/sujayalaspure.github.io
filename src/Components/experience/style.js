@@ -29,6 +29,9 @@ export const TabsRow = styled(Tabs)`
   .MuiTabs-scrollButtons {
     color: ${COLORS.slate};
   }
+  .MuiTabs-scrollButtons.Mui-disabled {
+    opacity: 1;
+  }
 `
 
 export const TabItem = styled(Tab)`

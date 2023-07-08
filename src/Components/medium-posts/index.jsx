@@ -27,26 +27,15 @@ function MediumPosts() {
 }
 
 const Post = ({ post }) => {
-  // var options = {
-  //   year: "numeric",
-  //   month: "short",
-  //   day: "numeric",
-  // }
-
-
   const title = post?.title
 
   const description = post?.description.replace(/<h3>.*<\/h3>|<figcaption>.*<\/figcaption>|<[^>]*>/gm, "")
-  // .substring(0, 120) + "..."
-
-  // const pubTime = new Date(post?.pubDate).toLocaleDateString("en-IN", options)
 
   return (
     <PostWrapper>
       <PostImage src={post?.thumbnail} alt={title} />
       <PostContentWrapper>
         <h3 className="title">{title}</h3>
-        {/* <p className="pub-time">{pubTime}</p> */}
         <p className="description">{description}</p>
         <TagGroup tags={post?.categories.slice(0, 5)} />
       </PostContentWrapper>

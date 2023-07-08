@@ -69,7 +69,6 @@ export const PostImage = styled.img`
     height: 100%;
     max-height: calc(100% - 60px);
     margin-right: 0;
-    margin-bottom: 1rem;
   }
 `
 
@@ -103,6 +102,7 @@ export const PostContentWrapper = styled.div`
 
   @media (max-width: 768px) {
     margin-bottom: 50px;
+    width: 100%;
     .pub-time {
       margin-bottom: -5px;
     }

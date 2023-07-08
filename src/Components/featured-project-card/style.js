@@ -13,7 +13,7 @@ export const FeaturedProjectCardContainer = styled.div`
   background-color: var(--navy);
   margin: 80px 0;
   transition: var(--transition);
-  /* padding: 50px; */
+  /* padding: 10px 0; */
 
   border-radius: 10px;
   @media (max-width: 768px) {
@@ -33,9 +33,11 @@ export const FeaturedProjectContent = styled.div`
   text-align: ${(_) => (_.right ? "right" : "left")};
   @media (max-width: 768px) {
     width: 100%;
-    padding: 4vh;
+    padding: 6vh 2vh;
     z-index: 10;
     text-align: left;
+    left: 0;
+    right: 0;
   }
 `
 
@@ -127,7 +129,7 @@ export const Link = styled.a`
 
 export const Projectimage = styled.div`
   width: 60%;
-  max-height: 340px;
+  /* max-height: 340px; */
   position: absolute;
 
   ${(_) => (_.right ? "left : 20px" : "right:20px")};
@@ -153,7 +155,8 @@ export const Projectimage = styled.div`
       object-fit: cover;
       width: 100%;
       height: 100%;
-
+      left: 0;
+      right: 0;
       filter: grayscale(100%) contrast(1) brightness(20%);
     }
   }

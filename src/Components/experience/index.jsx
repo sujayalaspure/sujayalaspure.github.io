@@ -22,7 +22,8 @@ const Experience = () => {
           textColor="primary"
           variant="scrollable"
           scrollButtons="auto"
-          aria-label="scrollable tabs"
+          allowScrollButtonsMobile
+          aria-label="scrollable force tabs"
         >
           {ExpData.map((exp, index) => (
             <TabItem key={index} label={exp.company} {...a11yProps(index)} />

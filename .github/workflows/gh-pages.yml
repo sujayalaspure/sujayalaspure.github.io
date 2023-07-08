@@ -27,7 +27,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
       - name: Clean
         run: rm -rf node_modules/.cache/gh-pages
       - name: Install
@@ -39,3 +39,25 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: build # The folder the action should deploy.
+  createtag:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: "Get package.json version"
+        id: set_var
+        run: |
+          echo "PACKAGE_JSON=$(jq -c . < package.json)" >> $GITHUB_ENV
+      - name: "Show version"
+        run: |
+          echo "${{fromJson(env.PACKAGE_JSON).version}}"
+      - name: "Create tag"
+        uses: rickstaa/action-create-tag@v1
+        id: "tag_create"
+        with:
+          tag: ${{fromJson(env.PACKAGE_JSON).version}}
+          tag_exists_error: false
+          force_push_tag: true
+          message: "Latest release: ${{ github.event.head_commit.message }}"
