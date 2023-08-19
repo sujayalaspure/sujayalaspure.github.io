@@ -5,6 +5,7 @@ import ContextProvider from "Context/ContextProvider"
 import { MousePointer, SomeRandomAnim } from "Components/atoms"
 import LogoIcon from "Assets/LogoIcon"
 import { resumeLink } from "constant"
+import GodrejCaseStudy from "./Projects/godrej-innard/GodrejCaseStudy"
 // import useFirebase from "utils/firebase"
 
 const Home = React.lazy(() => import("Pages/Home"))
@@ -44,6 +45,7 @@ function App() {
             <Route path="/" exact element={<Home />} />
             <Route path="/test" element={<TestPage />} />
             <Route path="/case/:slug" element={<CaseStudy />} />
+            <Route path="/innards" element={<GodrejCaseStudy />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import styled from "styled-components";
-import { colors, theme } from "../../Styles";
+import React, { useEffect } from "react"
+import { motion, useAnimation } from "framer-motion"
+import { useInView } from "react-intersection-observer"
+import styled from "styled-components"
+import { colors, theme } from "../../Styles"
 
 export default function GridItem({ img, caption = null, right = false }) {
-  const { ref, inView } = useInView({ threshold: 0.2 });
-  const animation = useAnimation();
+  const { ref, inView } = useInView({ threshold: 0.2 })
+  const animation = useAnimation()
 
   useEffect(() => {
     if (inView) {
@@ -17,24 +17,23 @@ export default function GridItem({ img, caption = null, right = false }) {
           duration: 1,
           bounce: 0.1,
         },
-      });
+      })
     }
-  }, [inView]);
+  }, [inView])
   return (
     <Container ref={ref}>
-      <motion.div
-        initial={{ x: right ? "200vw" : "-100vw" }}
-        animate={animation}
-      >
-        <Image src={img} alt="" />
-        {caption && (
-          <Caption>
-            <p>{caption}</p>
-          </Caption>
-        )}
+      <motion.div initial={{ x: right ? "200vw" : "-100vw" }} animate={animation}>
+        <Content>
+          <Image src={img} alt="" />
+          {caption && (
+            <Caption>
+              <p>{caption}</p>
+            </Caption>
+          )}
+        </Content>
       </motion.div>
     </Container>
-  );
+  )
 }
 
 const Container = styled.div`
@@ -43,19 +42,25 @@ const Container = styled.div`
 
   @media (max-width: 768px) {
     padding: 30px 0;
-  } ;
-`;
+  }
+`
+
+const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
 
 const Image = styled.img`
   border-radius: 10px;
   /* object-fit: cover; */
   /* max-height: 150vh; */
-  width: 100%;
+  /* width: 100%; */
   /* height: auto; */
-`;
+`
 
 const Caption = styled.div`
-  margin-top: ${theme.spacing[20]};
+  margin-top: ${theme.spacing[2]};
   width: 100%;
   text-align: center;
   padding: 0 15%;
@@ -67,4 +72,4 @@ const Caption = styled.div`
   @media (max-width: 768px) {
     padding: 0 5%;
   }
-`;
+`

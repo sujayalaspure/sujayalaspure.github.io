@@ -3,7 +3,20 @@ import cryptoBanner from "./Cryptoverse/banner.webp"
 import keepBanner from "./Keeper/keep-banner.webp"
 import musicAppStucture from "./music-app"
 import ScratchAppThumb from "./scratch-app/Scratch-app-thumbnail.webp"
+import { GodrejInnardAssets, GodrejInnardStructure } from "./godrej-innard"
 const projects = [
+  {
+    featured: true,
+    image: GodrejInnardAssets.AdBanner,
+    title: "Innards",
+    slug: "innard",
+    description: `Innards provides an enjoyable browsing experience, enabling users to find beautiful plants suited to their lifestyle and environment.`,
+    tags: ["React Native"],
+    githubLink: "",
+    // externalLink: "#/innards",
+    data: GodrejInnardStructure,
+    case: false,
+  },
   {
     featured: false,
     image: ScratchAppThumb,
@@ -29,7 +42,7 @@ const projects = [
     data: smarthmStructure,
   },
   {
-    featured: true,
+    featured: false,
     title: "Keeper App",
     slug: "keeper",
     image: keepBanner,
