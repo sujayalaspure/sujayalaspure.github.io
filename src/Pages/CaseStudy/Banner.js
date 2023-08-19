@@ -1,8 +1,8 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { Parallax } from "react-parallax";
-import MouseScrollAnimation from "Components/atoms/MouseScrollAnimation";
-import styled from "styled-components";
+import React from "react"
+import { motion } from "framer-motion"
+import { Parallax } from "react-parallax"
+import MouseScrollAnimation from "Components/atoms/MouseScrollAnimation"
+import styled from "styled-components"
 
 export default function Banner({ index, title, imgsrc }) {
   return (
@@ -21,7 +21,7 @@ export default function Banner({ index, title, imgsrc }) {
         </Parallax>
       </motion.div>
     </div>
-  );
+  )
 }
 
 const Title = styled.div`
@@ -38,5 +38,18 @@ const Title = styled.div`
   h1 {
     /* line-height: 10px; */
     font-weight: 500;
+    position: relative;
+    &::before {
+      background-color: #b5e2cb;
+      content: "";
+      position: absolute;
+      height: 90%;
+      width: 0.3rem;
+      border-top-right-radius: 100%;
+      border-bottom-right-radius: 100%;
+      left: -20px;
+
+      top: 5%;
+    }
   }
-`;
+`
