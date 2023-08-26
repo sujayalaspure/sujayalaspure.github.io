@@ -1,0 +1,16 @@
+{
+  "short_name": "Sujay Alaspure",
+  "name": "Sujay Alaspure Portfolio",
+  "icons": [
+    {
+      "src": "/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "density": "4.0"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
