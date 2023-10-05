@@ -1,8 +1,10 @@
-import { COLOR } from "src/Utils/theme"
-import styled, { keyframes } from "styled-components"
-export default function MouseScrollAnimation() {
+"use client"
+import {COLOR} from "@/utils/theme"
+import React from "react"
+import styled, {keyframes} from "styled-components"
+export default function ScrollingMouse() {
   return (
-    <Container scrolled={false}>
+    <Container>
       <Mouse>
         <Wheel />
       </Mouse>
@@ -45,7 +47,7 @@ const Mouse = styled.div`
   border-radius: 14px;
   -webkit-transform: none;
   transform: none;
-  border: 2px solid ${COLOR.lightText};
+  border: 2px solid ${COLOR.lightestSlate};
   top: 170px;
 `
 
@@ -56,7 +58,7 @@ const Wheel = styled.div`
   position: relative;
   height: 10px;
   width: 6px;
-  border: 2px solid ${COLOR.lightestText};
+  border: 2px solid ${COLOR.lightestSlate};
   border-radius: 8px;
   -webkit-animation: ${MouseWheel} 0.8s ease-in-out infinite;
   animation: ${MouseWheel} 0.8s ease-in-out infinite;
@@ -66,8 +68,8 @@ const ScrollArrows = styled.div`
   display: block;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  border-right: 2px solid ${COLOR.lightestText};
-  border-bottom: 2px solid ${COLOR.lightestText};
+  border-right: 2px solid ${COLOR.lightestSlate};
+  border-bottom: 2px solid ${COLOR.lightestSlate};
   margin: 0 0 5px 6px;
   width: 13px;
   height: 13px;
