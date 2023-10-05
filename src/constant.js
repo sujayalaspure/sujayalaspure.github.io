@@ -1,5 +1,6 @@
-import { SiLeetcode } from "react-icons/si"
-import { FaMediumM, FaLinkedinIn, FaGithub, FaDownload } from "react-icons/fa"
+import {SiLeetcode} from "react-icons/si"
+import {FaMediumM, FaLinkedinIn, FaGithub, FaDownload} from "react-icons/fa"
+import Logo from "./Assets/images/icon1.png"
 
 export const resumeLink = "/assets/Sujay_Alaspure_Software_Developer_3_years.pdf"
 
@@ -12,7 +13,9 @@ export const ProfileLinks = {
   resume: resumeLink,
 }
 
-export { default as profile } from "./Assets/images/profile.jpg"
+export {default as profile} from "./Assets/images/profile.jpg"
+
+export {Logo}
 export const socialLink = [
   {
     name: "Github",

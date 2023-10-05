@@ -1,10 +1,10 @@
-import React, { Suspense, useEffect } from "react"
-import { Routes, Route } from "react-router-dom"
+import React, {Suspense, useEffect} from "react"
+import {Routes, Route} from "react-router-dom"
 import "./App.css"
 import ContextProvider from "Context/ContextProvider"
-import { MousePointer, SomeRandomAnim } from "Components/atoms"
+import {Footer, MousePointer, SomeRandomAnim} from "Components/atoms"
 import LogoIcon from "Assets/LogoIcon"
-import { resumeLink } from "constant"
+import {resumeLink} from "constant"
 import GodrejCaseStudy from "./Projects/godrej-innard/GodrejCaseStudy"
 // import useFirebase from "utils/firebase"
 
@@ -50,6 +50,7 @@ function App() {
           </Routes>
         </Suspense>
       </ContextProvider>
+      <Footer />
     </>
   )
 }

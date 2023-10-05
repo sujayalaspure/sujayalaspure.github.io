@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react"
+import React, {useEffect, useState} from "react"
 import "styles/pages/Home.css"
 import Hero from "Components/Hero/Hero"
-import Section, { SectionHeading } from "Components/atoms/Section"
+import Section, {SectionHeading} from "Components/atoms/Section"
 import projects from "Projects"
-import { GithubCorner, GetInTouch, Footer } from "Components/atoms"
+import {GithubCorner, GetInTouch, Footer} from "Components/atoms"
 import AboutMe from "Components/Organisms/AboutMe"
 import FeaturedProjectCard from "Components/featured-project-card"
 import Experience from "Components/experience"
@@ -59,14 +59,14 @@ function Home() {
       <GithubCorner />
       <Hero />
 
-      {DATA.filter((item) => !item.hide).map(({ title, component }, index) => (
+      {DATA.filter((item) => !item.hide).map(({title, component}, index) => (
         <Section key={index.toString()}>
           <SectionHeading number={(index + 1).toFixed().toString()} title={title} />
           {component}
         </Section>
       ))}
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
