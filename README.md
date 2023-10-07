@@ -4,7 +4,6 @@
 
 ---
 
-
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/sujayalaspure/sujayalaspure.github.io/gh-pages.yml)
 ![GitHub](https://img.shields.io/github/license/sujayalaspure/sujayalaspure.github.io)
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/sujayalaspure/sujayalaspure.github.io)
@@ -49,13 +48,6 @@ This portfolio is written in ReactJs. You can reuse this project if you are look
 | Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
 | White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
 | Accent         | ![#f6ad55](https://via.placeholder.com/10/f6ad55?text=+) `#f6ad55` |
-
-## Open Source Credits
-
-Thanks to all who directly, indirectly help me build this version of my portfolio website.
-
-- [Brittany Chiang](https://brittanychiang.com/) For UI inspiration and Color Scheme
-<!-- - [InventingWithMonster](https://codesandbox.io/s/framer-motion-side-menu-mx2rw?fontsize=14&module=/src/Example.tsx&file=/src/MenuItem.tsx:497-517) For awesome verticle navbar animation using framer motion. -->
 
 [github]: https://github.com/sujayalaspure
 [website]: https://sujayalaspure.github.io

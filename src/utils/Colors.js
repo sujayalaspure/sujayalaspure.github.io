@@ -8,6 +8,8 @@ const COLORS = {
   lightestnavy: "#233554",
 
   navyshadow: "rgba(2,12,27,0.7)",
+  shineShadow: "rgba(13, 50, 155, 0.3)",
+  shineShadow2: "rgba(238, 130, 238, 0)",
 
   darkslate: "#495670",
   slate: "#8892b0",
@@ -29,6 +31,6 @@ const COLORS = {
   green: "#48bb78",
   teal: "#38b2ac",
   blue: "#3182ce",
-};
+}
 
-export default COLORS;
+export default COLORS

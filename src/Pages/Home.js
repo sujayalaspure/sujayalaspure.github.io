@@ -1,11 +1,11 @@
-import React, {useEffect, useState} from "react"
+import {useEffect, useState} from "react"
 import "styles/pages/Home.css"
 import Hero from "Components/Hero/Hero"
 import Section, {SectionHeading} from "Components/atoms/Section"
 import projects from "Projects"
-import {GithubCorner, GetInTouch, Footer} from "Components/atoms"
+import {GithubCorner, GetInTouch} from "Components/atoms"
 import AboutMe from "Components/Organisms/AboutMe"
-import FeaturedProjectCard from "Components/featured-project-card"
+import FeaturedProjects from "Components/featured-project-card"
 import Experience from "Components/experience"
 import LogoIcon from "Assets/LogoIcon"
 import MediumPosts from "Components/medium-posts"
@@ -31,7 +31,7 @@ function Home() {
     },
     {
       title: "Featured Projects",
-      component: <FeaturedProjectCard projects={projects} />,
+      component: <FeaturedProjects projects={projects} />,
     },
     {
       title: "My Writes",

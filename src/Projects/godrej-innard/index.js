@@ -25,6 +25,7 @@ import search from "./assets/search.png"
 import drawer from "./assets/drawer.png"
 import AdBanner from "./assets/ad-banner.png"
 import AuthScreens from "./assets/auth.png"
+import InnardLogo from "./assets/innard_logo.png"
 
 export const GodrejInnardAssets = {
   mock_1,
@@ -37,12 +38,26 @@ export const GodrejInnardAssets = {
   home3,
   filter,
   AdBanner,
+  InnardLogo,
 }
+
+// export const GodrejInnard: ProjectStructure = {
+//   metadata: {
+//     isFeatured: true,
+//     thumbnail: AdBanner,
+//     title: "Innards",
+//     slug: "innard",
+//     description: `Innards provides an enjoyable browsing experience, enabling users to find beautiful plants suited to their lifestyle and environment.`,
+//     tags: ["React Native"],
+//     isCaseStudy: false,
+//   },
+//   content: GodrejInnardStructure,
+// }
 
 export const GodrejInnardStructure = [
   {
     type: "bannerImage",
-    value: { title: "", imgsrc: cover },
+    value: {title: "", imgsrc: cover},
   },
   {
     type: "tophead",
@@ -66,11 +81,11 @@ export const GodrejInnardStructure = [
   },
   {
     type: "bannerImage",
-    value: { title: "Wireframes", imgsrc: wireframe },
+    value: {title: "Wireframes", imgsrc: wireframe},
   },
   {
     type: "fullImage",
-    value: { title: "", imgsrc: navigation_frame },
+    value: {title: "", imgsrc: navigation_frame},
   },
   {
     type: "usecaseScenarios",
@@ -135,7 +150,7 @@ export const GodrejInnardStructure = [
   },
   {
     type: "fullImage",
-    value: { title: "Onboarding", imgsrc: AuthScreens },
+    value: {title: "Onboarding", imgsrc: AuthScreens},
   },
   {
     type: "splitshow",
@@ -146,43 +161,43 @@ export const GodrejInnardStructure = [
           imgsrc: home,
           caption: "Home & Explore",
         },
-        { imgsrc: home2, caption: " Trustnet - Stars & Ratings" },
-        { imgsrc: home3, caption: "Educating the User" },
-        { imgsrc: search, caption: "Search & Discover" },
-        { imgsrc: orders, caption: "My Orders & Previous Order " },
+        {imgsrc: home2, caption: " Trustnet - Stars & Ratings"},
+        {imgsrc: home3, caption: "Educating the User"},
+        {imgsrc: search, caption: "Search & Discover"},
+        {imgsrc: orders, caption: "My Orders & Previous Order "},
 
         {
           imgsrc: track1,
           caption:
             "An order tracking system is one that tracks goods from the moment the order is placed to when they are physically delivered to the destination location.",
         },
-        { imgsrc: scane, caption: "View plant in your space with AR" },
+        {imgsrc: scane, caption: "View plant in your space with AR"},
         {
           imgsrc: launch,
           caption: "Appearance of the home screen on the day of the product launch, giving it the most priority.",
         },
       ],
       right: [
-        { imgsrc: drawer, caption: "Profile Side Drawer" },
+        {imgsrc: drawer, caption: "Profile Side Drawer"},
         {
           imgsrc: Prolist,
           caption:
             "The user will be able to see his or her orders, I tried to make the cart screen minimal and deliver. To decrease the level of stress users. experience when shopping for the latest products.",
         },
-        { imgsrc: prodDetils, caption: "Product Details" },
-        { imgsrc: prodDetils1, caption: "Detailed Summary" },
-        { imgsrc: filter, caption: "" },
-        { imgsrc: orderSuccess, caption: "" },
+        {imgsrc: prodDetils, caption: "Product Details"},
+        {imgsrc: prodDetils1, caption: "Detailed Summary"},
+        {imgsrc: filter, caption: ""},
+        {imgsrc: orderSuccess, caption: ""},
         {
           imgsrc: delivery,
           caption: "Priorities for the day to inform the user about the order status of the item ordered.",
         },
-        { imgsrc: help, caption: "Help" },
+        {imgsrc: help, caption: "Help"},
       ],
     },
   },
   {
     type: "bannerImage",
-    value: { title: "", imgsrc: AdBanner },
+    value: {title: "", imgsrc: AdBanner},
   },
 ]

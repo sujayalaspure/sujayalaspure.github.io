@@ -37,16 +37,17 @@ function Footer() {
 export default Footer
 
 const Container = styled.div`
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
-  width: 100%;
   z-index: 50;
   color: ${COLORS.slate};
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  div {
+  width: 100%;
+  @media (min-width: 768px) {
+    position: fixed;
   }
 `
 
@@ -86,17 +87,18 @@ const Content = styled.div`
   flex-direction: column;
   justify-content: center;
   max-width: 640px;
-  width: 100%;
+  width: 90%;
   position: relative;
   cursor: pointer;
   background-color: ${COLORS.darknavy};
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 
-  transform: translateY(${bufferHeight});
   transition: transform 0.3s ease;
-  @media (max-width: 768px) {
-    transform: translateY(0);
+  @media (min-width: 768px) {
+    width: 100%;
+    transform: translateY(${bufferHeight});
+    /* transform: translateY(2); */
   }
 
   &::before {
@@ -106,7 +108,7 @@ const Content = styled.div`
     pointer-events: none;
     position: absolute;
     width: 80%;
-    height: 100%;
+    /* height: 100%; */
     inset: -1px;
     margin: auto;
     border-top-left-radius: 9px;

@@ -1,13 +1,13 @@
-import { smarthmStructure, banner } from "./Smarthm"
+import {smarthmStructure, banner, SmartHMLogo, SmartHMAssets} from "./Smarthm"
 import cryptoBanner from "./Cryptoverse/banner.webp"
 import keepBanner from "./Keeper/keep-banner.webp"
 import musicAppStucture from "./music-app"
 import ScratchAppThumb from "./scratch-app/Scratch-app-thumbnail.webp"
-import { GodrejInnardAssets, GodrejInnardStructure } from "./godrej-innard"
+import {GodrejInnardAssets, GodrejInnardStructure} from "./godrej-innard"
 const projects = [
   {
-    featured: true,
-    image: GodrejInnardAssets.AdBanner,
+    isFeatured: true,
+    thumbnail: GodrejInnardAssets.AdBanner,
     title: "Innards",
     slug: "innard",
     description: `Innards provides an enjoyable browsing experience, enabling users to find beautiful plants suited to their lifestyle and environment.`,
@@ -16,10 +16,11 @@ const projects = [
     // externalLink: "#/innards",
     data: GodrejInnardStructure,
     case: false,
+    logo: GodrejInnardAssets.InnardLogo,
   },
   {
-    featured: false,
-    image: ScratchAppThumb,
+    isFeatured: false,
+    thumbnail: ScratchAppThumb,
     title: "Frontend Machine Coding Projects",
     slug: "",
     description: `This project is a machine coding implementation of some of the frontend problems. `,
@@ -30,22 +31,23 @@ const projects = [
     case: false,
   },
   {
-    featured: true,
+    isFeatured: true,
     title: "Smarthm",
     slug: "smarthm",
-    image: banner,
+    thumbnail: SmartHMAssets.banner,
     description:
-      "This app provide the functionality to control your smart home devices from your mobile, set alert, add automation to devices. Toggle device on specific time and much more. And yes with security and privacy because of its all new OfflineFirst technology.",
+      "This app provide the functionality to control your smart home devices from your mobile, set alert, add automation to devices. Control device at specific time and much more.",
     tags: ["React Native", "Firebase", "Appcenter API", "playStore CLI"],
     githubLink: "",
     playStore: "https://play.google.com/store/apps/details?id=com.indivisible.smarthm",
     data: smarthmStructure,
+    logo: SmartHMAssets.SmartHMLogo,
   },
   {
-    featured: false,
+    isFeatured: false,
     title: "Keeper App",
     slug: "keeper",
-    image: keepBanner,
+    thumbnail: keepBanner,
     description:
       "A Clone app of Google's note taking app <a href='https://keep.google.com/' target='_blank' class='link-item' > Google Keep</a>. This app is built using React and Firebase. It has all the features of Google keep. Adding, editing and deleting Notes, Colors, Labels, etc",
     tags: ["ReactJs", "Firebase@V9", "Context-API", "Google-auth"],
@@ -54,10 +56,10 @@ const projects = [
     data: null,
   },
   {
-    featured: false,
+    isFeatured: false,
     title: "Cryptoverse",
     slug: "cryptoverse",
-    image: cryptoBanner,
+    thumbnail: cryptoBanner,
     description:
       "As name says this app provides all the info regarding crypto, exchanges, news, details, live price, chart history and a lot more...",
     tags: ["React", "Ant-Design", "RapidAPI", "Redux/toolkit"],
@@ -129,16 +131,17 @@ const projects = [
     case: false,
   },
   {
-    featured: true,
-    image: ScratchAppThumb,
+    isFeatured: true,
+    thumbnail: ScratchAppThumb,
     title: "MIT Scratch app clone",
     slug: "mit-scratch-app",
-    description: `This project is a clone of <a class='link-item' href="https://scratch.mit.edu/projects/editor/">Scratch app from MIT</a>. Having fully featured Drag and Drop UI and animation based on Scratch Blocks.`,
+    description: `This project is a clone of <a class='link-item' href="https://scratch.mit.edu/projects/editor/">Scratch app from MIT</a> with fully featured Drag and Drop UI and animation based on Scratch Blocks.`,
     tags: ["ReactJs", "React-DND", "Context-API"],
     githubLink: "https://github.com/sujayalaspure/scratch-mit-clone",
     externalLink: "https://sujay-scratch-mit.netlify.app/",
     data: null,
     case: false,
+    logo: "https://seeklogo.com/images/S/scratch-cat-logo-7F652C6253-seeklogo.com.png",
   },
 ]
 
