@@ -1,11 +1,13 @@
-import { motion, useAnimation } from "framer-motion"
-import React, { useEffect } from "react"
-import { FiGithub, FiExternalLink, FiYoutube } from "react-icons/fi"
-import { useInView } from "react-intersection-observer"
+import React, {useEffect} from "react"
+import {motion, useAnimation} from "framer-motion"
+import ReactHtmlParser from "react-html-parser"
+import {FiGithub, FiExternalLink, FiYoutube} from "react-icons/fi"
+import {useInView} from "react-intersection-observer"
+
 import "styles/components/ProjectCard.css"
 import TagGroup from "../atoms/TagGroup"
-export default function ProjectCard({ project }) {
-  const { ref, inView } = useInView({ threshold: 0.2 })
+export default function ProjectCard({project}) {
+  const {ref, inView} = useInView({threshold: 0.2})
   const animation = useAnimation()
 
   useEffect(() => {
@@ -20,7 +22,7 @@ export default function ProjectCard({ project }) {
   }, [inView])
   return (
     <li ref={ref}>
-      <motion.div className="inner-card" initial={{ opacity: 0 }} animate={animation}>
+      <motion.div className="inner-card" initial={{opacity: 0}} animate={animation}>
         <div className="header">
           <div className="links">
             {project.githubLink && (
@@ -50,7 +52,7 @@ export default function ProjectCard({ project }) {
             </a>
           </h3>
           <div className="project-description">
-            <p>{project.description}</p>
+            <p>{ReactHtmlParser(project.description)}</p>
           </div>
         </div>
         <TagGroup tags={project.tags} />

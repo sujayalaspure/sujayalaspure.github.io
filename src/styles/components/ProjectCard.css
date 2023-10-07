@@ -49,6 +49,7 @@
   margin: 0px 0px 20px;
   color: var(--lightest-slate);
   font-size: var(--fz-xxl);
+  line-height: 35px;
 }
 
 .inner-card .header .project-description {

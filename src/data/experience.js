@@ -8,7 +8,17 @@ const expData = [
     details: [
       {
         id: "1",
-        content: `Revolutionizing fleet safety with advanced AI fleet dash cams for commercial vehicles.`,
+        content: `Worked on a feature from scratch to broadcast the data between the app and Hardware device over the “iBeacon” protocol.`,
+      },
+      {
+        id: "2",
+        content:
+          "Integrated the data caching mechanism in SDK built using KMM and SQLDelight which decreased the screen load time by almost 30% and increased the active usage time",
+      },
+      {
+        id: "3",
+        content:
+          "Reengineered the main Dashboard screen of the app which significantly reduced initial app load time by more than 45%.",
       },
     ],
   },

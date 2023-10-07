@@ -1,11 +1,11 @@
-import React, { useEffect } from "react"
-import { motion, useAnimation } from "framer-motion"
-import { useInView } from "react-intersection-observer"
+import React, {useEffect} from "react"
+import {motion, useAnimation} from "framer-motion"
+import {useInView} from "react-intersection-observer"
 import styled from "styled-components"
-import { colors, theme } from "../../Styles"
+import COLORS from "../../utils/Colors"
 
-export default function GridItem({ img, caption = null, right = false }) {
-  const { ref, inView } = useInView({ threshold: 0.2 })
+export default function GridItem({img, caption = null, right = false}) {
+  const {ref, inView} = useInView({threshold: 0.2})
   const animation = useAnimation()
 
   useEffect(() => {
@@ -22,7 +22,7 @@ export default function GridItem({ img, caption = null, right = false }) {
   }, [inView])
   return (
     <Container ref={ref}>
-      <motion.div initial={{ x: right ? "200vw" : "-100vw" }} animate={animation}>
+      <motion.div initial={{x: right ? "200vw" : "-100vw"}} animate={animation}>
         <Content>
           <Image src={img} alt="" />
           {caption && (
@@ -37,7 +37,7 @@ export default function GridItem({ img, caption = null, right = false }) {
 }
 
 const Container = styled.div`
-  padding: ${theme.spacing[10]} 20px;
+  padding: 2.5rem 20px;
   overflow: hidden;
 
   @media (max-width: 768px) {
@@ -60,13 +60,13 @@ const Image = styled.img`
 `
 
 const Caption = styled.div`
-  margin-top: ${theme.spacing[2]};
+  margin-top: 0.5rem;
   width: 100%;
   text-align: center;
   padding: 0 15%;
   p {
-    font-size: ${theme.fz["xl"]};
-    color: ${colors.lightSlate};
+    font-size: 1.25rem;
+    color: ${COLORS.lightSlate};
   }
 
   @media (max-width: 768px) {

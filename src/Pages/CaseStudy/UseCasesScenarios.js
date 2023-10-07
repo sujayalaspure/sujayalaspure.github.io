@@ -1,13 +1,12 @@
 import React from "react"
 import styled from "styled-components"
-import { colors } from "../../Styles"
+import COLORS from "../../utils/Colors"
 
-function UseCasesScenarios({ title, options }) {
+function UseCasesScenarios({title, options}) {
   return (
     <Container>
       {title && (
         <Title>
-          <Bar />
           <h1>{title}</h1>
         </Title>
       )}
@@ -75,17 +74,6 @@ const Title = styled.div`
   }
 `
 
-const Bar = styled.div`
-  background-color: #b5e2cb;
-  height: 90%;
-  width: 0.3rem;
-  border-top-left-radius: 100%;
-  border-bottom-left-radius: 100%;
-  position: absolute;
-  left: 0;
-  top: 5%;
-`
-
 const UseCaseWrapper = styled.div`
   padding: 2rem calc(10% - 0.7rem);
 `
@@ -100,7 +88,7 @@ const UseCaseRow = styled.div`
 `
 
 const UseCase = styled.div`
-  background-color: ${colors.lightnavy};
+  background-color: ${COLORS.lightnavy};
   padding: 2rem 5%;
   border-radius: 10px;
   margin: 0.7rem;
@@ -111,7 +99,7 @@ const UseCaseTitle = styled.div`
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 1rem;
-  color: ${colors.lightestSlate};
+  color: ${COLORS.lightestSlate};
 `
 const UseCaseDescription = styled.div``
 

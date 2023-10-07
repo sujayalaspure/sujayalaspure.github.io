@@ -1,13 +1,13 @@
 import ProjectCard from "Components/molecules/ProjectCard"
 import React from "react"
 
-function ProjectGrid({ projects }) {
+function ProjectGrid({projects}) {
   return (
     <ul className="project-grid">
       {projects
-        .filter((pro) => !pro.featured)
+        .filter((pro) => !pro.isFeatured)
         .map((project, index) => (
-          <ProjectCard key={index} {...{ project }} />
+          <ProjectCard key={index} {...{project}} />
         ))}
     </ul>
   )

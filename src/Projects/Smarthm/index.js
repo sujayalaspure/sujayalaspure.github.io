@@ -1,16 +1,16 @@
-import icon from "./Assets/icon.webp";
-import logo from "./Assets/logo.png";
-import logo_name from "./Assets/logo_name.webp";
-import designSys from "./Assets/designSystem.webp";
-import banner from "./Assets/banner3.webp";
-import profileScreen from "./Assets/profile.webp";
-import loginui from "./Assets/loginui.webp";
-import home from "./Assets/home.webp";
-import Drawer from "./Assets/drawer.webp";
+import icon from "./Assets/icon.webp"
+import logo from "./Assets/logo.png"
+import logo_name from "./Assets/logo_name.webp"
+import designSys from "./Assets/designSystem.webp"
+import banner from "./Assets/banner3.webp"
+import profileScreen from "./Assets/profile.webp"
+import loginui from "./Assets/loginui.webp"
+import home from "./Assets/home.webp"
+import Drawer from "./Assets/drawer.webp"
 
-export { banner };
+export const SmartHMAssets = {banner, SmartHMLogo: logo}
 export const smarthmStructure = [
-  { type: "bannerImage", value: { title: "", imgsrc: banner } },
+  {type: "bannerImage", value: {title: "", imgsrc: banner}},
   {
     type: "tophead",
     value: {
@@ -36,7 +36,7 @@ export const smarthmStructure = [
   },
   {
     type: "bannerImage",
-    value: { title: "The design won't leave you cold", imgsrc: designSys },
+    value: {title: "The design won't leave you cold", imgsrc: designSys},
   },
   {
     type: "splitshow",
@@ -45,26 +45,23 @@ export const smarthmStructure = [
       left: [
         {
           imgsrc: logo,
-          caption:
-            "Our first task was to give SmartHM a logotype and corporate identity.",
+          caption: "Our first task was to give SmartHM a logotype and corporate identity.",
         },
-        { imgsrc: logo_name, caption: "" },
+        {imgsrc: logo_name, caption: ""},
         {
           imgsrc: home,
-          caption:
-            "The homepage style went through several phases and multiple iterations.",
+          caption: "The homepage style went through several phases and multiple iterations.",
         },
-        { imgsrc: profileScreen, caption: "" },
+        {imgsrc: profileScreen, caption: ""},
         // { imgsrc: img1, caption: '' },
       ],
       right: [
-        { imgsrc: icon, caption: "" },
+        {imgsrc: icon, caption: ""},
         {
           imgsrc: loginui,
-          caption:
-            "To ease the user onboarding process, We have setup the login with email as well as Google auth.",
+          caption: "To ease the user onboarding process, We have setup the login with email as well as Google auth.",
         },
-        { imgsrc: Drawer, caption: "" },
+        {imgsrc: Drawer, caption: ""},
       ],
     },
   },
@@ -75,4 +72,4 @@ export const smarthmStructure = [
       content: `We were motivated to focus on every little detail including icon animation, to really enhance the user interaction.`,
     },
   },
-];
+]

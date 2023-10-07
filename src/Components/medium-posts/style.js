@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { colors } from "Styles"
+import COLORS from "../../utils/Colors"
 
 export const MediumPostsContainer = styled.div`
   display: flex;
@@ -13,13 +13,13 @@ export const PostWrapper = styled.div`
   justify-content: center;
   width: 100%;
   gap: 1.5rem;
-  border: 1px solid ${colors.darkslate};
+  border: 1px solid ${COLORS.darkslate};
   padding: 10px 20px;
   border-radius: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
   position: relative;
-  background-color: ${colors.navy};
+  background-color: ${COLORS.navy};
 
   .read-more {
     position: absolute;
@@ -27,7 +27,7 @@ export const PostWrapper = styled.div`
     top: 0;
     bottom: 0;
     display: none;
-    background-color: ${colors.accent}33;
+    background-color: ${COLORS.accent}33;
     height: 100%;
     width: 50px;
     cursor: pointer;
@@ -82,7 +82,7 @@ export const PostContentWrapper = styled.div`
     line-height: 1.4;
   }
   .pub-time {
-    color: ${colors.slate};
+    color: ${COLORS.slate};
     display: block;
     margin-top: 5px;
     margin-bottom: 8px;
