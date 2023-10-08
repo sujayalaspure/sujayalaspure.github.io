@@ -1,14 +1,14 @@
 import React from "react"
 import styled from "styled-components"
 
-function TagGroup({ tags = [], right = false }) {
+function TagGroup({tags = [], right = false}) {
   return (
     <Tags right={right}>
       {tags.map((tag, index) => (
-        <>
+        <React.Fragment key={index}>
           <Tag key={index}>{tag}</Tag>
           <span>&bull;</span>
-        </>
+        </React.Fragment>
       ))}
     </Tags>
   )

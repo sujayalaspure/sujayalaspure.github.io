@@ -1,7 +1,7 @@
 import React from "react"
 import AppBar from "@material-ui/core/AppBar"
 
-import { TabsRow, TabItem } from "./style"
+import {TabsRow, TabItem} from "./style"
 import ExpData from "data/experience"
 import COLORS from "utils/Colors"
 import TabPanel from "./TabPanel"
@@ -14,7 +14,7 @@ const Experience = () => {
 
   return (
     <div>
-      <AppBar position="static" style={{ backgroundColor: COLORS.navy }}>
+      <AppBar position="static" style={{backgroundColor: COLORS.navy}}>
         <TabsRow
           value={value}
           onChange={handleChange}
@@ -22,7 +22,6 @@ const Experience = () => {
           textColor="primary"
           variant="scrollable"
           scrollButtons="auto"
-          allowScrollButtonsMobile
           aria-label="scrollable force tabs"
         >
           {ExpData.map((exp, index) => (

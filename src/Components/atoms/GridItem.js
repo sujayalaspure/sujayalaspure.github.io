@@ -53,10 +53,10 @@ const Content = styled.div`
 
 const Image = styled.img`
   border-radius: 10px;
-  /* object-fit: cover; */
-  /* max-height: 150vh; */
-  /* width: 100%; */
-  /* height: auto; */
+  object-fit: cover;
+  max-height: 80vh;
+  width: 100%;
+  height: auto;
 `
 
 const Caption = styled.div`

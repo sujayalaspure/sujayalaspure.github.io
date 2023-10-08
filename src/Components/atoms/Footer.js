@@ -13,7 +13,7 @@ function Footer() {
         <ContentText>
           <FooterSocialLinkList>
             {socialLink.map(({name, link, Icon, color}) => (
-              <SocialLinkItem aria-label={`Link to ${name}`} href={link} target="_blank" rel="noreferrer">
+              <SocialLinkItem key={link} aria-label={`Link to ${name}`} href={link} target="_blank" rel="noreferrer">
                 {Icon}
               </SocialLinkItem>
             ))}
