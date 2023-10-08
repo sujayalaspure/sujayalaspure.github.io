@@ -13,11 +13,11 @@ function UseCasesScenarios({title, options}) {
 
       <UseCaseWrapper>
         {options.map((option, index) => (
-          <>
+          <React.Fragment key={index}>
             {option?.children ? (
               <UseCaseRow>
-                {option.children.map((child, index) => (
-                  <UseCase key={index}>
+                {option.children.map((child, idx) => (
+                  <UseCase key={idx}>
                     {child.title && <UseCaseTitle>{child.title}</UseCaseTitle>}
                     <UseCaseDescription>
                       <p>{child.content}</p>
@@ -26,14 +26,14 @@ function UseCasesScenarios({title, options}) {
                 ))}
               </UseCaseRow>
             ) : (
-              <UseCase key={index}>
+              <UseCase>
                 {option.title && <UseCaseTitle>{option.title}</UseCaseTitle>}
                 <UseCaseDescription>
                   <p>{option.content}</p>
                 </UseCaseDescription>
               </UseCase>
             )}
-          </>
+          </React.Fragment>
         ))}
       </UseCaseWrapper>
     </Container>

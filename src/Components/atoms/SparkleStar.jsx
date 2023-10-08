@@ -1,5 +1,5 @@
 import React from "react"
-import { useEffect } from "react"
+import {useEffect} from "react"
 import Star from "../../Assets/images/Star"
 
 function SparkleStar() {
@@ -38,7 +38,7 @@ function SparkleStar() {
   return (
     <>
       {[...Array(3)].map((e, i) => (
-        <span key={i} class="magic-star">
+        <span key={i} className="magic-star">
           <Star />
         </span>
       ))}

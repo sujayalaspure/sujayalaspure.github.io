@@ -13,7 +13,7 @@ function FeaturedProjectCardV2({isRight, thumbnail, logo, title, description, ex
         <ImageWrapper>
           {externalLink ? (
             <BrowserSkin link={externalLink}>
-              <Image src={thumbnail} />
+              <Image src={thumbnail} loading="lazy" />
             </BrowserSkin>
           ) : (
             <Image src={thumbnail} />
@@ -22,7 +22,7 @@ function FeaturedProjectCardV2({isRight, thumbnail, logo, title, description, ex
       </ImageContainer>
       <ContentContainer isRight={isRight}>
         <TitleWrapper>
-          <img src={logo || Logo} width={36} height={36} />
+          <img src={logo || Logo} width={36} height={36} loading="lazy" />
           <Title>{title}</Title>
         </TitleWrapper>
         <Body>{ReactHtmlParser(description)}</Body>

@@ -1,20 +1,21 @@
-import React, { useEffect, useState } from "react"
-import { useParams, useNavigate } from "react-router-dom"
+import React, {useEffect, useState} from "react"
+import {useParams, useNavigate} from "react-router-dom"
 import "styles/pages/CaseStudy.css"
 import Banner from "./Banner"
 import TopHead from "./TopHead"
 import Brief from "./Brief"
 import SplitShow from "./SplitShow"
-import { useProject } from "Context/ProjectContext"
+import {useProject} from "Context/ProjectContext"
 import Footer from "Components/atoms/Footer"
-import { CaseFooter, CaseStudyContainer } from "./style"
+import {CaseFooter, CaseStudyContainer} from "./style"
 import Fullimage from "./Fullimage"
 import UseCasesScenarios from "./UseCasesScenarios"
+import Screenshots from "./Screenshots"
 
 export default function CaseStudy() {
   const [project, setProject] = useState(null)
-  const { slug } = useParams()
-  const { getProject } = useProject()
+  const {slug} = useParams()
+  const {getProject} = useProject()
   let navigate = useNavigate()
 
   useEffect(() => {
@@ -22,7 +23,7 @@ export default function CaseStudy() {
     setProject(pro)
   }, [])
 
-  const renderComponent = ({ type, value }, index) => {
+  const renderComponent = ({type, value}, index) => {
     switch (type) {
       case "bannerImage":
         return <Banner key={index} {...value} index={index} />
@@ -36,6 +37,8 @@ export default function CaseStudy() {
         return <Fullimage key={index} {...value} index={index} />
       case "usecaseScenarios":
         return <UseCasesScenarios key={index} {...value} />
+      case "screenshots":
+        return <Screenshots key={index} {...value} />
 
       default:
         break

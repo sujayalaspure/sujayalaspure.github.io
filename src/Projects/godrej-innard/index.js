@@ -1,44 +1,7 @@
-import mock_1 from "./assets/mock_1.webp"
-import mock_2 from "./assets/mock_2.webp"
-import navigation_frame from "./assets/navigatgion-frame.webp"
-import cover from "./assets/cover.webp"
-import wireframe from "./assets/wireframe.png"
-import home from "./assets/home.png"
-import home2 from "./assets/home2.png"
-import home3 from "./assets/home3.png"
-import filter from "./assets/filter.png"
-import scane from "./assets/scan.png"
-import launch from "./assets/launch.png"
-import delivery from "./assets/delivery.png"
-import help from "./assets/help.png"
-// import track from "./assets/track.png"
-import track1 from "./assets/track1.png"
-import Prolist from "./assets/products-list.png"
-import orderSuccess from "./assets/55.png"
-// import checkout from "./assets/33.png"
-// import cart from "./assets/22.png"
-import prodDetils1 from "./assets/12.png"
-import prodDetils from "./assets/detail.png"
-import orders from "./assets/66.png"
-// import payment from "./assets/44.png"
-import search from "./assets/search.png"
-import drawer from "./assets/drawer.png"
-import AdBanner from "./assets/ad-banner.png"
-import AuthScreens from "./assets/auth.png"
-import InnardLogo from "./assets/innard_logo.png"
+import {InnardImages} from "./assets"
 
 export const GodrejInnardAssets = {
-  mock_1,
-  mock_2,
-  navigation_frame,
-  cover,
-  wireframe,
-  home,
-  home2,
-  home3,
-  filter,
-  AdBanner,
-  InnardLogo,
+  ...InnardImages,
 }
 
 // export const GodrejInnard: ProjectStructure = {
@@ -57,7 +20,7 @@ export const GodrejInnardAssets = {
 export const GodrejInnardStructure = [
   {
     type: "bannerImage",
-    value: {title: "", imgsrc: cover},
+    value: {title: "", imgsrc: InnardImages.InnardCover},
   },
   {
     type: "tophead",
@@ -81,11 +44,11 @@ export const GodrejInnardStructure = [
   },
   {
     type: "bannerImage",
-    value: {title: "Wireframes", imgsrc: wireframe},
+    value: {title: "Wireframes", imgsrc: InnardImages.Wireframe},
   },
   {
     type: "fullImage",
-    value: {title: "", imgsrc: navigation_frame},
+    value: {title: "", imgsrc: InnardImages.NavigationFrame},
   },
   {
     type: "usecaseScenarios",
@@ -150,54 +113,53 @@ export const GodrejInnardStructure = [
   },
   {
     type: "fullImage",
-    value: {title: "Onboarding", imgsrc: AuthScreens},
+    value: {title: "Onboarding", imgsrc: InnardImages.OnBoarding},
   },
   {
-    type: "splitshow",
+    type: "screenshots",
     value: {
-      title: "Screens",
-      left: [
-        {
-          imgsrc: home,
-          caption: "Home & Explore",
-        },
-        {imgsrc: home2, caption: " Trustnet - Stars & Ratings"},
-        {imgsrc: home3, caption: "Educating the User"},
-        {imgsrc: search, caption: "Search & Discover"},
-        {imgsrc: orders, caption: "My Orders & Previous Order "},
-
-        {
-          imgsrc: track1,
-          caption:
-            "An order tracking system is one that tracks goods from the moment the order is placed to when they are physically delivered to the destination location.",
-        },
-        {imgsrc: scane, caption: "View plant in your space with AR"},
-        {
-          imgsrc: launch,
-          caption: "Appearance of the home screen on the day of the product launch, giving it the most priority.",
-        },
-      ],
-      right: [
-        {imgsrc: drawer, caption: "Profile Side Drawer"},
-        {
-          imgsrc: Prolist,
-          caption:
-            "The user will be able to see his or her orders, I tried to make the cart screen minimal and deliver. To decrease the level of stress users. experience when shopping for the latest products.",
-        },
-        {imgsrc: prodDetils, caption: "Product Details"},
-        {imgsrc: prodDetils1, caption: "Detailed Summary"},
-        {imgsrc: filter, caption: ""},
-        {imgsrc: orderSuccess, caption: ""},
-        {
-          imgsrc: delivery,
-          caption: "Priorities for the day to inform the user about the order status of the item ordered.",
-        },
-        {imgsrc: help, caption: "Help"},
+      title: "",
+      content: [
+        [
+          {caption: "Signup", imgsrc: InnardImages.Signup},
+          {caption: "", imgsrc: InnardImages.Login},
+          {caption: "", imgsrc: InnardImages.OTPScreen},
+        ],
+        [
+          {caption: "", imgsrc: InnardImages.HomeScreen},
+          {caption: "Important info at your glance", imgsrc: InnardImages.HomescreenBanner},
+          {caption: "", imgsrc: InnardImages.DrawerMenu, isNotch: true},
+        ],
+        [
+          {caption: "", imgsrc: InnardImages.HomeToListScreen},
+          // {caption: "", imgsrc: InnardImages.ProductList1},
+          {caption: "", imgsrc: InnardImages.ListSwitch},
+        ],
+        [
+          {caption: "", imgsrc: InnardImages.HomeToDetails},
+          {caption: "", imgsrc: InnardImages.ProductDetailsScreen, isNotch: true},
+          {caption: "", imgsrc: InnardImages.ProductDetailsScreen2},
+        ],
+        [
+          {caption: "", imgsrc: InnardImages.CartScreen},
+          {caption: "", imgsrc: InnardImages.CartMoreDetails},
+          {caption: "", imgsrc: InnardImages.PaymentScreen},
+          {caption: "", imgsrc: InnardImages.OrderSuccessScreen, isNotch: true},
+        ],
+        [
+          {caption: "My Orders & Previous Order ", imgsrc: InnardImages.PreviousOrders},
+          {caption: "", imgsrc: InnardImages.OrderSummaryScreen},
+          {caption: "Connect With us for any help!", imgsrc: InnardImages.OrderHelp},
+        ],
+        [
+          {caption: "", imgsrc: InnardImages.BookmarkScreen},
+          {caption: "", imgsrc: InnardImages.FilterProductScreen},
+        ],
       ],
     },
   },
   {
     type: "bannerImage",
-    value: {title: "", imgsrc: AdBanner},
+    value: {title: "", imgsrc: InnardImages.AdBanner},
   },
 ]
