@@ -9,7 +9,10 @@ function BrowserSkin({children, link}) {
         <MdArrowBack />
         <MdArrowForward />
         <MdRefresh />
-        <InputBar>{link}</InputBar>
+        <InputBar>
+          {link}
+          <MdRefresh className="refresh" />
+        </InputBar>
       </ToolBar>
       <ChildrenContainer>{children}</ChildrenContainer>
     </Container>
@@ -36,6 +39,18 @@ const ToolBar = styled.div`
   .react-icons {
     margin: 0 0.5rem;
   }
+  .refresh {
+    display: none;
+  }
+
+  @media (max-width: 1024px) {
+    .react-icons {
+      display: none;
+    }
+    .refresh {
+      display: block;
+    }
+  }
 `
 
 const InputBar = styled.div`
@@ -45,9 +60,10 @@ const InputBar = styled.div`
   height: 2rem;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: space-between;
   flex: 1 1 0;
   color: ${COLORS.slate};
+  font-size: clamp(0.75rem, 1vw, 1rem);
 `
 
 const ChildrenContainer = styled.div`
@@ -58,4 +74,7 @@ const ChildrenContainer = styled.div`
   border-radius: 18px;
   padding: 0.5rem;
   overflow: hidden;
+  @media (max-width: 1024px) {
+    margin-top: 0;
+  }
 `

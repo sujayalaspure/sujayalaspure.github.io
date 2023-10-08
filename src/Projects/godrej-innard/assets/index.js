@@ -18,7 +18,7 @@ import DrawerMenu from "./17-DrawerMenu.webp"
 import BookmarkScreen from "./18-Bookmarks.webp"
 import FilterProductScreen from "./19-FilterProducts.webp"
 import AdBanner from "./ad-banner.webp"
-import InnardLoogo from "./innard_logo.png"
+import InnardLogo from "./innard_logo.png"
 import InnardCover from "./cover.webp"
 import NavigationFrame from "./navigatgion-frame.webp"
 import ScanScreen from "./scan.png"
@@ -51,7 +51,7 @@ export const InnardImages = {
   BookmarkScreen,
   FilterProductScreen,
   AdBanner,
-  InnardLoogo,
+  InnardLogo,
   InnardCover,
   NavigationFrame,
   ScanScreen,
