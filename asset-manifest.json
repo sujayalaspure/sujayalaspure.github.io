@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.f60e204c.chunk.css",
-    "main.js": "/static/js/main.db8b3612.chunk.js",
-    "runtime-main.js": "/static/js/runtime-main.d5cb119d.js",
+    "main.js": "/static/js/main.034f4629.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.90e0be4d.js",
     "static/js/2.52064ed6.chunk.js": "/static/js/2.52064ed6.chunk.js",
     "static/js/3.01e7c0da.chunk.js": "/static/js/3.01e7c0da.chunk.js",
     "static/css/4.073de144.chunk.css": "/static/css/4.073de144.chunk.css",
-    "static/js/4.b50868e1.chunk.js": "/static/js/4.b50868e1.chunk.js",
+    "static/js/4.6079ce1a.chunk.js": "/static/js/4.6079ce1a.chunk.js",
     "static/css/5.2aaf51b3.chunk.css": "/static/css/5.2aaf51b3.chunk.css",
     "static/js/5.3fea0763.chunk.js": "/static/js/5.3fea0763.chunk.js",
     "static/css/6.3cc42532.chunk.css": "/static/css/6.3cc42532.chunk.css",
@@ -65,9 +65,9 @@
     "static/media/wireframe.d0dc4f09.webp": "/static/media/wireframe.d0dc4f09.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.d5cb119d.js",
+    "static/js/runtime-main.90e0be4d.js",
     "static/js/3.01e7c0da.chunk.js",
     "static/css/main.f60e204c.chunk.css",
-    "static/js/main.db8b3612.chunk.js"
+    "static/js/main.034f4629.chunk.js"
   ]
 }
