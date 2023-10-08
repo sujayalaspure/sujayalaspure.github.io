@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.f60e204c.chunk.css",
-    "main.js": "/static/js/main.9573d9b1.chunk.js",
-    "runtime-main.js": "/static/js/runtime-main.35551f90.js",
+    "main.js": "/static/js/main.db8b3612.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.d5cb119d.js",
     "static/js/2.52064ed6.chunk.js": "/static/js/2.52064ed6.chunk.js",
     "static/js/3.01e7c0da.chunk.js": "/static/js/3.01e7c0da.chunk.js",
     "static/css/4.073de144.chunk.css": "/static/css/4.073de144.chunk.css",
-    "static/js/4.4ad7d2b9.chunk.js": "/static/js/4.4ad7d2b9.chunk.js",
+    "static/js/4.b50868e1.chunk.js": "/static/js/4.b50868e1.chunk.js",
     "static/css/5.2aaf51b3.chunk.css": "/static/css/5.2aaf51b3.chunk.css",
     "static/js/5.3fea0763.chunk.js": "/static/js/5.3fea0763.chunk.js",
     "static/css/6.3cc42532.chunk.css": "/static/css/6.3cc42532.chunk.css",
@@ -35,7 +35,7 @@
     "static/media/8-ProductDetailsScreen-2.49bd79f6.webp": "/static/media/8-ProductDetailsScreen-2.49bd79f6.webp",
     "static/media/9-CartScreen.9b3fec6b.webp": "/static/media/9-CartScreen.9b3fec6b.webp",
     "static/media/Scratch-app-thumbnail.47672e32.webp": "/static/media/Scratch-app-thumbnail.47672e32.webp",
-    "static/media/ad-banner.31918809.png": "/static/media/ad-banner.31918809.png",
+    "static/media/ad-banner.6b1d9b4b.webp": "/static/media/ad-banner.6b1d9b4b.webp",
     "static/media/banner.63e45e4f.webp": "/static/media/banner.63e45e4f.webp",
     "static/media/banner3.89763756.webp": "/static/media/banner3.89763756.webp",
     "static/media/cover.478266d6.webp": "/static/media/cover.478266d6.webp",
@@ -57,17 +57,17 @@
     "static/media/logo_name.1ece3d63.webp": "/static/media/logo_name.1ece3d63.webp",
     "static/media/music-section.3f963af1.webp": "/static/media/music-section.3f963af1.webp",
     "static/media/navigatgion-frame.889f0e8c.webp": "/static/media/navigatgion-frame.889f0e8c.webp",
-    "static/media/onboarding.32bc5622.png": "/static/media/onboarding.32bc5622.png",
+    "static/media/onboarding.c454dec1.avif": "/static/media/onboarding.c454dec1.avif",
     "static/media/profile.cb449294.webp": "/static/media/profile.cb449294.webp",
     "static/media/profile.f3922fbe.jpg": "/static/media/profile.f3922fbe.jpg",
     "static/media/scan.66f28936.png": "/static/media/scan.66f28936.png",
     "static/media/search.051867f9.png": "/static/media/search.051867f9.png",
-    "static/media/wireframe.5bc1f118.png": "/static/media/wireframe.5bc1f118.png"
+    "static/media/wireframe.d0dc4f09.webp": "/static/media/wireframe.d0dc4f09.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.35551f90.js",
+    "static/js/runtime-main.d5cb119d.js",
     "static/js/3.01e7c0da.chunk.js",
     "static/css/main.f60e204c.chunk.css",
-    "static/js/main.9573d9b1.chunk.js"
+    "static/js/main.db8b3612.chunk.js"
   ]
 }
