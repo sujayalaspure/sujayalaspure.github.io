@@ -1,11 +1,11 @@
-import { profile } from "constant"
-import { useAnimation, motion } from "framer-motion"
-import React, { useEffect } from "react"
-import { useInView } from "react-intersection-observer"
+import {profile} from "constant"
+import {useAnimation, motion} from "framer-motion"
+import React, {useEffect} from "react"
+import {useInView} from "react-intersection-observer"
 import "styles/components/AboutMe.css"
 
 export default function AboutMe() {
-  const { ref, inView } = useInView({ threshold: 0.2 })
+  const {ref, inView} = useInView({threshold: 0.2})
   const animation = useAnimation()
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function AboutMe() {
   return (
     <div className="about-me">
       <div className="inner" ref={ref}>
-        <motion.div className="about-bio" initial={{ x: "-100vw" }} animate={animation}>
+        <motion.div className="about-bio" initial={{x: "-100vw"}} animate={animation}>
           <p>
             I love writing code! 👨‍💻 I strongly believe technology can change anything and that's why I am so passionate
             about it! I am trying to make an impact in the Web and mobile space. I love working across the stack!
@@ -42,7 +42,7 @@ export default function AboutMe() {
             <li>SwiftUI</li>
           </ul>
         </motion.div>
-        <motion.div initial={{ x: "100vw" }} animate={animation} className="image">
+        <motion.div initial={{x: "100vw"}} animate={animation} className="image">
           <div className="wrapper">
             <img src={profile} alt="Sujay Alaspure" />
           </div>

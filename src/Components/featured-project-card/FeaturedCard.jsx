@@ -1,9 +1,9 @@
-import React, { useEffect } from "react"
-import { FiGithub, FiExternalLink } from "react-icons/fi"
-import { FaGooglePlay, FaAppStoreIos } from "react-icons/fa"
+import React, {useEffect} from "react"
+import {FiGithub, FiExternalLink} from "react-icons/fi"
+import {FaGooglePlay, FaAppStoreIos} from "react-icons/fa"
 import ReactHtmlParser from "react-html-parser"
-import { useInView } from "react-intersection-observer"
-import { motion, useAnimation } from "framer-motion"
+import {useInView} from "react-intersection-observer"
+import {motion, useAnimation} from "framer-motion"
 
 import {
   FeaturedProjectCardContainer,
@@ -29,7 +29,7 @@ const FeaturedCard = ({
   externalLink,
   right,
 }) => {
-  const { ref, inView } = useInView({ threshold: 0.4 })
+  const {ref, inView} = useInView({threshold: 0.4})
   const animation = useAnimation()
 
   useEffect(() => {
@@ -48,7 +48,7 @@ const FeaturedCard = ({
   }, [inView])
   return (
     <motion.div ref={ref}>
-      <motion.div initial={{ y: 300 }} animate={animation}>
+      <motion.div initial={{y: 300}} animate={animation}>
         <FeaturedProjectCardContainer>
           <FeaturedProjectContent right={right}>
             <Overline>Featured Project</Overline>
@@ -91,7 +91,7 @@ const FeaturedCard = ({
             </ProjectLinks>
           </FeaturedProjectContent>
           <Projectimage right={right}>
-            <img src={image} alt={title} />
+            <img src={image} alt={title} loading="lazy" />
           </Projectimage>
         </FeaturedProjectCardContainer>
       </motion.div>

@@ -1,10 +1,10 @@
 import LogoIcon from "Assets/LogoIcon"
 import TagGroup from "Components/atoms/TagGroup"
 
-import React, { useEffect, useState } from "react"
-import { FiExternalLink } from "react-icons/fi"
-import { getMediumPosts } from "service"
-import { MediumPostsContainer, PostContentWrapper, PostImage, PostWrapper } from "./style"
+import React, {useEffect, useState} from "react"
+import {FiExternalLink} from "react-icons/fi"
+import {getMediumPosts} from "service"
+import {MediumPostsContainer, PostContentWrapper, PostImage, PostWrapper} from "./style"
 
 function MediumPosts() {
   const [mediumPosts, setMediumPosts] = useState([])
@@ -26,14 +26,14 @@ function MediumPosts() {
   )
 }
 
-const Post = ({ post }) => {
+const Post = ({post}) => {
   const title = post?.title
 
   const description = post?.description.replace(/<h3>.*<\/h3>|<figcaption>.*<\/figcaption>|<[^>]*>/gm, "")
 
   return (
     <PostWrapper>
-      <PostImage src={post?.thumbnail} alt={title} />
+      <PostImage src={post?.thumbnail} alt={title} loading="lazy" />
       <PostContentWrapper>
         <h3 className="title">{title}</h3>
         <p className="description">{description}</p>

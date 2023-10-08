@@ -24,7 +24,7 @@ export default function GridItem({img, caption = null, right = false}) {
     <Container ref={ref}>
       <motion.div initial={{x: right ? "200vw" : "-100vw"}} animate={animation}>
         <Content>
-          <Image src={img} alt="" />
+          <Image src={img} alt="" loading="lazy" />
           {caption && (
             <Caption>
               <p>{caption}</p>

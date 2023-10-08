@@ -16,7 +16,7 @@ function FeaturedProjectCardV2({isRight, thumbnail, logo, title, description, ex
               <Image src={thumbnail} loading="lazy" />
             </BrowserSkin>
           ) : (
-            <Image src={thumbnail} />
+            <Image src={thumbnail} loading="lazy" />
           )}
         </ImageWrapper>
       </ImageContainer>
