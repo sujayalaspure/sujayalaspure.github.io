@@ -6,6 +6,7 @@ import {Footer, MousePointer, SomeRandomAnim} from "Components/atoms"
 import LogoIcon from "Assets/LogoIcon"
 import {resumeLink} from "constant"
 import GodrejCaseStudy from "./Projects/godrej-innard/GodrejCaseStudy"
+import ImageModal, {imageModalRef} from "./Components/molecules/ImageModal"
 // import useFirebase from "utils/firebase"
 
 const Home = React.lazy(() => import("Pages/Home"))
@@ -51,6 +52,7 @@ function App() {
         </Suspense>
       </ContextProvider>
       <Footer />
+      <ImageModal ref={imageModalRef} />
     </>
   )
 }

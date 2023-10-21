@@ -25,11 +25,10 @@ const Container = styled.div`
   border-radius: 26px;
   padding: 0.5rem;
   position: relative;
-
   img {
     border: 1px solid ${COLORS.darkslate};
     border-radius: 18px;
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     object-fit: cover;
   }

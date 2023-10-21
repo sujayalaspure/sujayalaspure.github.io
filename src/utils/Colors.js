@@ -22,7 +22,7 @@ const COLORS = {
   onSurface: "#",
   disabled: "#5B5B5B",
   placeholder: "#666666",
-  backdrop: "#",
+  backdrop: "#112240dd",
   notification: "#",
   card: "#",
   border: "#ced4da",

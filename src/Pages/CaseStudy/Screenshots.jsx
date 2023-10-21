@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import COLORS from "../../utils/Colors"
 import MobileFrame from "../../Components/atoms/MobileFrame"
+import {openModal} from "../../Components/molecules/ImageModal"
 
 function Screenshots({title, content}) {
   return (
@@ -8,7 +9,7 @@ function Screenshots({title, content}) {
       {content.map((row, index) => (
         <Row key={index}>
           {row.map(({imgsrc, caption, isNotch}, idx) => (
-            <ImageWrapper key={`${index}-${idx}`}>
+            <ImageWrapper onClick={() => openModal({imageSrc: imgsrc, caption, isNotch})} key={`${index}-${idx}`}>
               <MobileFrame isNotch={isNotch}>
                 <img src={imgsrc} loading="lazy" />
               </MobileFrame>
@@ -53,15 +54,19 @@ const ImageWrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  img {
+    width: 100%;
+    /* height: auto; */
+  }
 `
 
 const Caption = styled.div`
-  /* margin-top: 0.5rem; */
+  margin-top: 0.5rem;
   width: 100%;
   text-align: center;
   /* padding: 0 15%; */
   p {
-    font-size: 1.25rem;
+    font-size: clamp(0.8rem, 1.8vw, 1.25rem);
     color: ${COLORS.lightSlate};
   }
 

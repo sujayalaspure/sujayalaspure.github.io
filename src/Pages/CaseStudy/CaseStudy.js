@@ -49,7 +49,7 @@ export default function CaseStudy() {
 
   return (
     <>
-      <CaseStudyContainer>
+      <CaseStudyContainer id="fixed">
         {project ? project?.data?.map((item, index) => renderComponent(item, index)) : routeTo404Page()}
       </CaseStudyContainer>
       <CaseFooter>
