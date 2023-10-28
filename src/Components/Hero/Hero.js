@@ -13,8 +13,6 @@ export default function Hero() {
   const animation = useAnimation()
   const isMobile = useMobile()
 
-  console.log(isMobile)
-
   useEffect(() => {
     if (inView) {
       animation.start({
