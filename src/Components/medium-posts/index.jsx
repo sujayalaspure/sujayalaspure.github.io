@@ -4,7 +4,8 @@ import TagGroup from "Components/atoms/TagGroup"
 import React, {useEffect, useState} from "react"
 import {FiExternalLink} from "react-icons/fi"
 import {getMediumPosts} from "service"
-import {MediumPostsContainer, PostContentWrapper, PostImage, PostWrapper} from "./style"
+import {MediumPostsContainer, PostContentWrapper, PostImage, PostWrapper, ReadMoreText, ReadMoreWrapper} from "./style"
+import {ProfileLinks} from "../../constant"
 import {logEventAnalytics} from "../../utils/firebase"
 
 function MediumPosts() {
@@ -19,11 +20,20 @@ function MediumPosts() {
       })
   }, [])
   return (
-    <MediumPostsContainer>
-      {!mediumPosts && <LogoIcon zoom={0.5} />}
+    <>
+      <MediumPostsContainer>
+        {!mediumPosts && <LogoIcon zoom={0.5} />}
 
-      {mediumPosts && mediumPosts?.map((post, index) => <Post key={index} post={post} />)}
-    </MediumPostsContainer>
+        {mediumPosts && mediumPosts.slice(0, 5)?.map((post, index) => <Post key={index} post={post} />)}
+      </MediumPostsContainer>
+      {mediumPosts?.length > 5 && (
+        <ReadMoreWrapper>
+          <ReadMoreText className="link-item" href={ProfileLinks.medium}>
+            Read more on Medium
+          </ReadMoreText>
+        </ReadMoreWrapper>
+      )}
+    </>
   )
 }
 
