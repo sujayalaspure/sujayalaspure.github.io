@@ -6,6 +6,7 @@ import {Footer, MousePointer, SomeRandomAnim} from "Components/atoms"
 import LogoIcon from "Assets/LogoIcon"
 import {resumeLink} from "constant"
 import GodrejCaseStudy from "./Projects/godrej-innard/GodrejCaseStudy"
+import {logEventAnalytics} from "./utils/firebase"
 // import useFirebase from "utils/firebase"
 
 const Home = React.lazy(() => import("Pages/Home"))
@@ -20,6 +21,7 @@ function App() {
     const resumeRedirect = () => {
       const url = window.location.href
       if (url.includes("/resume")) {
+        logEventAnalytics("resume_redirect")
         window.location.href = `https://sujayalaspure.github.io${resumeLink}`
       }
     }

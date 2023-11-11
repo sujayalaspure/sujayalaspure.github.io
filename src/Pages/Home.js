@@ -6,16 +6,17 @@ import projects from "Projects"
 import {GithubCorner, GetInTouch} from "Components/atoms"
 import AboutMe from "Components/Organisms/AboutMe"
 import FeaturedProjects from "Components/featured-project-card"
-import Experience from "Components/experience"
 import LogoIcon from "Assets/LogoIcon"
 import MediumPosts from "Components/medium-posts"
 import ProjectGrid from "Components/project-grid"
 import ExperienceSectionV2 from "../Components/experience/ExperienceSectionV2"
+import {logPageView} from "../utils/firebase"
 
 function Home() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
+    logPageView("home_page_visited")
     setTimeout(() => {
       setLoading(false)
     }, 1000)

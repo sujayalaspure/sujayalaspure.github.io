@@ -3,6 +3,7 @@ import ExpData from "data/experience"
 import styled from "styled-components"
 import COLORS from "../../utils/Colors"
 import TabPanel from "./TabPanel"
+import {logEventAnalytics} from "../../utils/firebase"
 
 const editorBGColor = "#121D30"
 
@@ -11,6 +12,9 @@ function ExperienceSectionV2() {
   const [activeTabIndex, setActiveTabIndex] = useState(0)
 
   const setActiveTab = (e, index) => {
+    logEventAnalytics("experience_tab_clicked", {
+      label: ExpData[index].company,
+    })
     e.stopPropagation()
     setActiveTabIndex(index)
   }
