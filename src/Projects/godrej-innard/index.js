@@ -126,19 +126,21 @@ export const GodrejInnardStructure = [
           {caption: "", imgsrc: InnardImages.OTPScreen},
         ],
         [
+          {caption: "", imgsrc: InnardImages.DrawerMenu, isNotch: true},
           {caption: "", imgsrc: InnardImages.HomeScreen},
           {caption: "Important info at your glance", imgsrc: InnardImages.HomescreenBanner},
-          {caption: "", imgsrc: InnardImages.DrawerMenu, isNotch: true},
         ],
         [
           {caption: "", imgsrc: InnardImages.HomeToListScreen},
           // {caption: "", imgsrc: InnardImages.ProductList1},
           {caption: "", imgsrc: InnardImages.ListSwitch},
+          {caption: "", imgsrc: InnardImages.FilterProductScreen},
         ],
         [
           {caption: "", imgsrc: InnardImages.HomeToDetails},
           {caption: "", imgsrc: InnardImages.ProductDetailsScreen, isNotch: true},
           {caption: "", imgsrc: InnardImages.ProductDetailsScreen2},
+          {caption: "", imgsrc: InnardImages.BookmarkScreen},
         ],
         [
           {caption: "", imgsrc: InnardImages.CartScreen},
@@ -151,10 +153,7 @@ export const GodrejInnardStructure = [
           {caption: "", imgsrc: InnardImages.OrderSummaryScreen},
           {caption: "Connect With us for any help!", imgsrc: InnardImages.OrderHelp},
         ],
-        [
-          {caption: "", imgsrc: InnardImages.BookmarkScreen},
-          {caption: "", imgsrc: InnardImages.FilterProductScreen},
-        ],
+        [],
       ],
     },
   },

@@ -1,4 +1,4 @@
-import {smarthmStructure, banner, SmartHMLogo, SmartHMAssets} from "./Smarthm"
+import {smarthmStructure, SmartHMAssets} from "./Smarthm"
 import cryptoBanner from "./Cryptoverse/banner.webp"
 import keepBanner from "./Keeper/keep-banner.webp"
 import musicAppStucture from "./music-app"
@@ -21,10 +21,10 @@ const projects = [
   {
     isFeatured: false,
     thumbnail: ScratchAppThumb,
-    title: "Frontend Machine Coding Projects",
+    title: "React Sample Projects",
     slug: "",
     description: `This project is a machine coding implementation of some of the frontend problems. `,
-    tags: ["Calculator", "Nested Comments", "Typeahead"],
+    tags: ["UI Machine Coding", "Nested Comments", "Typeahead"],
     githubLink: "https://github.com/sujayalaspure/react-examples",
     externalLink: "https://r-example.netlify.app/",
     data: null,
@@ -67,27 +67,27 @@ const projects = [
     externalLink: "https://sujayalaspure.github.io/cryptoverse/",
     data: null,
   },
-  {
-    title: "React Gallery App",
-    slug: "gallery-app",
-    description:
-      "A Simple Gallary App. Photo upload to Firebase Storage, Realtime photo preview with Interactive animation using framer Motion",
-    tags: ["ReactJs", "Firebase", "Framer-Motion"],
-    githubLink: "https://github.com/sujayalaspure/react-galary",
-    externalLink: "https://sujayalaspure.github.io/react-galary/",
-    data: null,
-  },
-  {
-    title: "Chrome Extension App : Scaler-Timer",
-    slug: "scaler-timer",
-    description:
-      "A Simple time tracking extension for Scaler.com. It tracks the time taken by the user to solve the DSA problem. ",
-    tags: ["Javascript", "Chrome-Extension"],
-    githubLink: "https://github.com/sujayalaspure/scaler-timer",
-    externalLink: null,
-    data: null,
-    case: false,
-  },
+  // {
+  //   title: "React Gallery App",
+  //   slug: "gallery-app",
+  //   description:
+  //     "A Simple Gallary App. Photo upload to Firebase Storage, Realtime photo preview with Interactive animation using framer Motion",
+  //   tags: ["ReactJs", "Firebase", "Framer-Motion"],
+  //   githubLink: "https://github.com/sujayalaspure/react-galary",
+  //   externalLink: "https://sujayalaspure.github.io/react-galary/",
+  //   data: null,
+  // },
+  // {
+  //   title: "Chrome Extension App : Scaler-Timer",
+  //   slug: "scaler-timer",
+  //   description:
+  //     "A Simple time tracking extension for Scaler.com. It tracks the time taken by the user to solve the DSA problem. ",
+  //   tags: ["Javascript", "Chrome-Extension"],
+  //   githubLink: "https://github.com/sujayalaspure/scaler-timer",
+  //   externalLink: null,
+  //   data: null,
+  //   case: false,
+  // },
   {
     title: "React Native Todo App",
     slug: "todo-app",
@@ -100,16 +100,16 @@ const projects = [
     case: false,
   },
 
-  {
-    title: "Music Redesigned",
-    slug: "music-redesigned",
-    description: `This is a redesign of YouTube Music. In this design, I mostly tried to create a dark and artistic space for users to interact with.`,
-    tags: ["ReactJS", "RapidAPI", "Redux/toolkit"],
-    githubLink: "https://github.com/sujayalaspure/music-redesigned",
-    // externalLink: "https://music-redesigned.netlify.app/",
-    data: musicAppStucture,
-    case: true,
-  },
+  // {
+  //   title: "Music Redesigned",
+  //   slug: "music-redesigned",
+  //   description: `This is a redesign of YouTube Music. In this design, I mostly tried to create a dark and artistic space for users to interact with.`,
+  //   tags: ["ReactJS", "RapidAPI", "Redux/toolkit"],
+  //   githubLink: "https://github.com/sujayalaspure/music-redesigned",
+  //   // externalLink: "https://music-redesigned.netlify.app/",
+  //   data: musicAppStucture,
+  //   case: true,
+  // },
   {
     title: "Person Movement Detection",
     slug: "person-movement-detection",

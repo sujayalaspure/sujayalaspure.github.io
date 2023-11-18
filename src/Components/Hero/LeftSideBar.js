@@ -7,20 +7,22 @@ import styled from "styled-components"
 import COLORS from "../../utils/Colors"
 import {logEventAnalytics} from "../../utils/firebase"
 
-export default function LeftSideBar() {
+export default function LeftSideBar({isTop = false}) {
   const handleSocialLinkClick = (name) => (e) => {
     console.log(name)
     logEventAnalytics("social_link_click", {name})
   }
   return (
-    <Container>
-      <LogoContainer>
-        <img src={Logo} alt="Sujay Alaspure" />
+    <Container isTop={isTop}>
+      <LogoContainer isTop={isTop}>
+        <a href="/">
+          <img src={Logo} alt="Sujay Alaspure" />
+        </a>
       </LogoContainer>
-      <SocialLinkList>
+      <SocialLinkList isTop={isTop}>
         {socialLink.map(({name, link, Icon, color}) => (
-          <Tooltip title={name} aria-label={name} placement="right" arrow key={link} color={color}>
-            <SocialLinkItem>
+          <Tooltip title={name} aria-label={name} placement={isTop ? "bottom" : "right"} arrow key={link} color={color}>
+            <SocialLinkItem isTop={isTop}>
               <SocialLink
                 onClick={handleSocialLinkClick(name)}
                 aria-label={`Link to ${name}`}
@@ -56,12 +58,20 @@ const Container = styled.div`
   @media (max-width: 768px) {
     display: none;
   }
+  ${(_) =>
+    _.isTop &&
+    ` width: 100vw;
+      height: 80px;
+      flex-direction: row;
+      border-right:0;
+      border-bottom: 1px solid ${COLORS.darkslate};`}
 `
 const LogoContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 20px;
+  ${(_) => _.isTop && `padding: 0 0.5rem;`}
   img {
     height: 50px;
     width: 50px;
@@ -75,6 +85,10 @@ const SocialLinkList = styled.ul`
   display: flex;
   flex: 1 1 auto;
   justify-content: center;
+  ${(_) =>
+    _.isTop &&
+    `flex-direction: row;
+  justify-content: flex-end;`}
 `
 
 const SocialLinkItem = styled.li`
@@ -91,6 +105,10 @@ const SocialLinkItem = styled.li`
       transform: translateY(-3px);
     }
   }
+  ${(_) =>
+    _.isTop &&
+    ` padding: 0 16px;
+      margin: 0 0.5rem;`}
 `
 
 const SocialLink = styled.a``
