@@ -5,7 +5,7 @@ import ReactHtmlParser from "react-html-parser"
 import styled from "styled-components"
 import COLORS from "../../utils/Colors"
 
-function TableRow({project}) {
+function TableRow({project, tableHead}) {
   const [isOpen, setIsOpen] = useState(false)
   let linkValue = project?.externalLink
   if (linkValue?.includes("github.com")) {
@@ -19,6 +19,7 @@ function TableRow({project}) {
         <td>
           <TagGroup tags={tags} />
         </td>
+        <td>{project.madeAt}</td>
         <td className="link">
           {project.githubLink && (
             <a href={project.githubLink} target="_blank" rel="noreferrer">
@@ -38,7 +39,7 @@ function TableRow({project}) {
         </td>
       </Tr>
       <Description isOpen={isOpen}>
-        <td colSpan={3}>
+        <td colSpan={tableHead?.length}>
           <span>{ReactHtmlParser(project.description)}</span>
           {isOpen && <Arrow />}
         </td>

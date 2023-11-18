@@ -11,7 +11,7 @@ function ArchiveTable({tableHead, tableData}) {
         {tableData
           .filter((item) => !item.isFeatured)
           .map((project, index) => (
-            <TableRow key={index} project={project} />
+            <TableRow tableHead={tableHead} key={index} project={project} />
           ))}
       </tbody>
     </Table>
