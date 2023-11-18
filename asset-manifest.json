@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.698b0584.chunk.css",
-    "main.js": "/static/js/main.93c1f2f6.chunk.js",
-    "runtime-main.js": "/static/js/runtime-main.1c771784.js",
-    "static/js/2.cf108606.chunk.js": "/static/js/2.cf108606.chunk.js",
-    "static/js/3.adece8a5.chunk.js": "/static/js/3.adece8a5.chunk.js",
-    "static/css/4.a8f12b23.chunk.css": "/static/css/4.a8f12b23.chunk.css",
-    "static/js/4.4d9198a4.chunk.js": "/static/js/4.4d9198a4.chunk.js",
+    "main.css": "/static/css/main.cd3f58ec.chunk.css",
+    "main.js": "/static/js/main.c4f4fee1.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.501b7abf.js",
+    "static/js/2.1998c0c3.chunk.js": "/static/js/2.1998c0c3.chunk.js",
+    "static/css/3.3f2a7b3a.chunk.css": "/static/css/3.3f2a7b3a.chunk.css",
+    "static/js/3.07a55b8c.chunk.js": "/static/js/3.07a55b8c.chunk.js",
+    "static/js/4.f9c806a9.chunk.js": "/static/js/4.f9c806a9.chunk.js",
     "static/css/5.2aaf51b3.chunk.css": "/static/css/5.2aaf51b3.chunk.css",
-    "static/js/5.c97928dd.chunk.js": "/static/js/5.c97928dd.chunk.js",
+    "static/js/5.5c0a7b9c.chunk.js": "/static/js/5.5c0a7b9c.chunk.js",
     "static/css/6.3cc42532.chunk.css": "/static/css/6.3cc42532.chunk.css",
-    "static/js/6.c8527a0a.chunk.js": "/static/js/6.c8527a0a.chunk.js",
-    "static/js/7.3494c6fa.chunk.js": "/static/js/7.3494c6fa.chunk.js",
+    "static/js/6.38d9fd7f.chunk.js": "/static/js/6.38d9fd7f.chunk.js",
+    "static/js/7.6558f6d1.chunk.js": "/static/js/7.6558f6d1.chunk.js",
     "index.html": "/index.html",
-    "static/js/2.cf108606.chunk.js.LICENSE.txt": "/static/js/2.cf108606.chunk.js.LICENSE.txt",
-    "static/js/3.adece8a5.chunk.js.LICENSE.txt": "/static/js/3.adece8a5.chunk.js.LICENSE.txt",
+    "static/js/2.1998c0c3.chunk.js.LICENSE.txt": "/static/js/2.1998c0c3.chunk.js.LICENSE.txt",
+    "static/js/4.f9c806a9.chunk.js.LICENSE.txt": "/static/js/4.f9c806a9.chunk.js.LICENSE.txt",
     "static/media/1-Signupscreen.b0f4ef89.webp": "/static/media/1-Signupscreen.b0f4ef89.webp",
     "static/media/10-CartMorePriceDetails.f7b075ce.webp": "/static/media/10-CartMorePriceDetails.f7b075ce.webp",
     "static/media/11-Checkoutscreen.2a05620e.webp": "/static/media/11-Checkoutscreen.2a05620e.webp",
@@ -65,9 +65,9 @@
     "static/media/wireframe.d0dc4f09.webp": "/static/media/wireframe.d0dc4f09.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.1c771784.js",
-    "static/js/3.adece8a5.chunk.js",
-    "static/css/main.698b0584.chunk.css",
-    "static/js/main.93c1f2f6.chunk.js"
+    "static/js/runtime-main.501b7abf.js",
+    "static/js/2.1998c0c3.chunk.js",
+    "static/css/main.cd3f58ec.chunk.css",
+    "static/js/main.c4f4fee1.chunk.js"
   ]
 }
