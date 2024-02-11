@@ -1,3 +1,4 @@
+import {Link} from "Components/atoms";
 import React from "react";
 import styled from "styled-components";
 
@@ -12,9 +13,9 @@ export default function Brief({ briefTitle, content, links }) {
         {links && (
           <BriefLinks>
             {links.map(({ linkName, src }) => (
-              <a key={src} className="underline--magical" href={src} target="_blank" rel="noopener noreferrer">
+              <Link button key={src} href={src} target="_blank" rel="noopener noreferrer">
                 {linkName}
-              </a>
+              </Link>
             ))}
           </BriefLinks>
         )}
