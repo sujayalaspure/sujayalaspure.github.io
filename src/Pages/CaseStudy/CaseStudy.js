@@ -21,6 +21,7 @@ export default function CaseStudy() {
   useEffect(() => {
     const pro = getProject(slug)
     setProject(pro)
+    document.title = `${pro.title} | Sujay Alaspure`
   }, [])
 
   const renderComponent = ({type, value}, index) => {

@@ -39,7 +39,7 @@ function FeaturedProjectCardV2({isRight, thumbnail, logo, title, description, ex
             rel="noreferrer"
             target={externalLink ? "_blank" : "_self"}
           >
-            Read More
+            {externalLink ? "Demo" : "Learn More"}
           </ActionButton>
         </FootNote>
       </ContentContainer>

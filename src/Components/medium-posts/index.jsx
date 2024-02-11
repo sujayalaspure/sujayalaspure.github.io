@@ -3,7 +3,7 @@ import TagGroup from "Components/atoms/TagGroup"
 
 import React, {useEffect, useState} from "react"
 import {FiExternalLink} from "react-icons/fi"
-import {getMediumPosts} from "service"
+import {getMediumPostThumbnail, getMediumPosts} from "service"
 import {MediumPostsContainer, PostContentWrapper, PostImage, PostWrapper, ReadMoreText, ReadMoreWrapper} from "./style"
 import {ProfileLinks} from "../../constant"
 import {logEventAnalytics} from "../../utils/firebase"
@@ -51,7 +51,7 @@ const Post = ({post}) => {
 
   return (
     <PostWrapper>
-      <PostImage src={post?.thumbnail} alt={title} loading="lazy" />
+      <PostImage src={getMediumPostThumbnail(post?.description)} alt={title} loading="lazy" />
       <PostContentWrapper>
         <h3 className="title">{title}</h3>
         <p className="description">{description}</p>

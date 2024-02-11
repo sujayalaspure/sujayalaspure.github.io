@@ -6,6 +6,7 @@ import COLORS from "../utils/Colors"
 import projects from "../Projects"
 import ArchiveTable from "../Components/project-archives/ArchiveTable"
 import LeftSideBar from "../Components/Hero/LeftSideBar"
+import {useEffect} from "react"
 
 const tableHeading = [
   {
@@ -28,6 +29,10 @@ const tableHeading = [
 
 function Archives() {
   const navigate = useNavigate()
+
+  useEffect(() => {
+    document.title = `Project Archives | Sujay Alaspure`
+  }, [])
   return (
     <>
       <LeftSideBar isTop />
