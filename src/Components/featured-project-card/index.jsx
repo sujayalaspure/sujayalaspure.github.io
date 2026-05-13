@@ -44,6 +44,6 @@ const ArchiveText = styled.a`
     transition: transform 0.3s ease;
   }
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
 `
