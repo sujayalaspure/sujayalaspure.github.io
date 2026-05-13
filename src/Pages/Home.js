@@ -47,6 +47,7 @@ function Home() {
     {
       title: "Get In Touch",
       component: <GetInTouch />,
+      hideHeading: false,
     },
   ]
 
@@ -61,9 +62,9 @@ function Home() {
       <GithubCorner />
       <Hero />
 
-      {DATA.filter((item) => !item.hide).map(({title, component}, index) => (
+      {DATA.filter((item) => !item.hide).map(({title, component, hideHeading}, index) => (
         <Section key={index.toString()}>
-          <SectionHeading number={(index + 1).toFixed().toString()} title={title} />
+          {!hideHeading && <SectionHeading number={(index + 1).toFixed().toString()} title={title} />}
           {component}
         </Section>
       ))}
