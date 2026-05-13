@@ -7,6 +7,25 @@ import projects from "../Projects"
 import ArchiveTable from "../Components/project-archives/ArchiveTable"
 import LeftSideBar from "../Components/Hero/LeftSideBar"
 
+const tableHeading = [
+  {
+    label: "Project",
+    key: "title",
+  },
+  {
+    label: "Built with",
+    key: "tags",
+  },
+  {
+    label: "Made at",
+    key: "madeAt",
+  },
+  {
+    label: "Links",
+    key: "links",
+  },
+]
+
 function Archives() {
   const navigate = useNavigate()
   return (
@@ -22,7 +41,7 @@ function Archives() {
           <BiArrowBack />
         </Back>
         <Heading>All Projects</Heading>
-        <ArchiveTable tableHead={["Project", "Built with", "Links"]} tableData={projects} />
+        <ArchiveTable tableHead={tableHeading} tableData={projects} />
       </Container>
     </>
   )

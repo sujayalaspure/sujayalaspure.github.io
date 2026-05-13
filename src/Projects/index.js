@@ -1,7 +1,6 @@
 import {smarthmStructure, SmartHMAssets} from "./Smarthm"
 import cryptoBanner from "./Cryptoverse/banner.webp"
 import keepBanner from "./Keeper/keep-banner.webp"
-import musicAppStucture from "./music-app"
 import ScratchAppThumb from "./scratch-app/Scratch-app-thumbnail.webp"
 import {GodrejInnardAssets, GodrejInnardStructure} from "./godrej-innard"
 const projects = [
@@ -17,6 +16,7 @@ const projects = [
     data: GodrejInnardStructure,
     case: false,
     logo: GodrejInnardAssets.InnardLogo,
+    madeAt: "Personal Project",
   },
   {
     isFeatured: false,
@@ -29,6 +29,14 @@ const projects = [
     externalLink: "https://r-example.netlify.app/",
     data: null,
     case: false,
+    madeAt: "Personal Project",
+  },
+  {
+    title: "Driveri",
+    description: `Driveri is a mobile app that helps drivers to track their driving behavior and improve their driving skills.`,
+    tags: ["React Native", "KMM", "Swift", "Kotlin"],
+    externalLink: "https://apps.apple.com/in/app/driveri/id1392990449",
+    madeAt: "Netradyne ",
   },
   {
     isFeatured: true,
@@ -42,6 +50,7 @@ const projects = [
     playStore: "https://play.google.com/store/apps/details?id=com.indivisible.smarthm",
     data: smarthmStructure,
     logo: SmartHMAssets.SmartHMLogo,
+    madeAt: "Personal Project",
   },
   {
     isFeatured: false,
@@ -54,6 +63,15 @@ const projects = [
     githubLink: "https://github.com/sujayalaspure/google-keep/",
     externalLink: "https://sujayalaspure.github.io/google-keep/",
     data: null,
+    madeAt: "Personal Project",
+  },
+
+  {
+    title: "Sportico",
+    description: `Sportico is a sports news app that provides the latest news, live scores, and highlights for all major sports leagues.`,
+    tags: ["React Native", "Redux/toolkit", "OneSignal"],
+    externalLink: "https://play.google.com/store/apps/details?id=com.pmc.sportico&hl=en&gl=US",
+    madeAt: "Robosoft Technologies",
   },
   {
     isFeatured: false,
@@ -66,6 +84,7 @@ const projects = [
     githubLink: "https://github.com/sujayalaspure/cryptoverse/",
     externalLink: "https://sujayalaspure.github.io/cryptoverse/",
     data: null,
+    madeAt: "Personal Project",
   },
   // {
   //   title: "React Gallery App",
@@ -98,6 +117,7 @@ const projects = [
     externalLink: "https://expo.dev/@alaspuresujay/todo-app",
     data: null,
     case: false,
+    madeAt: "Personal Project",
   },
 
   // {
@@ -119,6 +139,7 @@ const projects = [
     // externalLink: "#",
     data: null,
     case: false,
+    madeAt: "Personal Project",
   },
   {
     title: "Image Color picker",
@@ -129,6 +150,7 @@ const projects = [
     youtubeLink: "https://youtu.be/1-b7aUZ1dzo",
     data: null,
     case: false,
+    madeAt: "Personal Project",
   },
   {
     isFeatured: true,
@@ -142,6 +164,7 @@ const projects = [
     data: null,
     case: false,
     logo: "https://seeklogo.com/images/S/scratch-cat-logo-7F652C6253-seeklogo.com.png",
+    madeAt: "Personal Project",
   },
 ]
 

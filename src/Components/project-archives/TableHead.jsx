@@ -6,7 +6,7 @@ function TableHead({data}) {
     <THead>
       <tr>
         {data.map((item, index) => (
-          <th key={index}>{item}</th>
+          <th key={index}>{item.label}</th>
         ))}
       </tr>
     </THead>
@@ -22,7 +22,6 @@ const THead = styled.thead`
   border: 0px solid ${COLORS.slate}33;
   border-bottom-width: 1px;
   background-color: ${COLORS.navy};
-
   th {
     font-weight: 500;
     font-size: 0.875rem;
@@ -31,5 +30,9 @@ const THead = styled.thead`
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: left;
+
+    &:first-child {
+      padding-left: 2rem;
+    }
   }
 `
