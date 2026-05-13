@@ -5,8 +5,13 @@ import {Logo, socialLink} from "../../constant"
 import "styles/components/Hero.css"
 import styled from "styled-components"
 import COLORS from "../../utils/Colors"
+import {logEventAnalytics} from "../../utils/firebase"
 
 export default function LeftSideBar() {
+  const handleSocialLinkClick = (name) => (e) => {
+    console.log(name)
+    logEventAnalytics("social_link_click", {name})
+  }
   return (
     <Container>
       <LogoContainer>
@@ -16,7 +21,14 @@ export default function LeftSideBar() {
         {socialLink.map(({name, link, Icon, color}) => (
           <Tooltip title={name} aria-label={name} placement="right" arrow key={link} color={color}>
             <SocialLinkItem>
-              <SocialLink aria-label={`Link to ${name}`} href={link} target="_blank" rel="noreferrer" color={color}>
+              <SocialLink
+                onClick={handleSocialLinkClick(name)}
+                aria-label={`Link to ${name}`}
+                href={link}
+                target="_blank"
+                rel="noreferrer"
+                color={color}
+              >
                 {Icon}
               </SocialLink>
             </SocialLinkItem>

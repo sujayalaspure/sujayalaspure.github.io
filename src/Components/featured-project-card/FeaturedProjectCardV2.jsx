@@ -4,8 +4,14 @@ import ReactHtmlParser from "react-html-parser"
 import COLORS from "../../utils/Colors"
 import {Logo} from "../../constant"
 import BrowserSkin from "../atoms/BrowserSkin"
+import {logEventAnalytics} from "../../utils/firebase"
 
 function FeaturedProjectCardV2({isRight, thumbnail, logo, title, description, externalLink, slug}) {
+  const onProjectClick = () => {
+    logEventAnalytics("featured_project_clicked", {
+      label: title,
+    })
+  }
   return (
     <Container isRight={isRight}>
       <ImageContainer isRight={isRight}>
@@ -28,6 +34,7 @@ function FeaturedProjectCardV2({isRight, thumbnail, logo, title, description, ex
         <Body>{ReactHtmlParser(description)}</Body>
         <FootNote>
           <ActionButton
+            onClick={onProjectClick}
             href={externalLink ? externalLink : `/#/case/${slug}`}
             rel="noreferrer"
             target={externalLink ? "_blank" : "_self"}

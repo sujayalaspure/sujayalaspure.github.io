@@ -5,6 +5,7 @@ import React, {useEffect, useState} from "react"
 import {FiExternalLink} from "react-icons/fi"
 import {getMediumPosts} from "service"
 import {MediumPostsContainer, PostContentWrapper, PostImage, PostWrapper} from "./style"
+import {logEventAnalytics} from "../../utils/firebase"
 
 function MediumPosts() {
   const [mediumPosts, setMediumPosts] = useState([])
@@ -31,6 +32,13 @@ const Post = ({post}) => {
 
   const description = post?.description.replace(/<h3>.*<\/h3>|<figcaption>.*<\/figcaption>|<[^>]*>/gm, "")
 
+  const onPostClick = () => {
+    logEventAnalytics("medium_post_clicked", {
+      title,
+      url: post?.link,
+    })
+  }
+
   return (
     <PostWrapper>
       <PostImage src={post?.thumbnail} alt={title} loading="lazy" />
@@ -40,7 +48,7 @@ const Post = ({post}) => {
         <TagGroup tags={post?.categories.slice(0, 5)} />
       </PostContentWrapper>
 
-      <a className="read-more" href={post?.link} target="_blank" rel="noreferrer">
+      <a onClick={onPostClick} className="read-more" href={post?.link} target="_blank" rel="noreferrer">
         <FiExternalLink />
       </a>
     </PostWrapper>

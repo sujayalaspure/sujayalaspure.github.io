@@ -1,10 +1,13 @@
-import { initializeApp } from "firebase/app"
-import { child, get, getDatabase, ref, set } from "firebase/database"
-import { useSearchParams } from "react-router-dom"
+import {initializeApp} from "firebase/app"
+import {child, get, getDatabase, ref, set} from "firebase/database"
+import {getAnalytics, logEvent} from "firebase/analytics"
+
+import {useSearchParams} from "react-router-dom"
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_APIKEY,
   authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASE_URL,
   projectId: process.env.REACT_APP_PROJECT_ID,
   storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
   messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
@@ -14,6 +17,21 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig)
 const db = getDatabase(app)
+export const analytics = getAnalytics(app)
+
+export const logEventAnalytics = (eventName, eventParams) => {
+  // console.log("logEventAnalytics", eventName, eventParams)
+  logEvent(analytics, eventName, eventParams)
+}
+
+export const logPageView = (page_location, eventParams) => {
+  logEventAnalytics("page_view", {
+    page_title: page_location,
+    page_location: window.location.href,
+    page_path: window.location.pathname,
+    ...eventParams,
+  })
+}
 
 const useFirebase = () => {
   let [searchParams] = useSearchParams()
@@ -22,7 +40,7 @@ const useFirebase = () => {
 
   const getCurrentmonth = () => {
     const now = new Date()
-    const some = now.toLocaleString("default", { month: "long", year: "numeric" })
+    const some = now.toLocaleString("default", {month: "long", year: "numeric"})
     return some.split(" ").join("-").toString()
   }
 
@@ -41,7 +59,7 @@ const useFirebase = () => {
     }
   }
 
-  return { updateVisitor }
+  return {updateVisitor}
 }
 
 export default useFirebase

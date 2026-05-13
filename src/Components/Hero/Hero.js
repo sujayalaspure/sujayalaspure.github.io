@@ -1,4 +1,4 @@
-import React, {useEffect} from "react"
+import {useEffect} from "react"
 import {motion, useAnimation} from "framer-motion"
 import {useInView} from "react-intersection-observer"
 import LeftSideBar from "./LeftSideBar"
@@ -8,6 +8,7 @@ import {Link, MouseScrollAnimation} from "Components/atoms"
 import {ProfileLinks, resumeLink} from "constant"
 import useMobile from "../../utils/useMobile"
 import SparkleStar from "../atoms/SparkleStar"
+import {logEventAnalytics} from "../../utils/firebase"
 export default function Hero() {
   const {ref, inView} = useInView({threshold: 0.2})
   const animation = useAnimation()
@@ -46,7 +47,14 @@ export default function Hero() {
               Checkout my GitHub!
             </Link>
           )}
-          <Link newTab button href={resumeLink}>
+          <Link
+            onClick={() => {
+              logEventAnalytics("resume_download")
+            }}
+            newTab
+            button
+            href={resumeLink}
+          >
             Get Resume
           </Link>
         </div>
