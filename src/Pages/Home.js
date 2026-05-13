@@ -10,6 +10,7 @@ import Experience from "Components/experience"
 import LogoIcon from "Assets/LogoIcon"
 import MediumPosts from "Components/medium-posts"
 import ProjectGrid from "Components/project-grid"
+import ExperienceSectionV2 from "../Components/experience/ExperienceSectionV2"
 
 function Home() {
   const [loading, setLoading] = useState(true)
@@ -27,7 +28,7 @@ function Home() {
     },
     {
       title: "Where I’ve Worked",
-      component: <Experience />,
+      component: <ExperienceSectionV2 />,
     },
     {
       title: "Featured Projects",

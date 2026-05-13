@@ -57,6 +57,7 @@ body {
   background-color: var(--navy);
   overflow-x: hidden;
   max-width: 100vw;
+  color: var(--slate);
 }
 h1,
 h2,
@@ -77,6 +78,10 @@ p {
 li {
   display: list-item;
   text-align: -webkit-match-parent;
+}
+strong {
+  font-weight: 600;
+  color: var(--light-slate);
 }
 
 a {

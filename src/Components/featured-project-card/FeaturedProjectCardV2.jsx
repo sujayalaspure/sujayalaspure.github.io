@@ -43,7 +43,6 @@ function FeaturedProjectCardV2({isRight, thumbnail, logo, title, description, ex
 export default FeaturedProjectCardV2
 
 const Container = styled.div`
-  /* border: 1px solid #ff0a; */
   display: flex;
   width: 100%;
   margin: 4rem auto;
@@ -65,6 +64,9 @@ const ImageContainer = styled.div`
   position: relative;
   border: 1px solid ${COLORS.darkslate};
   padding: 1rem;
+  box-shadow: 0 2.74416px 2.74416px rgba(0, 0, 0, 0.0274351), 0 5.48831px 5.48831px rgba(0, 0, 0, 0.0400741),
+    0 13.7208px 10.9766px rgba(0, 0, 0, 0.0499982), 0 20.5812px 20.5812px rgba(0, 0, 0, 0.0596004),
+    0 41.1623px 41.1623px rgba(0, 0, 0, 0.0709366), 0 96.0454px 89.1851px rgba(0, 0, 0, 0.09);
   @media (min-width: 768px) {
     padding: 2rem;
   }
@@ -117,6 +119,9 @@ const ContentContainer = styled.div`
   border: 1px solid ${COLORS.darkslate};
   padding: 1.5rem;
   border-top-width: 0;
+  box-shadow: 0 2.74416px 2.74416px rgba(0, 0, 0, 0.0274351), 0 5.48831px 5.48831px rgba(0, 0, 0, 0.0400741),
+    0 13.7208px 10.9766px rgba(0, 0, 0, 0.0499982), 0 20.5812px 20.5812px rgba(0, 0, 0, 0.0596004),
+    0 41.1623px 41.1623px rgba(0, 0, 0, 0.0709366), 0 96.0454px 89.1851px rgba(0, 0, 0, 0.09);
   @media (min-width: 1024px) {
     border-top-width: 1px;
     width: 34%;
