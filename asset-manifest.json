@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.94b59521.chunk.css",
-    "main.js": "/static/js/main.7f9152e8.chunk.js",
-    "runtime-main.js": "/static/js/runtime-main.8734a8d2.js",
-    "static/js/2.21e51012.chunk.js": "/static/js/2.21e51012.chunk.js",
+    "main.js": "/static/js/main.03609a2e.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.48cdc6a0.js",
+    "static/js/2.7521f3ab.chunk.js": "/static/js/2.7521f3ab.chunk.js",
     "static/css/3.3f2a7b3a.chunk.css": "/static/css/3.3f2a7b3a.chunk.css",
-    "static/js/3.2948da72.chunk.js": "/static/js/3.2948da72.chunk.js",
-    "static/js/4.76c40549.chunk.js": "/static/js/4.76c40549.chunk.js",
+    "static/js/3.28b63d50.chunk.js": "/static/js/3.28b63d50.chunk.js",
+    "static/js/4.b3667152.chunk.js": "/static/js/4.b3667152.chunk.js",
     "static/css/5.2aaf51b3.chunk.css": "/static/css/5.2aaf51b3.chunk.css",
-    "static/js/5.f5d2cbf8.chunk.js": "/static/js/5.f5d2cbf8.chunk.js",
+    "static/js/5.4a380e45.chunk.js": "/static/js/5.4a380e45.chunk.js",
     "static/css/6.3cc42532.chunk.css": "/static/css/6.3cc42532.chunk.css",
-    "static/js/6.fa2c659b.chunk.js": "/static/js/6.fa2c659b.chunk.js",
-    "static/js/7.3974ce1a.chunk.js": "/static/js/7.3974ce1a.chunk.js",
+    "static/js/6.42a75407.chunk.js": "/static/js/6.42a75407.chunk.js",
+    "static/js/7.2da30acb.chunk.js": "/static/js/7.2da30acb.chunk.js",
     "index.html": "/index.html",
-    "static/js/2.21e51012.chunk.js.LICENSE.txt": "/static/js/2.21e51012.chunk.js.LICENSE.txt",
-    "static/js/4.76c40549.chunk.js.LICENSE.txt": "/static/js/4.76c40549.chunk.js.LICENSE.txt",
+    "static/js/2.7521f3ab.chunk.js.LICENSE.txt": "/static/js/2.7521f3ab.chunk.js.LICENSE.txt",
+    "static/js/4.b3667152.chunk.js.LICENSE.txt": "/static/js/4.b3667152.chunk.js.LICENSE.txt",
     "static/media/1-Signupscreen.b0f4ef89.webp": "/static/media/1-Signupscreen.b0f4ef89.webp",
     "static/media/10-CartMorePriceDetails.f7b075ce.webp": "/static/media/10-CartMorePriceDetails.f7b075ce.webp",
     "static/media/11-Checkoutscreen.2a05620e.webp": "/static/media/11-Checkoutscreen.2a05620e.webp",
@@ -61,9 +61,9 @@
     "static/media/wireframe.d0dc4f09.webp": "/static/media/wireframe.d0dc4f09.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.8734a8d2.js",
-    "static/js/2.21e51012.chunk.js",
+    "static/js/runtime-main.48cdc6a0.js",
+    "static/js/2.7521f3ab.chunk.js",
     "static/css/main.94b59521.chunk.css",
-    "static/js/main.7f9152e8.chunk.js"
+    "static/js/main.03609a2e.chunk.js"
   ]
 }
