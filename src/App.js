@@ -7,6 +7,7 @@ import LogoIcon from "Assets/LogoIcon"
 import {resumeLink} from "constant"
 import GodrejCaseStudy from "./Projects/godrej-innard/GodrejCaseStudy"
 import ImageModal, {imageModalRef} from "./Components/molecules/ImageModal"
+import Archives from "./Pages/Archives"
 import {logEventAnalytics} from "./utils/firebase"
 // import useFirebase from "utils/firebase"
 
@@ -49,6 +50,7 @@ function App() {
             <Route path="/test" element={<TestPage />} />
             <Route path="/case/:slug" element={<CaseStudy />} />
             <Route path="/innards" element={<GodrejCaseStudy />} />
+            <Route path="/archives" element={<Archives />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

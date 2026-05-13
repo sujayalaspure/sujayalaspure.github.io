@@ -115,3 +115,31 @@ export const PostContentWrapper = styled.div`
     }
   }
 `
+
+export const ReadMoreWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: ${COLORS.accent};
+  margin-top: 2rem;
+`
+
+export const ReadMoreText = styled.a`
+  &:hover::after {
+    transform: translate(4px);
+  }
+
+  &::after {
+    content: "~>";
+    margin-left: 0.375rem;
+    display: inline-block;
+    font-family: JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New,
+      monospace;
+    font-weight: 500;
+    letter-spacing: 0em;
+    transition: transform 0.3s ease;
+  }
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+`

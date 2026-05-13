@@ -1,10 +1,10 @@
 {
   "name": "portfolio-react",
   "homepage": "https://sujayalaspure.github.io/",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "private": true,
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
+    "start": "react-scripts start",
     "build": "GENERATE_SOURCEMAP=false react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

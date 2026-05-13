@@ -40,10 +40,10 @@ function Home() {
       component: <MediumPosts />,
       hide: false,
     },
-    {
-      title: "All Projects",
-      component: <ProjectGrid projects={projects} />,
-    },
+    // {
+    //   title: "All Projects",
+    //   component: <ProjectGrid projects={projects} />,
+    // },
     {
       title: "Get In Touch",
       component: <GetInTouch />,
