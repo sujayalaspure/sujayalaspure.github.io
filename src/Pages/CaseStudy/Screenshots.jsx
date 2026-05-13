@@ -9,7 +9,10 @@ function Screenshots({title, content}) {
       {content.map((row, index) => (
         <Row key={index}>
           {row.map(({imgsrc, caption, isNotch}, idx) => (
-            <ImageWrapper onClick={() => openModal({imageSrc: imgsrc, caption, isNotch})} key={`${index}-${idx}`}>
+            <ImageWrapper onClick={(e) => {
+              const rect = e.currentTarget.getBoundingClientRect()
+              openModal({imageSrc: imgsrc, caption, isNotch, originRect: rect})
+            }} key={`${index}-${idx}`}>
               <MobileFrame isNotch={isNotch}>
                 <img src={imgsrc} loading="lazy" />
               </MobileFrame>
