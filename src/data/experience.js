@@ -3,7 +3,7 @@ const expData = [
     title: "Senior Software Developer",
     company: "Netradyne",
     companyWebsite: "https://www.netradyne.com/",
-    favicon: "https://www.netradyne.com/wp-content/uploads/2021/07/logo.png",
+    favicon: "https://cdn.prod.website-files.com/691f9a539f7f4834f9f9995c/6931cc5839df2fc9db7d5bc6_favicon.avif",
     start: "Feb 2023",
     end: "Present",
     details: [

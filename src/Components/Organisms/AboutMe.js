@@ -1,4 +1,4 @@
-import {profile} from "constant"
+import {profile, ProfileLinks} from "constant"
 import {motion} from "framer-motion"
 import {useInView} from "react-intersection-observer"
 import "styles/components/AboutMe.css"
@@ -51,7 +51,12 @@ export default function AboutMe() {
             corporation (TCS).
           </motion.p>
           <motion.p variants={item}>
-            Apart from coding, I also love to ride bikes, go on hiking the mountains, trekking.
+            Apart from coding, I also love to ride bikes, go on hiking the mountains, trekking. You can checkout my
+            Instagram{" "}
+            <a href={ProfileLinks.instagram} target="_blank" rel="noreferrer" style={{color: "var(--accent)"}}>
+              here
+            </a>
+            .
           </motion.p>
           <motion.p variants={item}>Here are a few technologies I've been working with recently:</motion.p>
           <motion.ul variants={item} className="skills-list">

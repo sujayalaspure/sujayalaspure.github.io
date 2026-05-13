@@ -50,11 +50,26 @@
 }
 
 .sidebar.right {
-  left: auto;
-  right: 40px;
+  left: 50%;
+  right: auto;
+  top: 20px;
+  transform: translateX(-50%);
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .sidebar.right:before,
-.sidebar.right:after,
+.sidebar.right:after {
+  content: "";
+  display: block;
+  opacity: 0.6;
+  width: 80px;
+  height: 1px;
+  margin: 0 8px;
+  background-color: var(--slate);
+}
+
 .sidebar.left:before,
 .sidebar.left:after {
   content: "";
@@ -64,7 +79,6 @@
   height: 12vh;
   margin: 0px auto;
   background-color: var(--slate);
-  /* opacity: 0.6; */
 }
 
 .sidebar.left .social {
@@ -84,21 +98,20 @@
 
 .sidebar.right .email {
   display: flex;
-  flex-direction: column;
-  -webkit-box-align: center;
+  flex-direction: row;
   align-items: center;
   transition: var(--transition);
 }
 
 .sidebar.right .email p {
-  margin: 10px auto;
+  margin: 0;
   padding: 10px;
   font-family: "Roboto mono";
   font-size: var(--fz-xs);
   line-height: 18px;
-  letter-spacing: 0.15rem;
-  -webkit-writing-mode: vertical-rl;
-  writing-mode: vertical-rl;
+  letter-spacing: 0.1rem;
+  -webkit-writing-mode: horizontal-tb;
+  writing-mode: horizontal-tb;
   color: inherit;
   transition: var(--transition);
   cursor: pointer;

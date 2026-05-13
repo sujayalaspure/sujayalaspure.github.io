@@ -15,13 +15,13 @@ const firebaseConfig = {
   measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 }
 
-const app = initializeApp(firebaseConfig)
-const db = getDatabase(app)
-export const analytics = getAnalytics(app)
+// const app = initializeApp(firebaseConfig)
+// const db = getDatabase(app)
+// export const analytics = getAnalytics(app)
 
 export const logEventAnalytics = (eventName, eventParams) => {
   // console.log("logEventAnalytics", eventName, eventParams)
-  logEvent(analytics, eventName, eventParams)
+  // logEvent(analytics, eventName, eventParams)
 }
 
 export const logPageView = (page_location, eventParams) => {
@@ -34,32 +34,33 @@ export const logPageView = (page_location, eventParams) => {
 }
 
 const useFirebase = () => {
-  let [searchParams] = useSearchParams()
+  return 
+  // let [searchParams] = useSearchParams()
 
-  const fromParam = searchParams.get("from")
+  // const fromParam = searchParams.get("from")
 
-  const getCurrentmonth = () => {
-    const now = new Date()
-    const some = now.toLocaleString("default", {month: "long", year: "numeric"})
-    return some.split(" ").join("-").toString()
-  }
+  // const getCurrentmonth = () => {
+  //   const now = new Date()
+  //   const some = now.toLocaleString("default", {month: "long", year: "numeric"})
+  //   return some.split(" ").join("-").toString()
+  // }
 
-  const updateVisitor = async () => {
-    const visitorRef = ref(db, "portfolio")
-    const countRef = child(visitorRef, "visits")
-    const count = await get(countRef)
-    set(countRef, count.val() + 1)
-    const monthRef = child(visitorRef, "monthly/" + getCurrentmonth())
-    const month = await get(monthRef)
-    set(monthRef, month.val() + 1 || 1)
-    if (fromParam) {
-      const fromRef = child(visitorRef, "from/" + fromParam)
-      const from = await get(fromRef)
-      set(fromRef, from.val() + 1 || 1)
-    }
-  }
+  // const updateVisitor = async () => {
+  //   const visitorRef = ref(db, "portfolio")
+  //   const countRef = child(visitorRef, "visits")
+  //   const count = await get(countRef)
+  //   set(countRef, count.val() + 1)
+  //   const monthRef = child(visitorRef, "monthly/" + getCurrentmonth())
+  //   const month = await get(monthRef)
+  //   set(monthRef, month.val() + 1 || 1)
+  //   if (fromParam) {
+  //     const fromRef = child(visitorRef, "from/" + fromParam)
+  //     const from = await get(fromRef)
+  //     set(fromRef, from.val() + 1 || 1)
+  //   }
+  // }
 
-  return {updateVisitor}
+  // return {updateVisitor}
 }
 
 export default useFirebase
