@@ -2,7 +2,7 @@ import {SiLeetcode} from "react-icons/si"
 import {FaMediumM, FaLinkedinIn, FaGithub, FaDownload} from "react-icons/fa"
 import Logo from "./Assets/images/icon1.png"
 
-export const resumeLink = "/assets/Sujay_Alaspure_Software_Developer_6_years.pdf"
+export const resumeLink = "/assets/Sujay_Alaspure_Software_Developer_7_years.pdf"
 
 export const ProfileLinks = {
   github: "https://github.com/sujayalaspure",
