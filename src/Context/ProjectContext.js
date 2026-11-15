@@ -8,7 +8,12 @@ export function useProject() {
 export default function ProjectProvider({ children }) {
   const [scrolled, setScrolled] = useState(0);
   function getProject(slug) {
-    return projects.find((project) => project.slug === slug);
+    return projects.find(
+      (project) =>
+        project.slug === slug ||
+        (project.slug === "travel-location-extractor" &&
+          (slug === "year-recap" || slug === "travel-recap"))
+    );
   }
 
   const updateThrottled = throttle((e) => {

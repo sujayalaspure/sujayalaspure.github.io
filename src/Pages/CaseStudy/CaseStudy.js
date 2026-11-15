@@ -11,6 +11,8 @@ import {CaseFooter, CaseStudyContainer} from "./style"
 import Fullimage from "./Fullimage"
 import UseCasesScenarios from "./UseCasesScenarios"
 import Screenshots from "./Screenshots"
+import FeatureFlow from "./FeatureFlow"
+import DesktopGallery from "./DesktopGallery"
 
 export default function CaseStudy() {
   const [project, setProject] = useState(null)
@@ -20,9 +22,13 @@ export default function CaseStudy() {
 
   useEffect(() => {
     const pro = getProject(slug)
-    setProject(pro)
-    document.title = `${pro.title} | Sujay Alaspure`
-  }, [])
+    if (pro) {
+      setProject(pro)
+      document.title = `${pro.title} | Sujay Alaspure`
+    } else {
+      navigate("/error")
+    }
+  }, [slug])
 
   const renderComponent = ({type, value}, index) => {
     switch (type) {
@@ -40,6 +46,12 @@ export default function CaseStudy() {
         return <UseCasesScenarios key={index} {...value} />
       case "screenshots":
         return <Screenshots key={index} {...value} />
+      case "featureFlow":
+        return <FeatureFlow key={index} {...value} />
+      case "desktopGallery":
+        return <DesktopGallery key={index} {...value} />
+      case "custom":
+        return <React.Fragment key={index}>{value?.component}</React.Fragment>
 
       default:
         break
@@ -51,7 +63,7 @@ export default function CaseStudy() {
   return (
     <>
       <CaseStudyContainer id="fixed">
-        {project ? project?.data?.map((item, index) => renderComponent(item, index)) : routeTo404Page()}
+        {project?.data?.map((item, index) => renderComponent(item, index))}
       </CaseStudyContainer>
       <CaseFooter>
         <a href="/" className="link-item nextcase">

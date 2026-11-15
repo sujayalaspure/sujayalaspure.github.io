@@ -3,7 +3,25 @@ import cryptoBanner from "./Cryptoverse/banner.webp"
 import keepBanner from "./Keeper/keep-banner.webp"
 import ScratchAppThumb from "./scratch-app/Scratch-app-thumbnail.webp"
 import {GodrejInnardAssets, GodrejInnardStructure} from "./godrej-innard"
+import {
+  TravelLocationExtractorAssets,
+  travelLocationExtractorStructure,
+} from "./travel-location-extractor" 
 const projects = [
+  {
+    isFeatured: true,
+    thumbnail: TravelLocationExtractorAssets.banner,
+    title: "Travel Location Extractor",
+    slug: "travel-location-extractor",
+    description: `A native macOS app to relive your journeys, track your routes, and turn 4+ TB of photos and 4K drone footage into an interactive travel atlas with animated trip playback and print-ready year recap posters.`,
+    tags: ["macOS App", "Interactive Maps", "Trip Playback", "Travel Posters", "Offline Drives"],
+    githubLink: "",
+    externalLink: "",
+    data: travelLocationExtractorStructure,
+    case: true,
+    logo: TravelLocationExtractorAssets.logo,
+    madeAt: "Personal Project",
+  },
   {
     isFeatured: true,
     thumbnail: GodrejInnardAssets.AdBanner,
